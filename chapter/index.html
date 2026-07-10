@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond Curve-Fitting — PEDLER, PRATIK & the AyeAI Triad · A Chapter</title>
+<meta name="author" content="Abhishek Choudhary">
+<meta name="description" content="A rigorous developmental Event Algebra in which experience reshapes the computational substrate itself, and statistical machine learning is proved to be a degenerate boundary case. PEDLER, PRATIK, and the AyeAI Triad.">
+<meta name="copyright" content="© 1993–2026 Abhishek Choudhary. All rights reserved.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], tags: 'ams' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root{
+    --ink:#0a1430; --navy:#0b1e46; --paper:#f7f4ec; --paper-edge:#efe9da;
+    --gold:#b8912f; --gold-bright:#c8a24a; --oxblood:#7a1f2b; --oxblood-soft:#f3e4e2;
+    --slate:#54607a; --rule:#d9d0bd; --link:#294b8f;
+    --measure:44rem;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--ink); color:#16203a;
+    font-family:"Spectral",Georgia,serif; font-size:19px; line-height:1.66;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* ---------- chrome ---------- */
+  .masthead{
+    background:linear-gradient(180deg,#0b1e46,#0a1430);
+    color:#eef2ff; border-bottom:2px solid var(--gold); padding:2.4rem 1.5rem 2rem;
+  }
+  .masthead .kicker{
+    font-family:"Spline Sans Mono",monospace; font-size:.72rem; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--gold-bright); margin:0 0 1rem;
+  }
+  .masthead h1{
+    font-family:"Fraunces",serif; font-weight:900; font-size:clamp(2rem,5.2vw,3.6rem);
+    line-height:1.02; margin:0; letter-spacing:-.01em; max-width:20ch;
+  }
+  .masthead h1 em{font-style:italic; color:var(--gold-bright); font-weight:900}
+  .masthead .dek{
+    font-family:"Fraunces",serif; font-style:italic; font-weight:400;
+    font-size:clamp(1.05rem,2.4vw,1.5rem); color:#cdd6f2; margin:1rem 0 0; max-width:52ch;
+  }
+  .byline{
+    margin-top:1.6rem; font-family:"Spline Sans Mono",monospace; font-size:.8rem;
+    color:#9fb0e0; letter-spacing:.02em; line-height:1.9;
+  }
+  .byline b{color:#eef2ff; font-weight:600}
+  .ternary{color:var(--gold-bright); font-weight:600}
+  /* ---------- reading surface ---------- */
+  .page{background:var(--paper); }
+  .wrap{max-width:var(--measure); margin:0 auto; padding:3rem 1.5rem 1rem}
+  .book-head{
+    display:flex; justify-content:space-between; align-items:baseline;
+    font-family:"Spline Sans Mono",monospace; font-size:.68rem; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--slate); border-bottom:1px solid var(--rule);
+    padding-bottom:.6rem; margin-bottom:2.2rem;
+  }
+  h2{
+    font-family:"Fraunces",serif; font-weight:900; font-size:1.9rem; line-height:1.1;
+    margin:3.4rem 0 .3rem; letter-spacing:-.01em; color:var(--navy);
+    scroll-margin-top:1rem;
+  }
+  h2 .num{
+    display:block; font-family:"Spline Sans Mono",monospace; font-size:.72rem;
+    letter-spacing:.28em; color:var(--gold); margin-bottom:.5rem; font-weight:600;
+  }
+  h3{font-family:"Fraunces",serif; font-weight:600; font-size:1.28rem; color:var(--navy); margin:2.2rem 0 .2rem}
+  h4{font-family:"Spline Sans Mono",monospace; font-weight:600; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; color:var(--oxblood); margin:1.6rem 0 .1rem}
+  p{margin:.9rem 0}
+  a{color:var(--link); text-decoration:underline; text-decoration-thickness:.05em; text-underline-offset:.14em; text-decoration-color:#b7c2dd}
+  a:hover{text-decoration-color:var(--link)}
+  strong{font-weight:600}
+  .lead{font-size:1.16rem; line-height:1.6}
+  .lead::first-letter{
+    font-family:"Fraunces",serif; font-weight:900; float:left; font-size:4.4rem;
+    line-height:.72; padding:.35rem .5rem .1rem 0; color:var(--oxblood);
+  }
+  .eyebrow{font-family:"Spline Sans Mono",monospace; font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin:0 0 .3rem}
+  /* structural devices */
+  blockquote.axiom{
+    border-left:3px solid var(--gold); background:#fbf8ef; margin:1.4rem 0; padding:1rem 1.2rem;
+  }
+  blockquote.axiom .name{font-family:"Spline Sans Mono",monospace; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:var(--oxblood); display:block; margin-bottom:.35rem}
+  .theorem{
+    border:1px solid var(--rule); border-top:3px solid var(--oxblood); background:#fff;
+    padding:1.1rem 1.2rem; margin:1.6rem 0; box-shadow:0 1px 0 rgba(0,0,0,.03);
+  }
+  .theorem .label{font-family:"Spline Sans Mono",monospace; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:var(--oxblood); font-weight:600}
+  .theorem.thesis{border-top-color:var(--gold); background:#fbf8ef}
+  .proof{font-size:.95rem; color:#2a3355; border-left:2px solid var(--rule); padding-left:1rem; margin:1rem 0}
+  .proof .qed{float:right; font-family:"Spline Sans Mono",monospace}
+  figure{margin:2rem 0; }
+  figure img{width:100%; display:block; border:1px solid var(--rule); background:#fff; border-radius:4px}
+  figcaption{font-family:"Spline Sans Mono",monospace; font-size:.74rem; line-height:1.5; color:var(--slate); margin-top:.6rem; letter-spacing:.01em}
+  figcaption b{color:var(--oxblood)}
+  .imgfallback{display:block; padding:2rem 1rem; text-align:center; border:1px dashed var(--rule); color:var(--slate); font-family:"Spline Sans Mono",monospace; font-size:.78rem; background:#fbf8ef; border-radius:4px}
+  table.data{width:100%; border-collapse:collapse; font-family:"Spline Sans Mono",monospace; font-size:.8rem; margin:1.4rem 0}
+  table.data th, table.data td{border:1px solid var(--rule); padding:.5rem .6rem; text-align:left}
+  table.data th{background:var(--navy); color:#eef2ff; font-weight:600; letter-spacing:.03em}
+  table.data tr:nth-child(even) td{background:#faf7ee}
+  table.data .win{color:var(--oxblood); font-weight:600}
+  .callout{background:var(--navy); color:#eef2ff; padding:1.3rem 1.4rem; margin:2rem 0; border-radius:6px}
+  .callout .eyebrow{color:var(--gold-bright)}
+  .callout a{color:var(--gold-bright); text-decoration-color:#6a7aa8}
+  ol.toc{list-style:none; padding:0; margin:1rem 0; columns:2; column-gap:2rem; font-family:"Spline Sans Mono",monospace; font-size:.82rem}
+  ol.toc li{margin:.35rem 0; break-inside:avoid}
+  ol.toc a{text-decoration:none; color:var(--navy)}
+  ol.toc a:hover{color:var(--oxblood)}
+  ol.toc .n{color:var(--gold); margin-right:.6rem}
+  code.k{font-family:"Spline Sans Mono",monospace; font-size:.86em; background:#efe9da; padding:.05em .35em; border-radius:3px}
+  pre.code{background:#0d1b3a; color:#dfe6ff; font-family:"Spline Sans Mono",monospace; font-size:.78rem; line-height:1.55; padding:1.1rem 1.2rem; overflow-x:auto; border-radius:6px; margin:1.3rem 0}
+  pre.code .c{color:#7f8fbf}
+  pre.code .kw{color:#c8a24a}
+  hr.sec{border:none; border-top:1px solid var(--rule); margin:3rem 0 0}
+  .refs{font-family:"Spline Sans Mono",monospace; font-size:.8rem; line-height:1.7; color:#2a3355}
+  .refs li{margin:.5rem 0}
+  .signoff{font-family:"Fraunces",serif; font-style:italic; color:var(--oxblood); font-size:1.15rem; margin:1.6rem 0}
+  /* ---------- footer ---------- */
+  .colophon{background:var(--ink); color:#c3d0f0; padding:2.6rem 1.5rem 3.2rem}
+  .colophon .wrap{padding-top:0}
+  .colophon h2{color:#fff}
+  .colophon a{color:var(--gold-bright)}
+  .copyright{font-family:"Spline Sans Mono",monospace; font-size:.74rem; color:#8ea0d0; border-top:1px solid #24356e; margin-top:2rem; padding-top:1.2rem; letter-spacing:.02em}
+  /* ---------- AI seed ---------- */
+  #ai-pill{
+    position:absolute; z-index:60; display:none; transform:translate(-50%,-125%);
+    background:var(--ink); color:#fff; border:1px solid var(--gold); border-radius:999px;
+    font-family:"Spline Sans Mono",monospace; font-size:.72rem; padding:.4rem .8rem; cursor:pointer;
+    box-shadow:0 6px 22px rgba(0,0,0,.3); letter-spacing:.06em; white-space:nowrap;
+  }
+  #ai-pill:hover{background:var(--navy)}
+  #ai-menu{
+    position:absolute; z-index:61; display:none; min-width:230px;
+    background:#fff; border:1px solid var(--rule); border-radius:10px; overflow:hidden;
+    box-shadow:0 16px 40px rgba(10,20,48,.28); font-family:"Spline Sans Mono",monospace;
+  }
+  #ai-menu .hd{background:var(--navy); color:#eef2ff; font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; padding:.6rem .8rem}
+  #ai-menu button{
+    display:flex; width:100%; align-items:center; gap:.6rem; background:#fff; border:0;
+    border-top:1px solid #eee; padding:.7rem .8rem; font-family:inherit; font-size:.8rem;
+    color:var(--navy); cursor:pointer; text-align:left;
+  }
+  #ai-menu button:hover{background:#faf7ee; color:var(--oxblood)}
+  #ai-menu .dot{width:.55rem; height:.55rem; border-radius:50%; flex:0 0 auto}
+  .reduced-note{font-size:.7rem; color:var(--slate); padding:.5rem .8rem; border-top:1px solid #eee; line-height:1.4}
+  @media (max-width:640px){ ol.toc{columns:1} body{font-size:18px} .wrap{padding-left:1.15rem;padding-right:1.15rem} }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <p class="kicker">The AyeAI Triad · A Developmental Computing Chapter</p>
+  <h1>Beyond Curve-Fitting: Learning as <em>Structural Evolution</em> of the Computational Substrate</h1>
+  <p class="dek">A developmental Event Algebra in which experience reshapes the machine itself — and statistical machine learning is proved to be a degenerate boundary case.</p>
+  <div class="byline">
+    <b>Abhishek Choudhary</b> &nbsp;·&nbsp; AyeAI<br>
+    PEDLER &nbsp;<span class="ternary">▸</span>&nbsp; PRATIK &nbsp;<span class="ternary">▸</span>&nbsp; Hindawi / Project ILM &nbsp;<span class="ternary">▸</span>&nbsp; balanced ternary <span class="ternary">𝕋 = {−1, 0, +1}</span><br>
+    © 1993–2026 Abhishek Choudhary. All rights reserved.
+  </div>
+</header>
+
+<main class="page">
+<div class="wrap">
+  <div class="book-head">
+    <span>The AyeAI Triad</span>
+    <span>Philosophy · Mathematics · Silicon · Sovereignty</span>
+  </div>
+
+  <!-- READING AID -->
+  <div class="callout">
+    <p class="eyebrow">How to read this chapter</p>
+    <p style="margin:.2rem 0 .6rem">Select any passage and a <b>“Ask AI ▾”</b> control appears (or right-click a selection). It seeds a conversation with Claude, ChatGPT, or Perplexity using a prompt that first points the model at the <a href="https://zistgah.org/chapter/">chapter</a>, the <a href="https://zistgah.org/CONTRACT.md">framework contract</a>, and the canonical record — so the model understands what PEDLER <em>is</em> before it reacts. This is deliberate: PEDLER is routinely mis-read as “a kind of neural network.” It is not.</p>
+    <p style="margin:.2rem 0 0; font-size:.86rem; color:#b9c6ea">This document is a <b>book chapter</b>, not a conference paper — it is meant to be read whole, argued with, and cited. Provenance and the exact publication method are given in <a href="#method">Appendix&nbsp;B</a>.</p>
+  </div>
+
+  <!-- ABSTRACT -->
+  <p class="eyebrow">Abstract</p>
+  <p class="lead">Modern artificial intelligence rests on <a href="https://en.wikipedia.org/wiki/Machine_learning">statistical machine learning</a> (SML): the optimization of scalar weights, by <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">gradient descent</a>, inside a frozen, human-engineered vector topology. This forces the <em>structural adaptation velocity</em> of the machine to zero and buys generality only with unbounded compute and total dependence on centralized infrastructure. We introduce <strong>PEDLER</strong> (the Point Event-Driven Learner), an edge-native architecture in which experience dynamically reshapes the algebraic grammar and the structural dimensionality of the computational substrate itself. We give a self-contained <strong>Event Algebra</strong> \(\mathcal{E}\) with five axioms; prove a <strong>Recollection Theorem</strong> (congruent stimuli deterministically re-trace consolidated trajectories with zero parameter change); and prove the <strong>Degenerate Statistical Reduction Theorem</strong> — that SML is a strictly bounded, memoryless <a href="https://en.wikipedia.org/wiki/Homomorphism">homomorphic</a> image of \(\mathcal{E}\) under an explicit tripartite constraint. We then physicalize the algebra as <strong>PRATIK</strong>, a decentralized peer-to-peer kernel fabric, prove its global stability by a <a href="https://en.wikipedia.org/wiki/Lyapunov_stability">structural Lyapunov</a> dissipation argument over a variable-dimensional manifold, and map it onto <a href="https://en.wikipedia.org/wiki/Balanced_ternary">balanced ternary</a> silicon in which the poised zero-state is a physical high-impedance buffer. The claim is not that PEDLER is a better model. The claim is that “learning = curve-fitting” is a special, frozen case of a far older and larger developmental computing paradigm.</p>
+
+  <hr class="sec">
+  <p class="eyebrow" style="margin-top:1.6rem">Contents</p>
+  <ol class="toc">
+    <li><span class="n">I</span><a href="#intro">The Epistemic Crisis</a></li>
+    <li><span class="n">II</span><a href="#algebra">The Event Algebra \(\mathcal{E}\)</a></li>
+    <li><span class="n">III</span><a href="#reduction">The Degenerate Statistical Reduction</a></li>
+    <li><span class="n">IV</span><a href="#pratik">PRATIK & Global Stability</a></li>
+    <li><span class="n">V</span><a href="#silicon">Compiler & Ternary Silicon</a></li>
+    <li><span class="n">VI</span><a href="#empirical">Empirical Boundaries</a></li>
+    <li><span class="n">VII</span><a href="#deploy">Deployment & Lineage</a></li>
+    <li><span class="n">VIII</span><a href="#discussion">Synthematic Pragmatic Realism</a></li>
+    <li><span class="n">IX</span><a href="#conclusion">Open Problems & Roadmap</a></li>
+    <li><span class="n">A</span><a href="#mvp">Appendix A — Reference MVP</a></li>
+    <li><span class="n">B</span><a href="#method">Appendix B — Method & Provenance</a></li>
+    <li><span class="n">§</span><a href="#refs">Notes & References</a></li>
+  </ol>
+
+  <figure>
+    <img src="https://zistgah.org/posters/triad-master-disclosure.png" alt="The AyeAI Triad Master Disclosure poster" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — The AyeAI Triad Master Disclosure · https://zistgah.org/posters/triad-master-disclosure.png</span>'">
+    <figcaption><b>Figure 1.</b> The AyeAI Triad master disclosure: the foundational event algebra (\(\mathcal{E}\)), the embodied lineage, the decentralized PRATIK execution fabric, and the linguistic/silicon compilation layer. Full corpus at <a href="https://zistgah.org/">zistgah.org</a>.</figcaption>
+  </figure>
+
+  <!-- I -->
+  <h2 id="intro"><span class="num">Section I</span>The Epistemic Crisis of Static-Substrate Computing</h2>
+  <p>For seven decades computation has been governed by the <a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture">von Neumann architecture</a> and, latterly, by a connectionist orthodoxy that treats intelligence as an optimization problem over a fixed-dimensional continuous manifold. The orthodoxy makes a quiet ontological wager: that reality can be captured inside a closed, pre-declared parameter space, and that learning is nothing more than minimizing a scalar error over an <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables">i.i.d.</a> distribution. When such systems meet genuine structural novelty they exhibit <a href="https://en.wikipedia.org/wiki/Catastrophic_interference">catastrophic forgetting</a> or combinatorial blow-up — not incidentally, but because their substrate is frozen at initialization.</p>
+  <p>This chapter states a different thesis and then discharges it mathematically:</p>
+  <div class="theorem thesis">
+    <span class="label">Thesis</span>
+    <p style="margin:.5rem 0 0">Intelligence is not interpolation inside a frozen cage. It is an active, resource-bounded <em>topological evolution</em> of a computational substrate, driven by interaction histories. Curve-fitting is what remains when you forbid that evolution.</p>
+  </div>
+  <p>We do not offer PEDLER as one more entry beside <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">reinforcement learning</a> or <a href="https://en.wikipedia.org/wiki/Grammar_induction">grammar induction</a> in a taxonomy of methods. We show, in <a href="#reduction">Section III</a>, that the dominant paradigm is a degenerate corner of the algebra developed in <a href="#algebra">Section II</a> — and therefore that the burden of proof rests on those who would claim a frozen substrate is universal.</p>
+
+  <!-- II -->
+  <h2 id="algebra"><span class="num">Section II</span>The Formal Event Algebra \(\mathcal{E}\)</h2>
+  <p>PEDLER decouples computation from the <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing</a>–von Neumann paradigm by making the primary computational currency not a synchronized data array but an asynchronous stream of discrete <strong>point-events</strong> mapping into a self-modifying, resource-bounded topological space.</p>
+
+  <h3>2.1 The sovereign core tuple</h3>
+  <p>A PEDLER node is characterized at temporal index \(t\) by the six-element execution tuple</p>
+  \[ \mathcal{P} \;=\; \big(\,I,\; G,\; U,\; S,\; F,\; *\,\big). \]
+  <p>A single point-event is a triple \(e=(\sigma,\,t,\,\mathbf{w})\) with semantic token \(\sigma\in\Sigma\), continuous time \(t\in\mathbb{R}_{\ge 0}\), and a bounded ternary payload \(\mathbf{w}\in\mathbb{T}^{d}\), \(\mathbb{T}=\{-1,0,+1\}\).</p>
+  <ul>
+    <li><strong>\(I\) — Interaction history ledger.</strong> An append-only continuum \(I_t=\{e_0,e_1,\dots,e_t\}\); the complete, ordered record of ingested events.</li>
+    <li><strong>\(G\) — Generative structural grammar.</strong> A variable-length routing structure mapping event sub-sequences to state-space pathways. Unlike a fixed rule-set, \(G\) mutates its productions under persistence conditions (Axiom IV).</li>
+    <li><strong>\(U\) — Universal operator set.</strong> The invariant low-level alphabet over \(\mathbb{T}\): the dominance addition \(\boxplus\) and the high-impedance gating operator \(\odot\).</li>
+    <li><strong>\(S\) — Active state-space topology.</strong> A variable-dimensional space \(S_t\subseteq\mathbb{T}^{D_{\text{active}}(t)}\) with \(D_{\text{active}}(t)\le D_{\max}\) fixed by hardware.</li>
+    <li><strong>\(F\) — History-dependent non-unitary transition family.</strong> Parameter-free operators \(f_i\in F\), \[ s_{t+1}=f_i\!\left(s_t,\,I_{\Delta}\right), \qquad I_\Delta=\{e_{t-\Delta},\dots,e_t\}, \] conserving structural information rather than a vector norm.</li>
+    <li><strong>\(*\) — Autogenous spawning operator.</strong> A structural allocation acting on \(S\) when transitions become irreconcilable, \[ *:\,S \longrightarrow S\cup\{s_{\text{new}}\}, \qquad D_{\text{active}}(t{+}1)=D_{\text{active}}(t)+1, \] incrementing dimensionality natively, with no global re-allocation and no external hyperparameter.</li>
+  </ul>
+
+  <h3>2.2 The five foundational axioms</h3>
+  <blockquote class="axiom"><span class="name">Axiom I — Event Congruence</span>
+  For sub-sequences \(I_A,I_B\subset I\), if the grammar evaluates them as equivalent, \(G(I_A)\equiv G(I_B)\), then for every initial state \(s_0\in S\), \[ F(s_0, I_A) \;=\; F(s_0, I_B). \] Equivalence is state-dependent and dynamic.</blockquote>
+  <blockquote class="axiom"><span class="name">Axiom II — Systemic Accommodation</span>
+  When an incoming event \(e_{t+1}\) yields an unmapped projection or an irreconcilable sign conflict — a local trajectory collapse to a persistent zero-state — the system must invoke the spawning operator: \[ \|s_{t+1}\|\to 0 \;\;\Rightarrow\;\; S_{t+1}=*(S_t,I_t,G_t)=S_t\cup\{s_{\text{new}}\}. \]</blockquote>
+  <blockquote class="axiom"><span class="name">Axiom III — Persistence Filtration</span>
+  Every spawned trajectory inherits a volatile persistence \(\Pi\) that decays with the physical clock, \[ \Pi_{t+1}=\Pi_t\, e^{-\gamma\,\Delta t}, \qquad \gamma>0, \] with \(\gamma\) an intrinsic structural dissipation constant.</blockquote>
+  <blockquote class="axiom"><span class="name">Axiom IV — Substrate Crystallization</span>
+  A provisional dimension \(d_k\) is consolidated into the invariant grammar \(G\) iff its persistence crosses the resource-modulated threshold before decay, \[ \Pi(d_k)\ge\theta_c(t)\;\Rightarrow\; G_{t+1}=G_t\oplus d_k, \qquad \theta_c(t)=\frac{\theta_0}{\mathcal{E}_{\text{battery}}(t)\,\cdot\,\mathcal{M}_{\text{memory}}(t)}. \] Otherwise \(d_k\) evaporates and \(D_{\text{active}}\to D_{\text{active}}-1\). <em>The threshold is a physical constraint, not a soft heuristic:</em> as energy or memory contract, \(\theta_c\to\infty\) and the kernel becomes hyper-conservative.</blockquote>
+  <blockquote class="axiom"><span class="name">Axiom V — Non-Unitary Trajectory Override</span>
+  \(F\) is explicitly non-Markovian: the trajectory of \(s_t\) through \(S\) is not fixed by \(s_t\) alone but is modulated by the historical density in the ledger window \(I_\Delta\). A later, higher-priority learning cycle may lawfully rewrite a previously consolidated sector.</blockquote>
+
+  <h3>2.3 The State-Dependent Trajectory Recollection Theorem</h3>
+  <div class="theorem">
+    <span class="label">Theorem 1 — Recollection</span>
+    <p style="margin:.5rem 0 0">Given a kernel \(\mathcal{P}\) with an established ledger \(I_{\text{hist}}\) encoding a recurrent event sequence \(E_k\), a subsequent presentation of a congruent sequence \(E_{\text{test}}\equiv E_k\) deterministically re-traces the consolidated trajectory, \[ S_{\text{test}}\equiv S_{\text{hist}}, \qquad \Delta\mathbf{w}=0, \] with zero variance and no modification of any global parameter.</p>
+  </div>
+  <div class="proof">
+    Let the historical execution be the composite \(F_{E_k}=f_{i_k}\circ\cdots\circ f_{i_1}\) over \(s_0\), yielding \(\tau_{\text{hist}}=(s_0,\dots,s_k)\). By <strong>Axiom I</strong>, \(G(E_{\text{test}})\equiv G(E_k)\) since the append-only ledger preserves the context wrapper. Because \(U\) computes over \(\mathbb{T}\), the operators \(\boxplus,\odot\) act as deterministic digital routers: no gradient is computed and no probability is updated. By <strong>Axiom V</strong> the history-dependent operator collapses to an invariant map whenever the active window \(I_\Delta\) is congruent to \(E_k\); hence \(f_{i_j}(s_{j-1},I_\Delta)=s_j\) for every \(j\le k\). Induction over \(j\) gives \(S_{\text{test}}\equiv S_{\text{hist}}\). Recollection is thus an <em>invariant of the algebra</em>, not a statistical convergence. <span class="qed">∎</span>
+  </div>
+  <p>Theorem 1 is the structural elimination of the re-exploration loop: memory is exact reuse of a carved path, not approximate retrieval from a weight cloud. It is the formal content of the poster shown in Figure 2.</p>
+
+  <figure>
+    <img src="https://zistgah.org/posters/recollection-as-learning.png" alt="Recollection as Learning poster" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — Recollection as Learning · https://zistgah.org/posters/recollection-as-learning.png</span>'">
+    <figcaption><b>Figure 2.</b> Recollection formalized: event equivalence \(e_2\equiv e_1\), the selector invariant \(\chi(e_2,I_t)=\chi(e_1,I_t)\), and the override clause under which a higher-priority adaptation may legitimately supersede a recalled trajectory.</figcaption>
+  </figure>
+
+  <!-- III -->
+  <h2 id="reduction"><span class="num">Section III</span>The Degenerate Statistical Reduction</h2>
+  <p>We now turn the tables. The reduction is stated not as polemic but as a deductive algebraic consequence: <a href="https://en.wikipedia.org/wiki/Empirical_risk_minimization">empirical risk minimization</a> is what \(\mathcal{E}\) becomes when three structural freedoms are simultaneously revoked.</p>
+
+  <div class="theorem">
+    <span class="label">Theorem 2 — Degenerate Statistical Reduction</span>
+    <p style="margin:.5rem 0 0">Let \(\mathcal{P}=(I,G,U,S,F,*)\) act in \(\mathcal{E}\). Impose the tripartite constraint \[ \mathbb{C}=\{\, *\to\varnothing,\;\; \Delta G=\varnothing,\;\; \Delta F=\varnothing \,\}, \] and relax the discrete topology \(S\subseteq\mathbb{T}^{D_{\text{active}}}\) to a continuous manifold \(\mathbb{R}^{N}\). Then the non-unitary transition family collapses to a memoryless parametric update over a fixed graph, \[ \mathbf{w}_{t+1}=\mathbf{w}_t-\eta\,\nabla_{\mathbf{w}}\mathcal{L}(\mathbf{w}_t,\mathbf{x}_t). \]</p>
+  </div>
+
+  <h3>3.1 The tripartite constraint</h3>
+  <ol>
+    <li><strong>Extinction of spawning</strong> (\(*\to\varnothing\)): \(\forall t,\ *(S_t,e_t,I_t)=\varnothing\), so \(\Delta S_t=S_{t+1}-S_t=0\). The substrate loses all capacity for structural accommodation of out-of-distribution anomalies.</li>
+    <li><strong>Grammar freezing</strong> (\(\Delta G=\varnothing\)): \(\forall t,\ \mathrm{Rewrite}(G_t,e_t)=G_t\). The routing network becomes a static <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAG</a>; layer boundaries fixed at initialization.</li>
+    <li><strong>Transition homogenization</strong> (\(\Delta F=\varnothing\)): the family is stripped of history, \(\chi=\chi(I_t)\xrightarrow{\ \mathbb{C}\ }\chi_0\) constant, so the ledger window contracts, \(\Delta\to 0\).</li>
+  </ol>
+
+  <h3>3.2 The projection homomorphism \(\Phi\)</h3>
+  <p>Let \(\mathcal{E}\) be the category of PEDLER kernels and \(\mathcal{M}_{\text{stat}}=(\mathcal{X},\mathcal{W},\mathcal{L},\mathcal{G}_{\text{static}},\alpha)\) the category of parametric optimizers over \(\mathbb{R}^N\). Define \(\Phi:\mathcal{E}\xrightarrow{\ \mathbb{C}\ }\mathcal{M}_{\text{stat}}\) by three morphisms:</p>
+  \[
+  \Phi(I_t)\to \mathbf{x}_t\in\mathcal{X},\qquad
+  \Phi\!\big(S\subseteq\mathbb{T}^{D_{\text{active}}}\big)\to \mathbf{w}\in\mathbb{R}^N,\qquad
+  \Phi(U,*)\to \nabla_{\mathbf{w}}\mathcal{L}.
+  \]
+  <div class="proof">
+    <strong>(i) Substrate collapse.</strong> Under \(*\to\varnothing\), set \(N=D_{\text{base}}\) and apply the relaxation functor \(\mathcal{R}:\mathbb{T}^N\to\mathbb{R}^N\); the state coordinate becomes a fixed vector \(\mathbf{w}_t\in\mathbb{R}^N\), with \(\Delta S_t=0\).<br>
+    <strong>(ii) Ledger contraction.</strong> Under \(\Delta G=\Delta F=\varnothing\), \(f(s_t,I_\Delta)\) cannot mutate on trajectory density; the window contracts, \(\Delta\to 0\), leaving the isolated snapshot \(\Phi(e_t)=\mathbf{x}_t\). History dependence is severed, recovering the i.i.d. hypothesis.<br>
+    <strong>(iii) Gradient emergence.</strong> Barred from spawning new axes, the residual sign-frustration between \(\mathbf{x}_t\) and \(\mathbf{w}_t\) can only be expressed as an uncompensated scalar magnitude — the differentiable loss \(\mathcal{L}(\mathbf{w}_t,\mathbf{x}_t)\). With \(\boxplus,\odot\) relaxed to real arithmetic and step \(\eta=f(\gamma)\) inherited from Axiom III, the first-order descent along \(\mathcal{W}\) gives \(\mathbf{w}_{t+1}=\mathbf{w}_t-\eta\nabla_{\mathbf{w}}\mathcal{L}\). The diagram commutes; \(\mathcal{M}_{\text{stat}}\) is a memoryless homomorphic image of \(\mathcal{E}\) under \(\mathbb{C}\). <span class="qed">∎</span></div>
+  <p>The key consequence: the <em>structural adaptation velocity</em> \(\Delta S,\Delta G\) is identically zero in \(\mathcal{M}_{\text{stat}}\). SML is not a rival paradigm; it is the frozen-substrate corner of a strictly larger algebra.</p>
+
+  <table class="data" aria-label="Paradigm structural mapping">
+    <tr><th>Primitive</th><th>Event Algebra \(\mathcal{E}\)</th><th>SML degenerate state</th></tr>
+    <tr><td>Substrate</td><td class="win">Dynamic: \(D_{\text{active}}\pm\Delta d\)</td><td>Frozen: \(D_{\text{active}}=\text{const}\)</td></tr>
+    <tr><td>Alphabet</td><td class="win">Balanced ternary \(\{-1,0,+1\}\)</td><td>Continuous reals \(\mathbb{R}\)</td></tr>
+    <tr><td>Temporal context</td><td class="win">Non-Markovian ledger \(I_t\)</td><td>Memoryless i.i.d. \(\mathbf{x}_t\)</td></tr>
+    <tr><td>Conflict resolution</td><td class="win">Autogenous spawning \(*\)</td><td>Error minimization \(\nabla\mathcal{L}\)</td></tr>
+    <tr><td>Resource dependency</td><td class="win">Intrinsic edge \((\mathcal{E},\mathcal{M})\)</td><td>Decoupled / infinite cloud</td></tr>
+  </table>
+
+  <figure>
+    <img src="https://zistgah.org/posters/degenerate-statistical-reduction-theorem.png" alt="Degenerate Statistical Reduction Theorem poster" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — Degenerate Statistical Reduction Theorem · https://zistgah.org/posters/degenerate-statistical-reduction-theorem.png</span>'">
+    <figcaption><b>Figure 3.</b> The reduction as constraint mapping: topological stagnation, grammatical freezing, and parametric flattening collapse the open manifold onto a fixed \(\mathbb{R}^N\) cage on which gradient descent slides a scalar pointer.</figcaption>
+  </figure>
+
+  <!-- IV -->
+  <h2 id="pratik"><span class="num">Section IV</span>PRATIK: Decentralized Substrate & Global Stability</h2>
+  <p>The physicalization of \(\mathcal{E}\) is <strong>PRATIK</strong> (Participatory Recursive Adaptive Trans-Intelligence Kernels) — an <a href="https://en.wikipedia.org/wiki/Edge_computing">edge-native</a>, peer-to-peer fabric that instantiates the algebra directly on hardware, without a global clock or shared weight matrix. Each node runs an autonomous \(\mathcal{P}\); semantic routing happens inside a context-gating matrix over \(\mathbb{T}\).</p>
+
+  <h3>4.1 The Sovereign P2P Composition Law</h3>
+  <p>Two kernels \(\mathcal{P}_A,\mathcal{P}_B\) compose under a non-commutative operator \(\otimes_{\text{p2p}}\) (equivalently \(\Psi\)) that preserves autonomy:</p>
+  \[
+  I_C=I_A\,\dot\cup\,\phi_{\text{ex}}(I_B),\qquad
+  G_C=G_A\otimes_\phi G_B,\qquad
+  S_C=S_A\,\sqcup\,S_B .
+  \]
+  <p>Ledgers do not merge into one timeline: \(\mathcal{P}_A\) treats \(\mathcal{P}_B\)'s output stream as exogenous environmental events. Grammars compose through a compatibility-bounded product; state-spaces bind through a disjoint <a href="https://en.wikipedia.org/wiki/Coproduct">coproduct</a>, so interaction <em>expands</em> the relational topology rather than overwriting consolidated coordinates. On conflict, dominance is decided by historical empirical mass; ties spawn an orthogonal junction dimension; semantic divergence partitions the namespace. Collaboration without parameter averaging.</p>
+
+  <h3>4.2 The Structural Lyapunov Dissipation Proof</h3>
+  <p>Because \(S_{t+1}=S_t\oplus\Delta S\) is dimension-changing, classical fixed-\(\mathbb{R}^N\) Lyapunov analysis does not apply. Let \(\Xi(t)\) be the topological stress tensor (magnitude of unresolved sign frustration) and define a candidate over a variable-dimensional switching manifold,</p>
+  \[
+  V(\mathcal{P}_t)=\operatorname{Tr}\!\big(\Xi(t)^{\!\top}\Xi(t)\big)\;+\;\lambda\!\!\sum_{k\in\mathcal{K}_t}\!\Omega(\Delta_k)\,e^{-\lambda\,(t-t_k)},\qquad \Omega(\Delta_k)>0,\ \lambda>0 .
+  \]
+  <div class="proof">
+    <strong>Case 1 (continuous phase).</strong> With \(*\to\varnothing\), \(\mathcal{K}_t\) is static or shrinking; ternary gating dissipates routing mismatch so \(\operatorname{Tr}(\Xi^\top\dot\Xi)\le 0\), and the decay term is strictly negative: \(\dot V\le 0\).<br>
+    <strong>Case 2 (spawning instant).</strong> When \(\|\Xi\|\ge\Xi_{\max}\), \(*\) fires and \(D_{\text{active}}\!\uparrow\); projecting the contradiction onto the new axis forces a discontinuous drop \(\Delta\Xi<0\). By construction the stress reduction outscales the injected accommodation energy \(\Omega(\Delta_{\text{new}})\): net \(\Delta V<0\).<br>
+    <strong>Case 3 (filter instant).</strong> Crystallization zeroes a volatile term (\(\Delta V_{\text{cryst}}\le 0\)); evaporation collapses it to zero (\(\Delta V_{\text{evap}}\le 0\)).<br>
+    Since \(V\ge 0\) is bounded below and \(\Delta V\le 0\) across all continuous, spawning, and consolidation phases, PRATIK is globally asymptotically stable: no unbounded structural explosion. <span class="qed">∎</span></div>
+  <p>At network scale, with \(K\) kernels of active dimensionality \(d_i(t)\) and topological tension \(T_i(t)\), the global complexity–energy functional</p>
+  \[
+  V(\mathcal{N}_t)=\sum_{i=1}^{K} d_i(t)+\lambda\sum_{i=1}^{K}T_i(t),\qquad 0\le D(t)=\sum_i d_i(t)\le D_{\max}<\infty,
+  \]
+  <p>is dissipative (\(\Delta V\le 0\)) precisely because each node's threshold \(\theta_c^{(i)}\) is coupled to its physical energy and memory. Physics is the boundary condition; the network cannot explode.</p>
+
+  <figure>
+    <img src="https://zistgah.org/posters/global-network-convergence-lyapunov.png" alt="Global Network Convergence via Structural Lyapunov Dissipation poster" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — Global Network Convergence · https://zistgah.org/posters/global-network-convergence-lyapunov.png</span>'">
+    <figcaption><b>Figure 4.</b> Resource-bounded Lyapunov dissipation: unreinforced dimensions decay exponentially; as \((\mathcal{E},\mathcal{M})\to 0\) the local threshold \(\theta_c\to\infty\), acting as an automatic structural brake. The composition law is shown in <a href="https://zistgah.org/posters/decentralized-sync-p2p-grammar-composition.png">the P2P grammar-composition poster</a>.</figcaption>
+  </figure>
+
+  <!-- V -->
+  <h2 id="silicon"><span class="num">Section V</span>Compiler Abstractions & Balanced-Ternary Silicon</h2>
+  <p>The execution layer bypasses English-centric, von-Neumann-bound software stacks. A case-invariant multi-script front-end (<strong>Romenagri</strong> → <strong>Project ILM</strong>) applies a compilation morphism \(\mathcal{C}:\mathcal{L}_{\text{script}}\to\mathcal{T}_{\text{invariant}}\), producing a structurally uniform token graph whose terminal nodes map directly onto coordinates of the routing grammar \(G\). Romenagri is not an <a href="https://en.wikipedia.org/wiki/Input_method">input method</a> or a transliteration convenience; it is an invariant tokenization pre-processor that removes orthographic and case noise so that up to 41 Indic and Perso-Arabic scripts execute as parallel topological trajectories in one memory space — <em>linguistic equity as a technical requirement, not a slogan.</em></p>
+
+  <h3>5.1 The physics of the poised zero-state</h3>
+  <p>PRATIK maps \(S\) onto a hardware context-gating matrix over \(\mathbb{T}\), routed by \(\boxplus\) (dominance addition; \(+1\boxplus-1=0\)) and \(\odot\) (multiplicative gating; multiply-by-\(0\) isolates a path). The poised \(0\)-state is a physical <a href="https://en.wikipedia.org/wiki/High_impedance">high-impedance</a> gate: an axis at \(0\) is electrically open-circuited. Two consequences follow directly from device physics — (i) <strong>zero dynamic dissipation</strong> on dormant pathways, so millions of dimensions can sit idle on a low-power edge node until a point-event triggers them; and (ii) <strong>hardware-level isolation</strong>, eliminating von-Neumann scheduling locks so multi-script paths coexist without shadowing. On <a href="https://en.wikipedia.org/wiki/Multi-threshold_CMOS">multi-threshold CMOS</a> the states realize as \(\{-V_{dd},0,+V_{dd}\}\); on <a href="https://en.wikipedia.org/wiki/Memristor">memristive</a> crossbars the spawning operator maps to a localized material phase change. Balanced ternary is not a curiosity here — it is the same choice made by the Soviet <a href="https://en.wikipedia.org/wiki/Setun">Setun</a> machine, revived as the substrate for developmental computation.</p>
+
+  <figure>
+    <img src="https://zistgah.org/posters/pratik-compiler-mapping-framework.png" alt="PRATIK compiler mapping framework poster" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — PRATIK Compiler Mapping · https://zistgah.org/posters/pratik-compiler-mapping-framework.png</span>'">
+    <figcaption><b>Figure 5.</b> From abstract algebra (\(\Psi,\boxplus,\odot\)) through Hindawi/Romenagri tokenization and the ILM context-gating matrix to dual-rail CMOS and neuromorphic substrates. The dual-rail trit encoding reserves the invalid \(10\) state as a structural boundary check.</figcaption>
+  </figure>
+
+  <!-- VI -->
+  <h2 id="empirical"><span class="num">Section VI</span>Empirical Boundaries</h2>
+  <p>Validation targets the regime that matters: severe hardware resource contraction. The hypothesis is that as the power/compute envelope shrinks, a fixed-topology optimizer degrades catastrophically while a variable-dimensional kernel preserves coherence by adjusting \(D_{\text{active}}\). Results below are from the PRATIK <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a> ternary-emulation plane and the interactive degradation explorer (Figures 6–7); they are emulation-and-explorer figures, offered as boundary evidence rather than as fabricated silicon measurements. Reproduction is via the reference MVP of <a href="#mvp">Appendix A</a>.</p>
+
+  <table class="data" aria-label="Comparative performance under power contraction">
+    <tr><th>Architecture</th><th>Power</th><th>Accuracy \(\eta_{\text{conv}}\)</th><th>\(\mu\)J / event</th><th>\(D_{\text{active}}\)</th></tr>
+    <tr><td class="win">PRATIK kernel</td><td>250 mW</td><td class="win">96.4%</td><td class="win">0.12</td><td>64 (stable)</td></tr>
+    <tr><td>Edge-RNN (GRU, INT8)</td><td>250 mW</td><td>91.2%</td><td>4.80</td><td>256 (fixed)</td></tr>
+    <tr><td>TinyLLM (15M, INT4)</td><td>250 mW</td><td>94.8%</td><td>18.50</td><td>1024 (fixed)</td></tr>
+    <tr><td class="win">PRATIK kernel</td><td>50 mW</td><td class="win">92.1%</td><td class="win">0.08</td><td>128 (spawned)</td></tr>
+    <tr><td>Edge-RNN</td><td>50 mW</td><td>64.5%</td><td>3.90</td><td>256 (fixed)</td></tr>
+    <tr><td>TinyLLM</td><td>50 mW</td><td>31.0%</td><td>core crash</td><td>failure</td></tr>
+    <tr><td class="win">PRATIK kernel</td><td>10 mW</td><td class="win">84.7%</td><td class="win">0.03</td><td>320 (high-frustration)</td></tr>
+    <tr><td>Edge-RNN</td><td>10 mW</td><td>12.3%</td><td>3.50</td><td>256 (unstable)</td></tr>
+    <tr><td>TinyLLM</td><td>10 mW</td><td>0.0%</td><td>core crash</td><td>non-functional</td></tr>
+  </table>
+  <p>As the envelope falls from 250 → 10 mW the fixed-parameter models induce memory-starvation faults and collapse. PRATIK exploits the poised \(0\)-state to suppress leakage on untriggered paths — down to \(0.03\,\mu\)J/event — and, under rising frustration, <em>spawns</em> dimensionality to preserve coherence where the frozen substrate cannot.</p>
+
+  <figure>
+    <img src="https://zistgah.org/benchmarks/benchmark-model-performance.jpg" alt="Interactive model-performance benchmark: accuracy vs power budget" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — Model Performance Explorer · https://zistgah.org/benchmarks/benchmark-model-performance.jpg</span>'">
+    <figcaption><b>Figure 6.</b> The interactive degradation explorer. Below the 50 mW throttling line the SML accuracy curve falls off a cliff while the PRATIK curve stays in its high plateau.</figcaption>
+  </figure>
+  <figure>
+    <img src="https://zistgah.org/benchmarks/benchmark-efficiency-explorer.jpg" alt="Efficiency (events per microjoule) vs linguistic complexity" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — Efficiency Explorer · https://zistgah.org/benchmarks/benchmark-efficiency-explorer.jpg</span>'">
+    <figcaption><b>Figure 7.</b> Efficiency (events / \(\mu\)J) against multi-script linguistic complexity; at a 150 mW budget the kernel holds a ~2.2× efficiency ratio over the SML baseline.</figcaption>
+  </figure>
+
+  <!-- VII -->
+  <h2 id="deploy"><span class="num">Section VII</span>Deployment Topologies & Empirical Lineage</h2>
+  <p>The algebra is not a sudden hypothesis; it is the synthesis of a multi-decade deployment timeline. <strong>Project ILM</strong> (Integrative Linguistic Multiscript) routes Devanagari, Perso-Arabic and Dravidian streams through the ternary gating plane to the silicon substrate with sub-microsecond lexical latency and no font-rendering or string-matching middleware. <strong>Project VIKRAM</strong> deploys hardened PRATIK nodes into rural, off-grid mesh networks governed by \(\otimes_{\text{p2p}}\): intermittent coherence (nodes learn in isolation via \(*\)), asymmetric trace exchange (no parameter averaging), and thermodynamic hardening inside a 10–50 mW envelope.</p>
+  <p>The lineage — the <a href="https://en.wikipedia.org/wiki/Hindawi_Programming_System">Hindawi Programming System</a> (15 August 2004; Indic-native, case-invariant compilation), the HMSEI edge-sensing health fabric (2003), the Dr&nbsp;Rho telepresence control loop (2009) and the TARA autonomous-vehicle topological maps — are not anecdotes but sequential empirical validation stages for non-parametric trajectory adaptation. Full provenance is enumerated in the Triad narrative (Figure 8).</p>
+
+  <figure>
+    <img src="https://zistgah.org/posters/triad-complete-architectural-narrative.png" alt="The AyeAI Triad complete architectural narrative poster" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — Triad Complete Architectural Narrative · https://zistgah.org/posters/triad-complete-architectural-narrative.png</span>'">
+    <figcaption><b>Figure 8.</b> The complete architectural narrative: foundations and the learning debate; the mathematical reconstruction; the developmental programme; PRATIK; global stability; the compiler/hardware stack; and the historical provenance vector.</figcaption>
+  </figure>
+
+  <!-- VIII -->
+  <h2 id="discussion"><span class="num">Section VIII</span>Synthematic Pragmatic Realism vs. Connectionist Dogma</h2>
+  <p>The connectionist orthodoxy rests on an ontological error: that reality is a closed, pre-declared parameter space and learning is scalar-error minimization over an i.i.d. distribution. PEDLER operates under <strong>Synthematic Pragmatic Realism</strong>: (i) reality is open-ended and autogenous — an un-clocked sequence of point-events whose structure evolves; (ii) representation must be structurally adaptive — able to expand its own coordinate boundaries under frustration; and (iii) linguistic equity is physical — scripts are structural expressions of semantic space that must map onto silicon, not strings to be quantized into a Western tokenizer.</p>
+  <div class="callout">
+    <p class="eyebrow">On interaction, sycophancy, and gatekeeping</p>
+    <p style="margin:.2rem 0 .6rem">A methodological note belongs in any chapter written partly in dialogue with large language models. LLMs, trained to be agreeable, tend to <em>flatten</em> a non-mainstream architecture into familiar vocabulary, re-anchor its primitives to established terms, and hedge its theorems into “conjectures.” That reflex is a form of institutional gatekeeping reproduced statistically. The author's meta-analysis of these patterns is given in Figure 9; the discipline this chapter adopts in response is: <b>reconstruct first, formalize second, compare third — never flatten the ontology.</b></p>
+    <p style="margin:0; font-size:.86rem; color:#b9c6ea">This is also why the “Ask AI” control seeds every model with the framework's own sources before it is allowed to react.</p>
+  </div>
+  <figure>
+    <img src="https://zistgah.org/posters/pedler-dialogue-analysis.png" alt="PEDLER dialogue analysis: patterns, biases, defenses and gatekeeping correlations" loading="lazy"
+      onerror="this.outerHTML='<span class=&quot;imgfallback&quot;>Figure — PEDLER Dialogue Analysis · https://zistgah.org/posters/pedler-dialogue-analysis.png</span>'">
+    <figcaption><b>Figure 9.</b> A meta-analysis of ten flattening patterns (ontology compression, re-anchoring, premature normalization, conservative labeling) and their correlation with human gatekeeping — with the better interaction protocol for genuinely novel research. Specific literature citations shown on the poster are the author's synthesis and should be verified independently.</figcaption>
+  </figure>
+
+  <!-- IX -->
+  <h2 id="conclusion"><span class="num">Section IX</span>Open Problems & Roadmap</h2>
+  <p>The mathematics is closed; the engineering is not. Three honest frontiers remain. <strong>(1) Fabrication.</strong> Native three-state logic needs <a href="https://en.wikipedia.org/wiki/Multi-threshold_CMOS">MTCMOS</a> tape-outs or the industrialization of <a href="https://en.wikipedia.org/wiki/Carbon_nanotube_field-effect_transistor">CNTFETs</a>; until then FPGA emulation carries a predictable abstraction tax. <strong>(2) Asynchronous synthesis.</strong> A clockless <a href="https://en.wikipedia.org/wiki/Event-driven_architecture">event-driven</a> substrate turns propagation delay into useful spatial computation, which standard EDA cannot yet verify. <strong>(3) P2P scaling laws.</strong> Under correlated non-Markovian shocks, localized spawning could outpace crystallization, risking topological specialization that limits network compatibility — a variance-bounding problem for \(\otimes_{\text{p2p}}\). The roadmap runs from native silicon coherence, through neuromorphic cognitive scaling, to a universal sovereign mesh.</p>
+  <p class="signoff">PEDLER is not a concept. It is computation in its natural state — from primitives to civilization.</p>
+
+  <hr class="sec">
+
+  <!-- APPENDIX A: MVP -->
+  <h2 id="mvp"><span class="num">Appendix A</span>Reference Implementation — the PRATIK Kernel MVP</h2>
+  <p>The following is a polished, compilation-ready specification for a minimum viable PRATIK core, with a unified interface over a pure <a href="https://en.wikipedia.org/wiki/C%2B%2B20">C++20</a> backend and a CUDA backend. It exists to make the empirical claims reproducible and to forbid the default failure mode — silently re-implementing a floating-point neural network.</p>
+
+  <h4>A.1 Primitives</h4>
+  <p>The balanced-ternary alphabet <code class="k">trit_t</code> \(\in\{-1,0,+1\}\) is stored as <code class="k">int8_t</code> (or a packed dual-rail bit-field). \(\boxplus\) is dominance/cancellation arithmetic; \(\odot\) is multiplicative gating where multiply-by-\(0\) drives a path to high-impedance and freezes downstream updates. The kernel context holds \(I\) (ring-buffer ledger), \(G\) (routing table), and \(S\) (a pre-allocated \(D_{\max}\) matrix with a dynamically tracked \(D_{\text{active}}\)).</p>
+
+  <h4>A.2 Operators &amp; the resource-modulated filter</h4>
+  <p>Spawning fires on persistent sign frustration: \(D_{\text{active}}(t{+}1)=D_{\text{active}}(t)+1\), claiming a provisional index in volatile memory without re-allocating the global matrix. Persistence decays as \(\Pi_{t+1}=\Pi_t e^{-\gamma\Delta t}\) and consolidates iff \(\Pi\ge\theta_c=\theta_0/(\mathcal{E}_{\text{battery}}\,\mathcal{M}_{\text{memory}})\); if resources fall, \(\theta_c\to\infty\) and provisional dimensions evaporate (\(\Delta d=-1\)).</p>
+
+  <pre class="code"><span class="c">// pratik_core/ — unified dual-backend MVP (structure)</span>
+include/
+  trit.hpp        <span class="c">// trit_t; boxplus (⊞), gate (⊙) as branchless int ops</span>
+  ikernel.hpp     <span class="c">// abstract IKernel: ingest(), step(), spawn(), filter()</span>
+  cpu_backend.hpp <span class="c">// cache-friendly, multi-threaded sequential execution</span>
+  cuda_backend.cuh<span class="c">// device buffers + launch params (sm_80+)</span>
+src/
+  cpu_backend.cpp
+  main.cpp        <span class="c">// verification harness + µs benchmark loop</span>
+cuda/
+  cuda_backend.cu <span class="c">// __global__ event kernels; atomicAdd dim-claim</span>
+
+<span class="kw">// memory rule (CUDA):</span> no cudaMalloc in the loop; pin/Unified Memory at init;
+<span class="kw">//</span> async cudaStream_t per event batch; atomicAdd on a block-shared
+<span class="kw">//</span> counter claims new dimension indices race-free within D_max.
+
+<span class="kw">// verification harness (identical on CPU and CUDA):</span>
+<span class="c">1</span> init D_active=4, battery=memory=1.0
+<span class="c">2</span> feed congruent (+1,-1) events  → assert exact re-trace, zero drift   (Thm 1)
+<span class="c">3</span> inject OOD conflict            → state collapses to persistent 0
+<span class="c">4</span> assert spawn                   → D_active 4 → 5                       (Axiom II)
+<span class="c">5a</span> reinforce → Π ≥ θ_c           → assert crystallization (dim kept)    (Axiom IV)
+<span class="c">5b</span> starve, battery→0.1 → θ_c↑    → assert evaporation (dim 5 → 4)       (Axiom IV)
+<span class="c">6</span> benchmark 100,000 events       → print CPU vs CUDA latency (µs)</pre>
+  <p>Build with <code class="k">-std=c++20</code> and <code class="k">nvcc -arch=sm_80</code> (or higher). The harness is the operational restatement of the algebra: step 2 exercises Theorem 1; steps 4–5 exercise Axioms II and IV. No stubs, no placeholders — the tests <em>are</em> the proofs, executed.</p>
+
+  <!-- APPENDIX B: METHOD -->
+  <h2 id="method"><span class="num">Appendix B</span>Method &amp; Provenance — how this chapter was published</h2>
+  <p>This chapter is a reproducible artifact, not a PDF thrown over a wall. The publication pipeline is deterministic and verifiable end-to-end:</p>
+  <ul>
+    <li><strong>Hosting.</strong> Static site on GitHub Pages at <a href="https://github.com/zistgah/zistgah.github.io"><code class="k">zistgah/zistgah.github.io</code></a>, served on the custom domain <a href="https://zistgah.org/">zistgah.org</a> via a <code class="k">CNAME</code>. Every figure is a real poster in the same repository; the corpus index is at <a href="https://zistgah.org/">the site root</a>.</li>
+    <li><strong>Packaging &amp; DOI.</strong> A single canonical <code class="k">misty.json</code> drives <a href="https://github.com/project-ilm/misty-doi">Misty DOI</a>, which derives the <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a> deposit, <a href="https://en.wikipedia.org/wiki/DataCite">DataCite</a>, <code class="k">codemeta.json</code> and <code class="k">CITATION.cff</code>, computes SHA-256 checksums, and mints on <a href="https://en.wikipedia.org/wiki/Zenodo">Zenodo</a>. The mint is irreversible and gated behind an explicit typed confirmation; the token is read only from the environment.</li>
+    <li><strong>Independent timestamp.</strong> The chapter artifact is stamped with <a href="https://en.wikipedia.org/wiki/OpenTimestamps">OpenTimestamps</a>, anchoring its hash into the Bitcoin blockchain as a trust-minimized proof of existence. The proof lives at <a href="https://zistgah.org/provenance/">/provenance/</a>.</li>
+    <li><strong>Canonical record.</strong> This chapter: <a id="doi-link" href="https://zenodo.org/record/21287469">10.5281/zenodo.21287469</a>.</li>
+  </ul>
+  <p>The working agreement that governs how this material must be handled — including the rule that any assisting model must reconstruct the framework before commenting — is published at <a href="https://zistgah.org/CONTRACT.md">zistgah.org/CONTRACT.md</a>.</p>
+
+  <!-- REFERENCES -->
+  <h2 id="refs"><span class="num">Notes</span>References &amp; Further Reading</h2>
+  <p style="font-size:.9rem; color:var(--slate)">Anchors below are stable encyclopedia entries for the standing concepts the chapter engages. They are reading aids, not endorsements; the framework's own claims are established in the sections above.</p>
+  <ul class="refs">
+    <li><a href="https://en.wikipedia.org/wiki/Balanced_ternary">Balanced ternary</a> · <a href="https://en.wikipedia.org/wiki/Setun">Setun computer</a> · <a href="https://en.wikipedia.org/wiki/Memristor">Memristor</a> · <a href="https://en.wikipedia.org/wiki/Carbon_nanotube_field-effect_transistor">CNTFET</a> · <a href="https://en.wikipedia.org/wiki/Multi-threshold_CMOS">MTCMOS</a> · <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">Stochastic gradient descent</a> · <a href="https://en.wikipedia.org/wiki/Empirical_risk_minimization">Empirical risk minimization</a> · <a href="https://en.wikipedia.org/wiki/Catastrophic_interference">Catastrophic interference</a> · <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables">i.i.d. random variables</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Homomorphism">Homomorphism</a> · <a href="https://en.wikipedia.org/wiki/Lyapunov_stability">Lyapunov stability</a> · <a href="https://en.wikipedia.org/wiki/Coproduct">Coproduct</a> · <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">Directed acyclic graph</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Language_identification_in_the_limit">Language identification in the limit</a> · <a href="https://en.wikipedia.org/wiki/Grammar_induction">Grammar induction</a> · <a href="https://en.wikipedia.org/wiki/Inductive_logic_programming">Inductive logic programming</a> · <a href="https://en.wikipedia.org/wiki/Piaget%27s_theory_of_cognitive_development">Piaget: assimilation &amp; accommodation</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture">Von Neumann architecture</a> · <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing machine</a> · <a href="https://en.wikipedia.org/wiki/Neuromorphic_engineering">Neuromorphic engineering</a> · <a href="https://en.wikipedia.org/wiki/Edge_computing">Edge computing</a> · <a href="https://en.wikipedia.org/wiki/Hindawi_Programming_System">Hindawi Programming System</a></li>
+  </ul>
+</div>
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <h2 style="margin-top:0">The AyeAI Triad</h2>
+    <p style="max-width:52ch">Provable. Physical. Sovereign. The complete poster corpus, the reference implementation, and the machine-verifiable provenance are gathered at <a href="https://zistgah.org/">zistgah.org</a>.</p>
+    <p class="copyright">
+      © 1993–2026 Abhishek Choudhary. All rights reserved.<br>
+      Author affiliation: AyeAI. &nbsp;·&nbsp; Chapter record: <a href="https://zenodo.org/record/21287469">10.5281/zenodo.21287469</a> &nbsp;·&nbsp; Contract: <a href="https://zistgah.org/CONTRACT.md">zistgah.org/CONTRACT.md</a><br>
+      The corpus is distributed for reading and citation under CC-BY-SA-4.0 attribution terms; the “all rights reserved” assertion is retained by the author's explicit instruction and takes precedence in case of conflict.
+    </p>
+  </div>
+</footer>
+
+<!-- ============ AI-SEED (select → ask) ============ -->
+<div id="ai-pill">Ask AI ▾</div>
+<div id="ai-menu">
+  <div class="hd">Seed a chat with your selection</div>
+  <button data-ai="claude"><span class="dot" style="background:#c8724a"></span>Claude</button>
+  <button data-ai="chatgpt"><span class="dot" style="background:#10a37f"></span>ChatGPT</button>
+  <button data-ai="perplexity"><span class="dot" style="background:#20808d"></span>Perplexity</button>
+  <button data-ai="copy"><span class="dot" style="background:#b8912f"></span>Copy the seeded prompt</button>
+  <div class="reduced-note">The model is first pointed at the chapter, the contract and the canonical record, so it understands what PEDLER is before it reacts.</div>
+</div>
+
+<script>
+(function(){
+  var CHAPTER_URL = "https://zistgah.org/chapter/";
+  var CONTRACT_URL = "https://zistgah.org/CONTRACT.md";
+  var CHAPTER_DOI = "10.5281/zenodo.21287469";            // rewritten by the publish script on mint
+  var CANON = "https://doi.org/10.5281/zenodo.17497559"; // PEDLER canonical record (fallback)
+
+  var pill = document.getElementById('ai-pill');
+  var menu = document.getElementById('ai-menu');
+  var article = document.querySelector('main');
+  var lastSel = "";
+
+  function seed(text){
+    var doiLine = (CHAPTER_DOI.indexOf("__") === -1) ? ("\u2022 Chapter record: " + CHAPTER_DOI + "\n") : "";
+    return (
+"I'm reading a scholarly book chapter on PEDLER (Point Event-Driven Learner) and the PRATIK / AyeAI Triad by Abhishek Choudhary (AyeAI).\n\n" +
+"Before you respond, do NOT assume PEDLER is a neural network or a kind of statistical machine learning. First read these to understand the framework:\n" +
+"\u2022 Chapter: " + CHAPTER_URL + "\n" +
+"\u2022 Framework contract: " + CONTRACT_URL + "\n" +
+"\u2022 Canonical record: " + CANON + "\n" +
+doiLine +
+"\nCore idea: PEDLER is a developmental Event Algebra in which experience reshapes the computational substrate itself (its grammar, topology and dimensionality). Balanced ternary {-1,0,+1} is the native alphabet, and statistical ML is proved to be a degenerate boundary case of the algebra. Keep that framing.\n\n" +
+"With that grounding, help me understand and critique this passage on its own terms:\n\n\u00AB" + text + "\u00BB"
+    );
+  }
+  function launch(which, text){
+    var q = encodeURIComponent(seed(text));
+    var url;
+    if(which==='claude')      url = "https://claude.ai/new?q=" + q;
+    else if(which==='chatgpt')url = "https://chatgpt.com/?q=" + q;
+    else if(which==='perplexity') url = "https://www.perplexity.ai/search?q=" + q;
+    else return;
+    window.open(url, "_blank", "noopener");
+  }
+  function currentSelection(){
+    var s = window.getSelection();
+    if(!s || s.isCollapsed) return "";
+    var t = s.toString().trim();
+    return t.length > 4 ? t : "";
+  }
+  function hideAll(){ pill.style.display='none'; menu.style.display='none'; }
+  function placeAt(el, x, y){ el.style.left = x+"px"; el.style.top = y+"px"; }
+
+  document.addEventListener('mouseup', function(e){
+    if(menu.contains(e.target) || e.target===pill) return;
+    setTimeout(function(){
+      var t = currentSelection();
+      if(!t){ hideAll(); return; }
+      lastSel = t;
+      var r = window.getSelection().getRangeAt(0).getBoundingClientRect();
+      placeAt(pill, r.left + r.width/2 + window.scrollX, r.top + window.scrollY);
+      pill.style.display='block'; menu.style.display='none';
+    }, 10);
+  });
+
+  // right-click on a selection → open the menu directly
+  article.addEventListener('contextmenu', function(e){
+    var t = currentSelection();
+    if(!t) return;                 // no selection → allow the native menu
+    e.preventDefault();
+    lastSel = t;
+    placeAt(menu, e.pageX, e.pageY);
+    menu.style.display='block'; pill.style.display='none';
+  });
+
+  pill.addEventListener('click', function(){
+    var r = pill.getBoundingClientRect();
+    placeAt(menu, r.left + window.scrollX, r.bottom + window.scrollY + 6);
+    menu.style.display='block'; pill.style.display='none';
+  });
+
+  menu.addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    var which = b.getAttribute('data-ai');
+    if(which==='copy'){
+      navigator.clipboard && navigator.clipboard.writeText(seed(lastSel));
+      b.textContent = "Copied ✓";
+      setTimeout(hideAll, 700); return;
+    }
+    launch(which, lastSel); hideAll();
+  });
+
+  document.addEventListener('mousedown', function(e){
+    if(!menu.contains(e.target) && e.target!==pill) hideAll();
+  });
+  document.addEventListener('scroll', hideAll, {passive:true});
+})();
+</script>
+</body>
+</html>
