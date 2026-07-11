@@ -1,0 +1,28 @@
+name: "🐞 Defect"
+description: "Something on a Zistgah page or tool is wrong or broken"
+title: "[defect] "
+labels: ["defect", "triage"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: "Where"
+      description: "URL or path (e.g. https://zistgah.org/aab/)"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: "What is wrong"
+      description: "What you saw vs what you expected. Screenshots welcome."
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: "Steps to reproduce"
+      placeholder: "1. open ...  2. click ...  3. observe ..."
+  - type: input
+    id: env
+    attributes:
+      label: "Browser / OS"

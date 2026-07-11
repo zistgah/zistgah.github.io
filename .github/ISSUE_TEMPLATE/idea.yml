@@ -1,0 +1,32 @@
+name: "💡 Idea / proposal"
+description: "Propose a tool, domain, experiment, or improvement for the Zistgah habitat"
+title: "[idea] "
+labels: ["idea", "triage"]
+body:
+  - type: textarea
+    id: intent
+    attributes:
+      label: "Original intent"
+      description: "What do you actually want to exist? Stated verbatim — this is preserved for continuity, audit, and gap analysis (you may want a time machine; we may reach a simulator first)."
+      placeholder: "I want ..."
+    validations:
+      required: true
+  - type: textarea
+    id: increment
+    attributes:
+      label: "Smallest useful first increment"
+      description: "What is the shortest scrum-sized step that would already be useful?"
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: "Domain"
+      description: "Industry / occupation / field it belongs to (plain words are fine)"
+  - type: textarea
+    id: oracle
+    attributes:
+      label: "How would we know it's right? (the oracle)"
+      description: "A test, a measurement, a second implementation, a review — how is the result checked?"
+    validations:
+      required: true

@@ -1,0 +1,29 @@
+name: "🤝 Contribution offer"
+description: "Offer a build, a domain expertise, a translation, a review, or hardware/data"
+title: "[contrib] "
+labels: ["contribution", "triage"]
+body:
+  - type: textarea
+    id: offer
+    attributes:
+      label: "What you're offering"
+      description: "Code, domain expertise (any field), language/script knowledge, review capacity, data, hardware — everything helps a habitat."
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: "Which part of the ecosystem"
+      placeholder: "AAB / Zamin / Fiza / ILM / VGC-Health / new"
+  - type: textarea
+    id: gate
+    attributes:
+      label: "Verification you can offer or accept"
+      description: "Contributions are accepted through the gate: tests, parity checks, or independent review. Which can you provide, or are you happy for us to apply?"
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Ground rules"
+      options:
+        - label: "I understand accepted work is licensed per category (content CC-BY-SA-4.0, software GPL-3.0-or-later, metadata CC0-1.0) and authorship/credit is recorded accurately."
+          required: true
