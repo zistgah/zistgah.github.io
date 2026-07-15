@@ -1,0 +1,160 @@
+{
+  "dome": {
+    "R": 10,
+    "ocuR": 1.7,
+    "ocuY": 9.85,
+    "glassFloorY": 0.25
+  },
+  "flight": {
+    "hoverThr": 0.62,
+    "rate": 2.2,
+    "level": 2.6,
+    "drag": 0.62,
+    "g": 9.81,
+    "maxTilt": 0.6,
+    "allowSubfloor": false,
+    "escapeThroughOculus": true
+  },
+  "space": {
+    "bound": 320,
+    "cruise": 1
+  },
+  "transit": {
+    "secondsPerUnit": 0.055,
+    "arcLift": 38
+  },
+  "worlds": [
+    {
+      "id": "earth",
+      "label": "Earth",
+      "r": 58,
+      "at": [
+        0,
+        -60.6,
+        0
+      ],
+      "coast": true,
+      "habitat": null,
+      "tint": 3108751,
+      "atmo": 5879512
+    },
+    {
+      "id": "moon",
+      "label": "Moon habitat",
+      "r": 11,
+      "at": [
+        -86,
+        58,
+        -150
+      ],
+      "coast": false,
+      "habitat": {
+        "domeR": 5.2,
+        "embodiment": "lander"
+      },
+      "tint": 10134448,
+      "atmo": 2831696
+    },
+    {
+      "id": "mars",
+      "label": "Mars habitat",
+      "r": 14,
+      "at": [
+        104,
+        44,
+        -196
+      ],
+      "coast": false,
+      "habitat": {
+        "domeR": 6.4,
+        "embodiment": "quad"
+      },
+      "tint": 11622202,
+      "atmo": 8010536
+    }
+  ],
+  "embodiments": {
+    "quad": {
+      "label": "Quadrotor",
+      "g": 1,
+      "thrust": 1,
+      "hud": "ALT · SPD · THR"
+    },
+    "rocket": {
+      "label": "Transfer rocket",
+      "g": 0,
+      "thrust": 0,
+      "hud": "TRANSIT"
+    },
+    "lander": {
+      "label": "Landing system",
+      "g": 0.165,
+      "thrust": 0.55,
+      "hud": "DESCENT"
+    }
+  },
+  "sky": {
+    "glyphCentres": [
+      0.12,
+      0.88
+    ],
+    "lorenzDt": 0.0012,
+    "midThreadAlpha": 0.12,
+    "meteorEveryMs": [
+      4000,
+      9000
+    ]
+  },
+  "dawn": {
+    "cap": 0.88,
+    "gamma": 1.35,
+    "damp": 0.045,
+    "panelBand": [
+      0.35,
+      0.8
+    ],
+    "stops": [
+      "#050a18",
+      "#243052",
+      "#e7d9be"
+    ]
+  },
+  "quality": {
+    "mobileDpr": 1.15,
+    "desktopDpr": 2,
+    "dragScale": 0.72,
+    "nebulaHz": [
+      20,
+      30
+    ],
+    "shellHz": [
+      8,
+      12
+    ]
+  },
+  "chakra": {
+    "engine": "project-ilm/chakra · src/chakra-core.js",
+    "widgets": [
+      "ZW.dial",
+      "ZW.skyBand",
+      "ZW.juliaCanvas",
+      "ZW.lorenzStep",
+      "coastBuffer"
+    ],
+    "scrubDaysPerPx": 0.2,
+    "cardRotation": "jdn % 10 — no tradition owns the top slot"
+  },
+  "fractal": {
+    "c": [
+      -0.8,
+      0.156
+    ],
+    "palette": "meenakari: enamel blue → jade → ruby → gold"
+  },
+  "provenance": {
+    "owner": "Abhishek Choudhary",
+    "affiliation": "AyeAI",
+    "orcid": "0009-0002-0684-8320",
+    "copyright": "© 1993–2026 Abhishek Choudhary. All rights reserved."
+  }
+}
