@@ -1,0 +1,63 @@
+{
+  "name": "Zistgah",
+  "short_name": "Zistgah",
+  "description": "The living habitat — the Zistgah portal, with the CHAKRA temporal instrument.",
+  "id": "/",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#050a18",
+  "theme_color": "#050a18",
+  "categories": [
+    "education",
+    "utilities",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Time dial",
+      "short_name": "Dial",
+      "url": "./widget.html",
+      "description": "CHAKRA moon-phase + calendars"
+    },
+    {
+      "name": "Orrery",
+      "short_name": "Orrery",
+      "url": "./chakra-widget.html?view=orrery",
+      "description": "Heliocentric orrery"
+    },
+    {
+      "name": "Lagna",
+      "short_name": "Lagna",
+      "url": "./chakra-widget.html?view=lagna",
+      "description": "Rising chart"
+    },
+    {
+      "name": "Sky",
+      "short_name": "Sky",
+      "url": "./chakra-widget.html?view=sky",
+      "description": "Local sky"
+    }
+  ]
+}

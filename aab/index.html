@@ -1,0 +1,1101 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AAB · آب — paint a system, ship software</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#06131f">
+<!-- AAB studio — آب · Ascension for All and Beyond — © 1993–2026 Abhishek Choudhary · AyeAI
+     model: Claude Opus 4.8. A paint program for systems: the human paints; the AI + the
+     Verification-Gated process implement. Gamification is grounded — no oracle, no glow. -->
+<style>
+  :root{
+    --bg:#06131f;--bg2:#0a1c2e;--ink:#eaf2f8;--mut:#7f97ab;--line:rgba(120,200,232,.18);
+    --water:#3fb6d8;--water2:#2b7fa8;--gold:#c9a44e;--ok:#4fd08a;--warn:#e0a34a;--panel:rgba(10,28,46,.82);
+    --mono:ui-monospace,Menlo,Consolas,monospace;--ui:-apple-system,Segoe UI,Roboto,system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%;background:
+    radial-gradient(120% 80% at 50% -10%,#0d243a,#06131f 60%);color:var(--ink);
+    font:15px/1.5 var(--ui);overflow:hidden;overscroll-behavior:none}
+  #app{height:100%;display:flex;flex-direction:column}
+  header{display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border-bottom:1px solid var(--line);
+    background:var(--panel);backdrop-filter:blur(8px);z-index:5}
+  header .logo{font:600 15px var(--ui);letter-spacing:.02em}
+  header .logo b{color:var(--water)}
+  header .el{color:var(--mut);font:11px var(--mono);margin-left:-.2rem}
+  header .xp{margin-left:auto;font:11px var(--mono);color:var(--gold)}
+  header .lvl{font:11px var(--mono);color:var(--water);border:1px solid var(--line);
+    padding:.15rem .5rem;border-radius:999px}
+  /* palette rail */
+  #stage{flex:1;display:flex;min-height:0}
+  #palette{width:64px;flex:0 0 64px;border-right:1px solid var(--line);background:rgba(6,16,26,.6);
+    display:flex;flex-direction:column;gap:.2rem;padding:.4rem .2rem;overflow-y:auto}
+  .brush{display:flex;flex-direction:column;align-items:center;gap:.15rem;padding:.5rem .2rem;
+    border-radius:10px;cursor:pointer;border:1px solid transparent;color:var(--mut);font:8.5px var(--mono)}
+  .brush svg{width:24px;height:24px}
+  .brush.on{border-color:var(--water);background:rgba(63,182,216,.12);color:var(--ink)}
+  .brush:active{transform:scale(.94)}
+  /* canvas */
+  #canvasWrap{flex:1;position:relative;min-width:0;touch-action:none;overflow:hidden}
+  #canvas{position:absolute;inset:0}
+  #hintbar{position:absolute;left:.6rem;top:.6rem;right:.6rem;font:11px var(--mono);color:var(--mut);
+    pointer-events:none;text-shadow:0 1px 3px #000}
+  /* inspector / quest drawer */
+  #drawer{position:absolute;right:0;top:0;bottom:0;width:min(88vw,340px);background:var(--panel);
+    backdrop-filter:blur(10px);border-left:1px solid var(--line);transform:translateX(100%);
+    transition:transform .22s ease;z-index:6;display:flex;flex-direction:column;overflow-y:auto}
+  #drawer.on{transform:translateX(0)}
+  #drawer h3{font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--water);
+    padding:.9rem .9rem .3rem}
+  #drawer .body{padding:0 .9rem 1rem}
+  label.f{display:block;font:11px var(--mono);color:var(--mut);margin:.7rem 0 .2rem}
+  input.f,textarea.f,select.f{width:100%;background:#08192a;color:var(--ink);border:1px solid var(--line);
+    border-radius:8px;padding:.5rem .6rem;font:13px var(--ui)}
+  textarea.f{min-height:64px;resize:vertical}
+  .chipstate{display:inline-flex;align-items:center;gap:.3rem;font:10px var(--mono);
+    padding:.2rem .5rem;border-radius:999px;border:1px solid var(--line)}
+  .st-sketch{color:var(--mut)} .st-named{color:var(--water);border-color:rgba(63,182,216,.4)}
+  .st-verified{color:var(--ok);border-color:rgba(79,208,138,.5)}
+  .btn{display:block;width:100%;text-align:center;background:linear-gradient(180deg,var(--water),var(--water2));
+    color:#04121c;font:600 13px var(--ui);border:none;border-radius:10px;padding:.7rem;margin-top:.8rem;
+    cursor:pointer}
+  .btn.ghost{background:none;color:var(--water);border:1px solid var(--line)}
+  .btn.gold{background:linear-gradient(180deg,#e3c375,#c9a44e);color:#1a1305}
+  /* bottom quest bar */
+  #quests{flex:0 0 auto;display:flex;gap:.4rem;padding:.5rem .6rem;border-top:1px solid var(--line);
+    background:var(--panel);overflow-x:auto}
+  .quest{flex:0 0 auto;min-width:112px;border:1px solid var(--line);border-radius:10px;padding:.45rem .6rem;
+    cursor:pointer;background:rgba(8,25,42,.6)}
+  .quest .qn{font:9px var(--mono);color:var(--mut);letter-spacing:.06em}
+  .quest .qt{font:600 12px var(--ui);margin-top:.1rem}
+  .quest .qb{height:3px;background:rgba(255,255,255,.08);border-radius:2px;margin-top:.4rem;overflow:hidden}
+  .quest .qb i{display:block;height:100%;background:var(--water)}
+  .quest.done{border-color:rgba(79,208,138,.5)}
+  .quest.done .qb i{background:var(--ok)}
+  .quest.active{border-color:var(--gold)}
+  /* toast + modal */
+  #toast{position:absolute;left:50%;bottom:5rem;transform:translateX(-50%);background:rgba(6,16,26,.95);
+    border:1px solid var(--line);border-radius:10px;padding:.5rem .9rem;font:12px var(--mono);
+    opacity:0;transition:opacity .2s;pointer-events:none;z-index:9;max-width:90vw;text-align:center}
+  #toast.on{opacity:1}
+  #modal{position:absolute;inset:0;background:rgba(3,10,16,.86);display:none;align-items:center;
+    justify-content:center;z-index:10;padding:1rem}
+  #modal.on{display:flex}
+  #modal .box{background:var(--bg2);border:1px solid var(--line);border-radius:14px;max-width:560px;
+    width:100%;max-height:86vh;overflow-y:auto;padding:1.1rem}
+  #modal h2{font:600 15px var(--ui);color:var(--water);margin-bottom:.5rem}
+  #modal pre{background:#04121c;border:1px solid var(--line);border-radius:8px;padding:.7rem;
+    font:11px/1.5 var(--mono);white-space:pre-wrap;word-break:break-word;color:#bfe0ef;max-height:44vh;overflow:auto}
+  .row{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.6rem}
+  .row .btn{flex:1;margin-top:0;min-width:120px}
+  .muted{color:var(--mut);font-size:12px}
+  .k{color:var(--gold)}
+</style></head><body>
+<div id="app">
+  <header>
+    <span class="logo"><b>AAB</b> <span class="el">آب · water</span></span>
+    <span class="lvl" id="lvl">Sketching</span>
+    <span class="xp" id="xp">0 XP</span>
+    <button class="lvl" id="btnOne" title="One-shot AI paint">✦ Paint</button>
+    <button class="lvl" id="btnStep" title="Step-by-step">◇ Step</button>
+    <button class="lvl" id="btnSet" title="AI provider">⚙</button>
+  </header>
+  <div id="stage">
+    <div id="palette"></div>
+    <div id="canvasWrap">
+      <canvas id="canvas"></canvas>
+      <div id="hintbar">Tap a brush, then tap the canvas to place. Drag between nodes to wire a flow.</div>
+    </div>
+    <div id="drawer"><h3 id="drawerTitle">Inspect</h3><div class="body" id="drawerBody"></div></div>
+  </div>
+  <div id="quests"></div>
+</div>
+<div id="toast"></div>
+<div id="modal"><div class="box" id="modalBox"></div></div>
+<script>
+"use strict";
+/* AAB AI-provider layer — © 1993–2026 Abhishek Choudhary · AyeAI · model: Claude Opus 4.8
+   One contract: provider.complete(prompt, schemaName) -> Promise<validated JSON>.
+   Backends are a strategy, so internal API calls can be switched on later with a config
+   flip and zero changes to the painting logic. */
+
+/* ---- the JSON schemas the AI must satisfy, one per step ---- */
+const KINDS=["actor","component","store","gate","interface","environment"];
+const SCHEMAS={
+  elements:{
+    root:"elements",
+    validate(o){
+      if(!o||!Array.isArray(o.elements))return "expected { elements: [...] }";
+      for(const e of o.elements){
+        if(!KINDS.includes(e.kind))return `bad kind "${e.kind}" (allowed: ${KINDS.join(", ")})`;
+        if(!e.name||typeof e.name!=="string")return "each element needs a string name";
+      }
+      return null;
+    }
+  },
+  flows:{
+    root:"flows",
+    validate(o){
+      if(!o||!Array.isArray(o.flows))return "expected { flows: [...] }";
+      for(const f of o.flows){
+        if(!f.from||!f.to)return "each flow needs from and to (element names)";
+      }
+      return null;
+    }
+  },
+  full:{ // one-shot: intent already known, AI returns elements + flows together
+    root:"system",
+    validate(o){
+      if(!o)return "empty";
+      if(!Array.isArray(o.elements))return "expected elements[]";
+      for(const e of o.elements){
+        if(!KINDS.includes(e.kind))return `bad kind "${e.kind}"`;
+        if(!e.name)return "element missing name";
+      }
+      if(o.flows&&!Array.isArray(o.flows))return "flows must be an array";
+      return null;
+    }
+  }
+};
+function extractJSON(text){
+  // tolerate ```json fences, prose around it, or a bare object
+  if(typeof text!=="string")return text;
+  let s=text.trim().replace(/^```(?:json)?/i,"").replace(/```$/,"").trim();
+  const a=s.indexOf("{"), b=s.lastIndexOf("}");
+  if(a>=0&&b>a)s=s.slice(a,b+1);
+  return JSON.parse(s);
+}
+
+/* ---- base contract ---- */
+class AIProvider{
+  get kind(){return "base";}
+  get live(){return false;}                 // live = round-trips without user paste
+  async complete(prompt, schemaName){throw new Error("not implemented");}
+  parseAndValidate(text, schemaName){
+    const obj=extractJSON(text);
+    const sch=SCHEMAS[schemaName];
+    const err=sch?sch.validate(obj):null;
+    if(err)throw new Error("schema ("+schemaName+"): "+err);
+    return obj;
+  }
+}
+
+/* ---- 1. Manual (default, keyless): prompt out, JSON pasted back ---- */
+class ManualProvider extends AIProvider{
+  get kind(){return "manual";}
+  async complete(prompt, schemaName){
+    // resolved by the UI: it shows the prompt, collects a paste, calls parseAndValidate.
+    return {mode:"manual", prompt, schemaName};
+  }
+}
+
+/* ---- 2. Key (opt-in): user's own API key, live call ---- */
+class KeyProvider extends AIProvider{
+  constructor(key, model){super();this.key=key;this.model=model||"claude-sonnet-4-6";}
+  get kind(){return "key";}
+  get live(){return true;}
+  async complete(prompt, schemaName){
+    const res=await fetch("https://api.anthropic.com/v1/messages",{
+      method:"POST",
+      headers:{"content-type":"application/json","x-api-key":this.key,
+        "anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
+      body:JSON.stringify({model:this.model,max_tokens:2000,
+        messages:[{role:"user",content:prompt+"\n\nReturn ONLY valid JSON, no prose, no code fences."}]})
+    });
+    if(!res.ok)throw new Error("API "+res.status);
+    const data=await res.json();
+    const text=(data.content||[]).filter(c=>c.type==="text").map(c=>c.text).join("\n");
+    return this.parseAndValidate(text, schemaName);
+  }
+}
+
+/* ---- 3. Hosted (future internal calls): flip config when users justify it ---- */
+class HostedProvider extends AIProvider{
+  constructor(endpoint){super();this.endpoint=endpoint;}
+  get kind(){return "hosted";}
+  get live(){return true;}
+  async complete(prompt, schemaName){
+    const res=await fetch(this.endpoint,{method:"POST",
+      headers:{"content-type":"application/json"},
+      body:JSON.stringify({prompt, schema:schemaName})});
+    if(!res.ok)throw new Error("hosted "+res.status);
+    const data=await res.json();
+    return this.parseAndValidate(data.text||JSON.stringify(data), schemaName);
+  }
+}
+
+/* ---- factory: config decides the backend; the studio never hard-codes one ---- */
+const AAB_CONFIG={
+  provider:"manual",                     // "manual" | "key" | "hosted"
+  hostedEndpoint:"",                     // set when HostedProvider is enabled
+  model:"claude-sonnet-4-6"
+};
+function makeProvider(cfg, key){
+  cfg=cfg||AAB_CONFIG;
+  if(cfg.provider==="key"&&key)return new KeyProvider(key, cfg.model);
+  if(cfg.provider==="hosted"&&cfg.hostedEndpoint)return new HostedProvider(cfg.hostedEndpoint);
+  return new ManualProvider();
+}
+if(typeof module!=="undefined")module.exports={AIProvider,ManualProvider,KeyProvider,HostedProvider,
+  makeProvider,SCHEMAS,extractJSON,KINDS,AAB_CONFIG};
+
+/* ---- browser: publish the API as globals so other <script> blocks can see it ---- */
+if(typeof window!=="undefined"){
+  window.AIProvider=AIProvider;window.ManualProvider=ManualProvider;
+  window.KeyProvider=KeyProvider;window.HostedProvider=HostedProvider;
+  window.makeProvider=makeProvider;window.SCHEMAS=SCHEMAS;window.extractJSON=extractJSON;
+  window.KINDS=KINDS;window.AAB_CONFIG=AAB_CONFIG;
+}
+
+</script>
+<script>
+"use strict";
+/* AAB six-step painting engine — © 1993–2026 Abhishek Choudhary · AyeAI · model: Claude Opus 4.8
+   The human states intent; the AI paints. Each step has a context-rich prompt and a JSON
+   schema. One-shot chains all six; stepwise runs one at a time for learning / optimisation. */
+
+const AAB_RULES=[
+ "Preserve the stated intent verbatim — never rewrite it.",
+ "Implement only what is painted; ask before adding scope.",
+ "Nothing is 'done' without a runnable oracle (a command/test returning pass/fail).",
+ "Every element kind must be one of: actor, component, store, gate, interface, environment.",
+ "© 1993–2026 Abhishek Choudhary · AyeAI. Software GPL-3.0-or-later."
+];
+
+/* context block prepended to every prompt so the AI paints inside AAB's vocabulary */
+function ctx(G){
+  return `You are the painting engine inside AAB (آب), a Verification-Gated (VGC) system-design
+studio. A "system" is painted from six element kinds only:
+  actor        — a person/role/external system that acts
+  component    — a service/module/process that does work
+  store        — a data store (db, file, queue, cache)
+  gate         — a verification gate/oracle checkpoint
+  interface    — an API/UI/contract surface
+  environment  — a runtime/context boundary (browser, server, device, cloud)
+Flows connect elements (from → to) and describe data/control movement.
+
+SYSTEM INTENT (verbatim, never alter):
+${G.intent||"(not yet stated)"}
+
+RULES:
+${AAB_RULES.map(r=>"- "+r).join("\n")}`;
+}
+
+/* the six steps. Each: id, title, schema, buildPrompt(G) -> string, apply(G,json) -> void */
+const STEPS=[
+ {id:"intent", title:"Intent", schema:null,
+  // intent is human-authored, not AI-painted; this step just captures it
+  human:true},
+
+ {id:"elements", title:"Elements", schema:"elements",
+  prompt:G=>`${ctx(G)}
+
+TASK: Paint the ELEMENTS of this system. Return the minimal set that satisfies the intent —
+typically 4–9 elements. Each needs: kind (one of the six), a short name, and a one-line intent.
+Return ONLY JSON:
+{"elements":[{"kind":"actor|component|store|gate|interface|environment","name":"...","intent":"..."}]}`,
+  apply(G,j){
+    const spread=layoutRing(j.elements.length);
+    G.nodes=j.elements.map((e,i)=>({id:i+1,kind:e.kind,label:e.name,state:"named",
+      note:e.intent||"",oracle:"",x:spread[i].x,y:spread[i].y}));
+    G.nextId=G.nodes.length+1;
+  }},
+
+ {id:"flows", title:"Flows", schema:"flows",
+  prompt:G=>`${ctx(G)}
+
+ELEMENTS ALREADY PAINTED:
+${G.nodes.map(n=>`- [${n.kind}] ${n.label}`).join("\n")}
+
+TASK: Paint the FLOWS between these elements (data/control movement). Use the exact element
+names above. Return ONLY JSON:
+{"flows":[{"from":"<name>","to":"<name>","label":"<what moves>"}]}`,
+  apply(G,j){
+    const byName=n=>G.nodes.find(x=>x.label===n);
+    G.edges=j.flows.map(f=>{const a=byName(f.from),b=byName(f.to);
+      return a&&b?{a:a.id,b:b.id,label:f.label||""}:null;}).filter(Boolean);
+  }},
+
+ {id:"naming", title:"Naming", schema:"elements",
+  prompt:G=>`${ctx(G)}
+
+CURRENT ELEMENTS:
+${G.nodes.map(n=>`- [${n.kind}] ${n.label} — ${n.note||"(no note)"}`).join("\n")}
+
+TASK: Refine NAMES and one-line intents for clarity and convention (clear, specific, no jargon).
+Keep the same kinds and count. Return ONLY JSON:
+{"elements":[{"kind":"...","name":"...","intent":"..."}]}`,
+  apply(G,j){
+    j.elements.forEach((e,i)=>{if(G.nodes[i]){G.nodes[i].label=e.name;G.nodes[i].note=e.intent||G.nodes[i].note;}});
+  }},
+
+ {id:"gates", title:"Gates", schema:"elements",
+  prompt:G=>`${ctx(G)}
+
+CURRENT ELEMENTS:
+${G.nodes.map(n=>`- [${n.kind}] ${n.label}`).join("\n")}
+
+TASK: Ensure the system has VERIFICATION GATES. Return any gate elements to ADD (kind must be
+"gate"), each with the oracle it enforces in its intent field. Return ONLY JSON:
+{"elements":[{"kind":"gate","name":"...","intent":"oracle: <how it is checked>"}]}
+If gates already suffice, return {"elements":[]}.`,
+  apply(G,j){
+    let id=G.nextId||(G.nodes.length+1);
+    const spread=layoutRing(G.nodes.length+j.elements.length);
+    j.elements.forEach(e=>{G.nodes.push({id:id,kind:"gate",label:e.name,state:"named",
+      note:e.intent||"",oracle:(e.intent||"").replace(/^oracle:\s*/i,""),x:spread[id-1].x,y:spread[id-1].y});id++;});
+    G.nextId=id;
+  }},
+
+ {id:"oracles", title:"Oracles", schema:"elements",
+  prompt:G=>`${ctx(G)}
+
+ELEMENTS:
+${G.nodes.map(n=>`- [${n.kind}] ${n.label}`).join("\n")}
+
+TASK: For EACH element, specify the concrete ORACLE that proves it works — a runnable command
+or test that returns pass/fail (e.g. "pytest tests/x.py", "curl … | grep 200", "node test.js").
+Return ONLY JSON (same order as above):
+{"elements":[{"kind":"...","name":"<same>","intent":"<oracle command>"}]}`,
+  apply(G,j){
+    j.elements.forEach((e,i)=>{if(G.nodes[i])G.nodes[i].oracle=e.intent||G.nodes[i].oracle;});
+  }}
+];
+
+/* simple ring auto-layout so painted nodes don't stack */
+function layoutRing(n){
+  const cx=190,cy=180,R=Math.min(130,60+n*10),out=[];
+  for(let i=0;i<Math.max(n,1);i++){const a=(-90+i*360/Math.max(n,1))*Math.PI/180;
+    out.push({x:cx+R*Math.cos(a),y:cy+R*Math.sin(a)});}
+  return out;
+}
+
+/* one-shot prompt: intent -> full system (elements+flows+oracles) in a single handoff */
+function oneShotPrompt(G){
+  return `${ctx(G)}
+
+TASK: Paint the ENTIRE system in one pass — elements, flows, gates and each element's oracle.
+Return ONLY JSON:
+{
+  "elements":[{"kind":"...","name":"...","intent":"...","oracle":"<runnable pass/fail command>"}],
+  "flows":[{"from":"<name>","to":"<name>","label":"<what moves>"}]
+}
+Include at least one gate element. Keep it minimal but complete for the intent.`;
+}
+function applyOneShot(G,j){
+  const spread=layoutRing(j.elements.length);
+  G.nodes=j.elements.map((e,i)=>({id:i+1,kind:e.kind,label:e.name,state:"named",
+    note:e.intent||"",oracle:e.oracle||"",x:spread[i].x,y:spread[i].y}));
+  G.nextId=G.nodes.length+1;
+  const byName=n=>G.nodes.find(x=>x.label===n);
+  G.edges=(j.flows||[]).map(f=>{const a=byName(f.from),b=byName(f.to);
+    return a&&b?{a:a.id,b:b.id,label:f.label||""}:null;}).filter(Boolean);
+}
+
+if(typeof module!=="undefined")module.exports={STEPS,oneShotPrompt,applyOneShot,ctx,AAB_RULES,layoutRing};
+
+if(typeof window!=="undefined"){
+  window.STEPS=STEPS;window.oneShotPrompt=oneShotPrompt;window.applyOneShot=applyOneShot;
+  window.ctx=ctx;window.AAB_RULES=AAB_RULES;window.layoutRing=layoutRing;
+}
+
+</script>
+<script>
+"use strict";
+/* AAB build/validate + ship layer — © 1993–2026 Abhishek Choudhary · AyeAI · model: Claude Opus 4.8
+   Q6 Build&Validate: JS/browser systems RUN in a sandboxed iframe (pass/fail vs oracle);
+   non-browser targets generate build+oracle commands and record the pasted result.
+   Q7 Provenance: GitHub compose-URL seeding (keyless), browser OTS, Zenodo token-or-tools. */
+
+/* ---- detect whether a system is runnable in the studio ---- */
+function isBrowserRunnable(G){
+  const envs=G.nodes.filter(n=>n.kind==="environment").map(n=>(n.label+" "+n.note).toLowerCase());
+  const anyBrowser=envs.some(e=>/browser|web|dom|client|js|javascript|html/.test(e));
+  const anyServer =envs.some(e=>/server|python|node backend|docker|cloud|device|native|c\+\+|rust/.test(e));
+  if(anyBrowser&&!anyServer)return true;
+  if(!envs.length)return null;   // unknown — let the user choose
+  return anyServer?false:anyBrowser;
+}
+
+/* ---- JS-in-studio: run user code + oracle in a sandboxed iframe, capture pass/fail ---- */
+function runInSandbox(code, oracle, timeoutMs){
+  return new Promise((resolve)=>{
+    timeoutMs=timeoutMs||4000;
+    const iframe=document.createElement('iframe');
+    iframe.sandbox="allow-scripts";
+    iframe.style.display="none";
+    let done=false;
+    const finish=(r)=>{if(done)return;done=true;clearTimeout(to);
+      window.removeEventListener('message',onMsg);iframe.remove();resolve(r);};
+    const onMsg=(ev)=>{if(ev.data&&ev.data.__aab)finish(ev.data);};
+    window.addEventListener('message',onMsg);
+    const to=setTimeout(()=>finish({__aab:true,pass:false,log:"timed out ("+timeoutMs+"ms)"}),timeoutMs);
+    // the harness: run the system code, then the oracle; oracle throws or returns false = fail
+    const harness=`<!doctype html><script>
+      (function(){
+        var log=[]; var _c=console.log; console.log=function(){log.push([].join.call(arguments,' '));};
+        var pass=false, err=null;
+        try{
+          ${code}
+          ;var __r=(function(){ ${oracle} })();
+          pass=(__r===undefined)?true:!!__r;
+        }catch(e){err=String(e&&e.stack||e);pass=false;}
+        parent.postMessage({__aab:true,pass:pass,log:log.join("\\n"),err:err},"*");
+      })();
+    <\/script>`;
+    iframe.srcdoc=harness;
+    document.body.appendChild(iframe);
+  });
+}
+
+/* ---- non-browser: emit the build + oracle commands to run externally, record result ---- */
+function externalRunbook(G){
+  const gates=G.nodes.filter(n=>n.kind==="gate"||n.oracle);
+  return `# AAB build & validate — external runbook
+# © 1993–2026 Abhishek Choudhary · AyeAI
+# System: ${(G.intent||"").slice(0,80)}
+set -euo pipefail
+
+# 1. scaffold (the AI's build plan produces the files; place them here)
+# 2. run each element's oracle; every one must return pass:
+${gates.map(n=>`echo "== oracle: ${n.label} =="\n${n.oracle||"# (no oracle recorded — add one)"}`).join("\n")}
+
+echo "ALL ORACLES PASSED"   # only if every command above exited 0`;
+}
+
+/* ---- GitHub compose-URL seeding (Option B — keyless, click-to-commit) ---- */
+function composeURL(owner, repo, branch, filename, content){
+  // github.com/OWNER/REPO/new/BRANCH?filename=…&value=…  — pre-fills the new-file editor
+  const base=`https://github.com/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/new/${encodeURIComponent(branch||"main")}`;
+  return `${base}?filename=${encodeURIComponent(filename)}&value=${encodeURIComponent(content)}`;
+}
+function seedFiles(owner, repo, branch, files){
+  // returns [{filename, url}] — the UI opens each; GitHub's editor value length is URL-bounded,
+  // so large files are flagged for manual paste.
+  return files.map(f=>{
+    const url=composeURL(owner,repo,branch,f.filename,f.content);
+    return {filename:f.filename, url, tooLong:url.length>7000};
+  });
+}
+
+/* ---- browser OTS: SHA-256 the artifact, stamp via an OTS calendar, hand back the proof ---- */
+async function sha256Hex(text){
+  const buf=await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+async function otsStamp(text, calendarUrl){
+  // OpenTimestamps calendar submit: POST the 32-byte digest, receive a partial timestamp.
+  // Default calendar is https://a.pool.opentimestamps.org (user-overridable).
+  const hashHex=await sha256Hex(text);
+  const digest=new Uint8Array(hashHex.match(/../g).map(h=>parseInt(h,16)));
+  const cal=(calendarUrl||"https://a.pool.opentimestamps.org")+"/digest";
+  try{
+    const res=await fetch(cal,{method:"POST",
+      headers:{"content-type":"application/octet-stream","accept":"application/octet-stream"},
+      body:digest});
+    if(!res.ok)throw new Error("calendar "+res.status);
+    const proof=new Uint8Array(await res.arrayBuffer());
+    return {ok:true, sha256:hashHex, calendar:cal, proofBytes:proof,
+      note:"Partial OTS timestamp received. Save the .ots and upgrade later with the OpenTimestamps client for full Bitcoin attestation."};
+  }catch(e){
+    // honest failure: still give them the hash so they can stamp with the CLI
+    return {ok:false, sha256:hashHex, error:String(e),
+      note:"Calendar unreachable from the browser (CORS/network). The SHA-256 is valid — stamp it with: `ots stamp` on a file containing this hash, or retry."};
+  }
+}
+
+/* ---- Zenodo: token path or point to the developed tools ---- */
+function zenodoGuidance(hasToken){
+  if(hasToken)return {mode:"token",
+    steps:["Studio will POST a new deposition to https://zenodo.org/api/deposit/depositions",
+           "Attach the exported manifest + README",
+           "You review and publish on Zenodo (the studio never publishes for you)."]};
+  return {mode:"tools",
+    steps:["Install misty-doi:  pip install misty-doi",
+           "Dry-run first:      misty publish --dry-run  (dry-run is the default)",
+           "Then mint:          misty publish   (your ZENODO_TOKEN, your hands)",
+           "misty-doi handles concept/version DOIs + OpenTimestamps sealing.",
+           "Docs: project-ilm/misty-doi · doi:10.5281/zenodo.20719388"]};
+}
+
+if(typeof module!=="undefined")module.exports={isBrowserRunnable,runInSandbox,externalRunbook,
+  composeURL,seedFiles,sha256Hex,otsStamp,zenodoGuidance};
+
+if(typeof window!=="undefined"){
+  window.isBrowserRunnable=isBrowserRunnable;window.runInSandbox=runInSandbox;
+  window.externalRunbook=externalRunbook;window.composeURL=composeURL;window.seedFiles=seedFiles;
+  window.sha256Hex=sha256Hex;window.otsStamp=otsStamp;window.zenodoGuidance=zenodoGuidance;
+}
+
+</script>
+<script>
+"use strict";
+/* AAB studio engine — © 1993–2026 Abhishek Choudhary · AyeAI · model: Claude Opus 4.8
+   Paint a system; the AI + VGC implement it. Grounded: sketch→named→verified(oracle). */
+
+/* ---- the palette: the vocabulary of a system, per the AAB definition ---- */
+const BRUSHES=[
+  {k:"actor",     name:"Actor",     hue:"#e0a34a", ico:'<circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/>'},
+  {k:"component", name:"Component",hue:"#3fb6d8", ico:'<rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h5"/>'},
+  {k:"store",     name:"Store",    hue:"#8a97b8", ico:'<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/>'},
+  {k:"gate",      name:"Gate",     hue:"#4fd08a", ico:'<path d="M12 3l8 5v8l-8 5-8-5V8z"/><path d="M9 12l2 2 4-4"/>'},
+  {k:"interface", name:"Interface",hue:"#c9a44e", ico:'<rect x="3" y="5" width="18" height="12" rx="2"/><path d="M3 9h18M7 21h10"/>'},
+  {k:"environment",name:"Env",     hue:"#6f8b7a", ico:'<path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>'},
+];
+const BR=Object.fromEntries(BRUSHES.map(b=>[b.k,b]));
+
+/* ---- the VGC quests: stages that only complete with typed evidence ---- */
+const QUESTS=[
+  {k:"intent",  n:"Q1", t:"State intent",   need:g=>g.intent&&g.intent.length>12,
+    hint:"Write, in your words, what this system is for. Preserved verbatim, forever."},
+  {k:"paint",   n:"Q2", t:"Paint the system",need:g=>g.nodes.length>=3,
+    hint:"Place at least three elements — an actor, a component, and one more."},
+  {k:"wire",    n:"Q3", t:"Wire the flows", need:g=>g.edges.length>=2,
+    hint:"Draw at least two flows between elements."},
+  {k:"name",    n:"Q4", t:"Name everything",need:g=>g.nodes.length>0&&g.nodes.every(n=>n.state!=="sketch"),
+    hint:"Every element must be named — no sketches left. (+XP each)"},
+  {k:"gate",    n:"Q5", t:"Place a gate",   need:g=>g.nodes.some(n=>n.kind==="gate"),
+    hint:"Every serious system has a verification gate. Place at least one."},
+  {k:"oracle",  n:"Q5+",t:"Record an oracle",need:g=>g.nodes.some(n=>n.state==="verified"),
+    hint:"Mark one element verified — but only by recording the oracle that passed. No oracle, no glow."},
+  {k:"validate",n:"Q6", t:"Build & Validate",need:g=>g.nodes.some(n=>n.state==="verified"),
+    hint:"The VGC gate: build it, run the oracle, record pass/fail. JS runs in-studio; else a runbook."},
+  {k:"publish", n:"Q7", t:"Wire to provenance",need:g=>g.publish&&g.publish.tool,
+    hint:"Connect to the real IP machinery: misty-doi / publish_paper.sh (DOI+OTS) or patent_track.sh."},
+];
+
+/* ---- persistent grimoire ---- */
+const KEY="aab-canvas-v1";
+let G=load();
+function blank(){return {intent:"",nodes:[],edges:[],xp:0,publish:{tool:"",note:""},created:Date.now()};}
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.nodes)return s;}catch(e){}return blank();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(G));}catch(e){}}
+
+/* ---- canvas ---- */
+const cv=document.getElementById('canvas'), cx=cv.getContext('2d');
+let DPR=Math.min(devicePixelRatio||1,2), W=0, H=0;
+function resize(){const r=cv.parentElement.getBoundingClientRect();
+  W=r.width;H=r.height;cv.width=W*DPR;cv.height=H*DPR;cv.style.width=W+'px';cv.style.height=H+'px';
+  cx.setTransform(DPR,0,0,DPR,0,0);draw();}
+let brush=null, sel=null, wiring=null, panPt=null;
+function setBrush(k){brush=(brush===k?null:k);renderPalette();
+  hint(brush?`Tap the canvas to place a ${BR[brush].name.toLowerCase()}.`:"Tap a brush to paint. Drag node→node to wire.");}
+function nodeAt(x,y){for(let i=G.nodes.length-1;i>=0;i--){const n=G.nodes[i];
+  if(Math.hypot(n.x-x,n.y-y)<34)return n;}return null;}
+function draw(){
+  cx.clearRect(0,0,W,H);
+  // faint water grid
+  cx.strokeStyle='rgba(63,182,216,.06)';cx.lineWidth=1;
+  for(let x=0;x<W;x+=32){cx.beginPath();cx.moveTo(x,0);cx.lineTo(x,H);cx.stroke();}
+  for(let y=0;y<H;y+=32){cx.beginPath();cx.moveTo(0,y);cx.lineTo(W,y);cx.stroke();}
+  // edges (flows)
+  for(const e of G.edges){const a=G.nodes.find(n=>n.id===e.a),b=G.nodes.find(n=>n.id===e.b);
+    if(!a||!b)continue;
+    cx.strokeStyle='rgba(63,182,216,.5)';cx.lineWidth=2;
+    cx.beginPath();cx.moveTo(a.x,a.y);
+    const mx=(a.x+b.x)/2,my=(a.y+b.y)/2;
+    cx.quadraticCurveTo(mx,my-18,b.x,b.y);cx.stroke();
+    // arrowhead
+    const ang=Math.atan2(b.y-my,b.x-mx);
+    cx.fillStyle='rgba(63,182,216,.7)';cx.beginPath();
+    cx.moveTo(b.x,b.y);cx.lineTo(b.x-9*Math.cos(ang-0.4),b.y-9*Math.sin(ang-0.4));
+    cx.lineTo(b.x-9*Math.cos(ang+0.4),b.y-9*Math.sin(ang+0.4));cx.fill();
+  }
+  if(wiring){cx.strokeStyle='rgba(201,164,78,.7)';cx.setLineDash([4,4]);cx.lineWidth=2;
+    cx.beginPath();cx.moveTo(wiring.x0,wiring.y0);cx.lineTo(wiring.x,wiring.y);cx.stroke();cx.setLineDash([]);}
+  // nodes
+  for(const n of G.nodes){const b=BR[n.kind];
+    const glow=n.state==="verified";
+    cx.save();
+    if(glow){cx.shadowColor=b.hue;cx.shadowBlur=18;}
+    cx.fillStyle=n.state==="sketch"?'rgba(10,28,46,.7)':'rgba(10,28,46,.95)';
+    cx.strokeStyle=n.state==="verified"?'#4fd08a':n.state==="named"?b.hue:'rgba(127,151,171,.5)';
+    cx.lineWidth=n===sel?3:2;
+    if(n.state==="sketch")cx.setLineDash([5,4]);
+    roundRect(n.x-30,n.y-24,60,48,10);cx.fill();cx.stroke();cx.setLineDash([]);
+    cx.restore();
+    // icon glyph
+    cx.fillStyle=b.hue;cx.font='600 9px ui-monospace,monospace';cx.textAlign='center';
+    cx.fillText(b.name.toUpperCase(),n.x,n.y-10);
+    cx.fillStyle=n.state==="sketch"?'#7f97ab':'#eaf2f8';cx.font='600 11px system-ui';
+    cx.fillText((n.label||'…').slice(0,11),n.x,n.y+6);
+    if(glow){cx.fillStyle='#4fd08a';cx.font='8px ui-monospace';cx.fillText('✓ verified',n.x,n.y+18);}
+    else if(n.state==="named"){cx.fillStyle=b.hue;cx.font='8px ui-monospace';cx.fillText('named',n.x,n.y+18);}
+  }
+}
+function roundRect(x,y,w,h,r){cx.beginPath();cx.moveTo(x+r,y);
+  cx.arcTo(x+w,y,x+w,y+h,r);cx.arcTo(x+w,y+h,x,y+h,r);
+  cx.arcTo(x,y+h,x,y,r);cx.arcTo(x,y,x+w,y,r);cx.closePath();}
+
+/* ---- pointer: place / select / wire / move ---- */
+let downPt=null,moved=false;
+cv.addEventListener('pointerdown',ev=>{const p=xy(ev);downPt=p;moved=false;
+  const hit=nodeAt(p.x,p.y);
+  if(brush&&!hit){addNode(brush,p.x,p.y);brush=null;renderPalette();return;}
+  if(hit){sel=hit;wiring={node:hit,x0:hit.x,y0:hit.y,x:p.x,y:p.y};}
+  try{cv.setPointerCapture(ev.pointerId)}catch(e){}
+});
+cv.addEventListener('pointermove',ev=>{const p=xy(ev);
+  if(!downPt)return;moved=Math.hypot(p.x-downPt.x,p.y-downPt.y)>6;
+  if(wiring){const over=nodeAt(p.x,p.y);
+    if(over&&over!==wiring.node){wiring.x=over.x;wiring.y=over.y;wiring.target=over;}
+    else{wiring.x=p.x;wiring.y=p.y;wiring.target=null;}
+    // if dragging the node itself with no target intent yet, move it
+    draw();}
+});
+cv.addEventListener('pointerup',ev=>{const p=xy(ev);
+  if(wiring){
+    const over=nodeAt(p.x,p.y);
+    if(over&&over!==wiring.node){addEdge(wiring.node.id,over.id);}
+    else if(!moved){openInspector(wiring.node);}
+    else if(moved){wiring.node.x=p.x;wiring.node.y=p.y;save();} // moved a node
+    wiring=null;
+  }
+  downPt=null;draw();refreshQuests();
+});
+
+function xy(ev){const r=cv.getBoundingClientRect();return {x:ev.clientX-r.left,y:ev.clientY-r.top};}
+let nextId=Math.max(0,...G.nodes.map(n=>n.id||0))+1;
+function addNode(kind,x,y){G.nodes.push({id:nextId++,kind,label:"",state:"sketch",x,y,note:"",oracle:""});
+  save();draw();refreshQuests();award(1,"element sketched");openInspector(G.nodes[G.nodes.length-1]);}
+function addEdge(a,b){if(a===b)return;if(G.edges.some(e=>e.a===a&&e.b===b))return;
+  G.edges.push({a,b});save();draw();refreshQuests();award(1,"flow wired");hint("Flow wired.");}
+
+/* ---- XP / level ---- */
+function award(n,why){G.xp+=n;save();
+  document.getElementById('xp').textContent=G.xp+" XP";
+  const done=QUESTS.filter(q=>q.need(G)).length;
+  document.getElementById('lvl').textContent=
+    done>=7?"Shipped":done>=5?"Verifying":done>=3?"Building":done>=1?"Painting":"Sketching";
+  if(why)hint("+"+n+" XP · "+why);}
+
+/* ---- inspector drawer: name, ground, and record oracles ---- */
+const drawer=document.getElementById('drawer');
+function openInspector(n){sel=n;draw();
+  document.getElementById('drawerTitle').textContent=BR[n.kind].name;
+  const body=document.getElementById('drawerBody');
+  const stateChip=n.state==="verified"?'<span class="chipstate st-verified">✓ verified</span>':
+    n.state==="named"?'<span class="chipstate st-named">named</span>':
+    '<span class="chipstate st-sketch">sketch</span>';
+  body.innerHTML=`
+    <div>${stateChip}</div>
+    <label class="f">Name</label>
+    <input class="f" id="iName" value="${(n.label||'').replace(/"/g,'&quot;')}" placeholder="e.g. Ingest service">
+    <label class="f">What it does (intent for this element)</label>
+    <textarea class="f" id="iNote" placeholder="Plain words. Preserved verbatim.">${n.note||''}</textarea>
+    <label class="f">Verifying oracle (required to mark verified)</label>
+    <input class="f" id="iOracle" value="${(n.oracle||'').replace(/"/g,'&quot;')}"
+      placeholder="e.g. tests/ingest_test.sh passes; or: 10/10 pytest green">
+    <button class="btn" id="iSave">Save & name</button>
+    <button class="btn ${n.oracle?'gold':'ghost'}" id="iVerify">
+      ${n.state==="verified"?'✓ Verified (recorded)':'Mark verified — needs an oracle'}</button>
+    <button class="btn ghost" id="iDel">Delete</button>
+  `;
+  drawer.classList.add('on');
+  document.getElementById('iSave').onclick=()=>{
+    n.label=document.getElementById('iName').value.trim();
+    n.note=document.getElementById('iNote').value.trim();
+    n.oracle=document.getElementById('iOracle').value.trim();
+    if(n.label&&n.state==="sketch"){n.state="named";award(2,"named "+n.label);}
+    save();draw();refreshQuests();hint("Saved.");openInspector(n);
+  };
+  document.getElementById('iVerify').onclick=()=>{
+    const orc=document.getElementById('iOracle').value.trim();
+    if(!orc){hint("No oracle, no glow. Record which oracle passed.");
+      document.getElementById('iOracle').focus();return;}
+    n.oracle=orc;if(!n.label)n.label=BR[n.kind].name;
+    n.state="verified";award(5,"verified "+n.label+" via oracle");save();draw();refreshQuests();
+    toast("✓ "+n.label+" verified — oracle recorded: "+orc.slice(0,40));openInspector(n);
+  };
+  document.getElementById('iDel').onclick=()=>{
+    G.nodes=G.nodes.filter(x=>x!==n);G.edges=G.edges.filter(e=>e.a!==n.id&&e.b!==n.id);
+    save();draw();refreshQuests();drawer.classList.remove('on');
+  };
+}
+// tap outside drawer closes it
+document.getElementById('canvasWrap').addEventListener('pointerdown',()=>{},{passive:true});
+
+/* ---- quests bar ---- */
+function refreshQuests(){
+  const box=document.getElementById('quests');box.innerHTML='';
+  let firstOpen=null;
+  QUESTS.forEach(q=>{const done=q.need(G);if(!done&&!firstOpen)firstOpen=q.k;
+    const el=document.createElement('div');
+    el.className='quest'+(done?' done':'')+(q.k===firstOpen?' active':'');
+    el.innerHTML=`<div class="qn">${q.n}${done?' ✓':''}</div><div class="qt">${q.t}</div>
+      <div class="qb"><i style="width:${done?100:0}%"></i></div>`;
+    el.onclick=()=>{if(q.k==='intent')openIntent();
+      else if(q.k==='validate'&&window.AABv2)window.AABv2.openBuildValidate();
+      else if(q.k==='publish'&&window.AABv2)window.AABv2.openShip();
+      else{hint(q.hint);}};
+    box.appendChild(el);});
+  award(0);
+}
+
+/* ---- intent (Q1) — preserved verbatim ---- */
+function openIntent(){
+  modal(`<h2>State your intent</h2>
+    <p class="muted">In your own words: what is this system for? This is preserved <b>verbatim</b>
+    for continuity, audit and gap-analysis. It is never rewritten.</p>
+    <textarea class="f" id="mIntent" style="min-height:120px;margin-top:.6rem"
+      placeholder="e.g. A local-first tool that lets a clinic book, remind and follow up patients without cloud lock-in.">${G.intent||''}</textarea>
+    <div class="row"><button class="btn" id="mSave">Save intent</button>
+    <button class="btn ghost" id="mClose">Close</button></div>`);
+  document.getElementById('mSave').onclick=()=>{G.intent=document.getElementById('mIntent').value.trim();
+    save();refreshQuests();closeModal();if(G.intent)award(3,"intent stated");};
+  document.getElementById('mClose').onclick=closeModal;
+}
+
+/* ---- publish (Q7) — the real provenance machinery ---- */
+function openPublish(){
+  modal(`<h2>Wire to provenance</h2>
+    <p class="muted">Connect the painting to the real publishing & IP machinery. Filing stays
+    with you and counsel — this records the route, it does not file.</p>
+    <label class="f">Route</label>
+    <select class="f" id="mTool">
+      <option value="">— choose —</option>
+      <option value="misty-doi">misty-doi — DOI + OpenTimestamps (software/data)</option>
+      <option value="publish_paper.sh">publish_paper.sh — paper → DOI + OTS</option>
+      <option value="patent_track.sh">patent_track.sh — OTS disclosure as priority-date evidence</option>
+    </select>
+    <label class="f">Note (what gets published)</label>
+    <textarea class="f" id="mNote" placeholder="e.g. the AAB manifest + README as a v0.1 software record">${G.publish.note||''}</textarea>
+    <div class="row"><button class="btn gold" id="mSave">Record route</button>
+    <button class="btn ghost" id="mClose">Close</button></div>`);
+  document.getElementById('mTool').value=G.publish.tool||'';
+  document.getElementById('mSave').onclick=()=>{
+    G.publish={tool:document.getElementById('mTool').value,note:document.getElementById('mNote').value.trim()};
+    save();refreshQuests();closeModal();if(G.publish.tool)award(4,"provenance route set");};
+  document.getElementById('mClose').onclick=closeModal;
+}
+
+/* ---- the payoff: the painting → an AI build prompt (the manifest) ---- */
+function buildManifest(){
+  const nodes=G.nodes.map(n=>({kind:n.kind,name:n.label||"(unnamed)",state:n.state,
+    intent:n.note||"",oracle:n.oracle||""}));
+  const edges=G.edges.map(e=>{const a=G.nodes.find(x=>x.id===e.a),b=G.nodes.find(x=>x.id===e.b);
+    return {from:a?a.label||a.kind:"?",to:b?b.label||b.kind:"?"};});
+  return {system_intent:G.intent||"(intent not yet stated)",
+    elements:nodes,flows:edges,
+    verification:{gates:nodes.filter(n=>n.kind==="gate").map(n=>n.name),
+      verified:nodes.filter(n=>n.state==="verified").map(n=>({name:n.name,oracle:n.oracle}))},
+    provenance:G.publish,
+    method:"AAB (آب) · Verification-Gated Human–AI Co-Development",
+    rules:["Preserve the stated intent verbatim.",
+      "Implement only what is painted; ask before adding.",
+      "Nothing is 'done' without a recorded, runnable oracle.",
+      "Copyright © 1993–2026 Abhishek Choudhary · AyeAI. GPL-3.0-or-later for software."]};
+}
+function buildPrompt(){
+  const m=buildManifest();
+  return `You are implementing a system painted in the AAB studio, under the Verification-Gated
+(VGC) method. Build ONLY what is painted. Preserve the intent verbatim. Nothing is complete
+without a runnable oracle.
+
+SYSTEM INTENT (verbatim):
+${m.system_intent}
+
+ELEMENTS:
+${m.elements.map(e=>`- [${e.kind}] ${e.name} — ${e.intent||"(no note)"}${e.oracle?` · oracle: ${e.oracle}`:""} · ${e.state}`).join("\n")}
+
+FLOWS:
+${m.flows.map(f=>`- ${f.from} → ${f.to}`).join("\n")||"- (none yet)"}
+
+VERIFICATION GATES: ${m.verification.gates.join(", ")||"(none — add at least one)"}
+ALREADY VERIFIED: ${m.verification.verified.map(v=>`${v.name} (${v.oracle})`).join("; ")||"(none yet)"}
+PROVENANCE ROUTE: ${m.provenance.tool||"(not set)"} ${m.provenance.note?"· "+m.provenance.note:""}
+
+RULES:
+${m.rules.map(r=>"- "+r).join("\n")}
+
+Deliver: a plan that maps each element to a file/module, each flow to an interface, and each
+gate to a concrete oracle (a script/test that returns pass/fail). Do not invent scope. Ask
+before assuming. Provide the oracle commands so each element can move to "verified".`;
+}
+function openBuild(){
+  const p=buildPrompt();
+  modal(`<h2>Your system → an AI build prompt</h2>
+    <p class="muted">This is the painting, serialized as a VGC manifest. Hand it to any AI to
+    implement. Your intent is preserved verbatim.</p>
+    <pre id="mPrompt">${p.replace(/</g,'&lt;')}</pre>
+    <div class="row">
+      <button class="btn" id="mCopy">⧉ Copy prompt</button>
+      <button class="btn gold" id="mClaude">Open in Claude</button>
+    </div>
+    <div class="row">
+      <button class="btn ghost" id="mJson">⬇ Export manifest (JSON)</button>
+      <button class="btn ghost" id="mClose">Close</button>
+    </div>`);
+  document.getElementById('mCopy').onclick=async()=>{
+    try{await navigator.clipboard.writeText(p);}catch(e){}
+    document.getElementById('mCopy').textContent="✓ copied";};
+  document.getElementById('mClaude').onclick=()=>
+    window.open("https://claude.ai/new?q="+encodeURIComponent(p),"_blank","noopener");
+  document.getElementById('mJson').onclick=()=>{
+    const blob=new Blob([JSON.stringify(buildManifest(),null,2)],{type:"application/json"});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+    a.download="aab-manifest.json";a.click();};
+  document.getElementById('mClose').onclick=closeModal;
+}
+
+/* ---- palette render ---- */
+function renderPalette(){
+  const box=document.getElementById('palette');box.innerHTML='';
+  BRUSHES.forEach(b=>{const el=document.createElement('div');
+    el.className='brush'+(brush===b.k?' on':'');
+    el.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="${b.hue}" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">${b.ico}</svg>${b.name}`;
+    el.onclick=()=>setBrush(b.k);box.appendChild(el);});
+  // build button pinned at the bottom
+  const build=document.createElement('div');build.className='brush';build.style.marginTop='auto';
+  build.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="#4fd08a" stroke-width="1.8"><path d="M5 3l14 9-14 9z"/></svg>Build`;
+  build.onclick=openBuild;box.appendChild(build);
+}
+
+/* ---- modal / toast / hint ---- */
+function modal(html){document.getElementById('modalBox').innerHTML=html;
+  document.getElementById('modal').classList.add('on');}
+function closeModal(){document.getElementById('modal').classList.remove('on');}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal();});
+let toastT;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('on');
+  clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),2400);}
+function hint(m){document.getElementById('hintbar').textContent=m;}
+
+/* ---- boot ---- */
+renderPalette();refreshQuests();resize();
+addEventListener('resize',resize);
+if(!G.intent&&G.nodes.length===0)setTimeout(openIntent,400);   // first-run: start with intent
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+// expose a reset
+window.aabReset=()=>{G=blank();nextId=1;save();draw();refreshQuests();renderPalette();hint("Fresh canvas.");};
+
+/* ---- v2 wiring: paint modes + settings (buttons live in the header) ---- */
+(function(){
+  const b1=document.getElementById('btnOne'),b2=document.getElementById('btnStep'),bs=document.getElementById('btnSet');
+  if(b1)b1.onclick=()=>window.AABv2&&window.AABv2.paintOneShot();
+  if(b2)b2.onclick=()=>window.AABv2&&window.AABv2.paintStep();
+  if(bs)bs.onclick=()=>window.AABv2&&window.AABv2.openSettings();
+})();
+
+</script>
+<script>
+"use strict";
+/* AAB v2 orchestration — © 1993–2026 Abhishek Choudhary · AyeAI · model: Claude Opus 4.8
+   Wires the provider + step engine + ship layer into the studio UI. Two modes:
+   one-shot (speed) and stepwise (learning/optimisation). Adds Q6 Build&Validate. */
+
+/* provider selection (persisted). Default manual/keyless. */
+let AAB_PROV=(function(){
+  try{const c=JSON.parse(localStorage.getItem('aab-prov')||'null');if(c)Object.assign(AAB_CONFIG,c);}catch(e){}
+  return makeProvider(AAB_CONFIG, (JSON.parse(localStorage.getItem('aab-prov')||'{}')).key);
+})();
+function setProvider(cfg,key){Object.assign(AAB_CONFIG,cfg);
+  try{localStorage.setItem('aab-prov',JSON.stringify(Object.assign({},cfg,{key:key||""})));}catch(e){}
+  AAB_PROV=makeProvider(AAB_CONFIG,key);}
+
+/* run one step's AI call: live providers round-trip; manual shows prompt + collects paste */
+async function runStep(prompt, schema){
+  if(AAB_PROV.live){
+    return await AAB_PROV.complete(prompt, schema);   // KeyProvider/HostedProvider return validated JSON
+  }
+  // manual: resolve via a paste modal
+  return await new Promise((resolve,reject)=>{
+    modal(`<h2>Paint step — hand this to your AI</h2>
+      <p class="muted">Copy the prompt, paste it into your AI (or Open in Claude), then paste the
+      JSON it returns below. Keyless and free. <span class="k">Enable a live key in ⚙ for one-tap.</span></p>
+      <pre id="mP">${prompt.replace(/</g,'&lt;')}</pre>
+      <div class="row">
+        <button class="btn" id="mCopy">⧉ Copy prompt</button>
+        <button class="btn gold" id="mClaude">Open in Claude</button>
+      </div>
+      <label class="f">Paste the JSON the AI returned</label>
+      <textarea class="f" id="mJson" style="min-height:96px" placeholder='{"elements":[…]}'></textarea>
+      <div id="mErr" style="color:#e0685a;font:11px var(--mono);min-height:1.2em"></div>
+      <div class="row"><button class="btn" id="mApply">Apply to canvas</button>
+      <button class="btn ghost" id="mCancel">Cancel</button></div>`);
+    document.getElementById('mCopy').onclick=async()=>{try{await navigator.clipboard.writeText(prompt);}catch(e){}
+      document.getElementById('mCopy').textContent="✓ copied";};
+    document.getElementById('mClaude').onclick=()=>
+      window.open("https://claude.ai/new?q="+encodeURIComponent(prompt),"_blank","noopener");
+    document.getElementById('mApply').onclick=()=>{
+      try{const j=AAB_PROV.parseAndValidate(document.getElementById('mJson').value, schema);
+        closeModal();resolve(j);}
+      catch(e){document.getElementById('mErr').textContent=e.message;}
+    };
+    document.getElementById('mCancel').onclick=()=>{closeModal();reject(new Error("cancelled"));};
+  });
+}
+
+/* ONE-SHOT: intent -> whole system in a single handoff */
+async function paintOneShot(){
+  if(!G.intent){openIntent();return;}
+  try{
+    const j=await runStep(oneShotPrompt(G), "full");
+    applyOneShot(G,j);save();draw();refreshQuests();
+    toast("Painted "+G.nodes.length+" elements, "+G.edges.length+" flows");
+  }catch(e){if(e.message!=="cancelled")toast("✗ "+e.message);}
+}
+
+/* STEPWISE: run one step, let the human inspect/optimise, then continue */
+let stepIdx=0;
+async function paintStep(){
+  if(!G.intent){openIntent();return;}
+  const steps=STEPS.filter(s=>!s.human);   // intent handled separately
+  if(stepIdx>=steps.length){toast("All six steps done — inspect, then Build.");return;}
+  const s=steps[stepIdx];
+  try{
+    const j=await runStep(s.prompt(G), s.schema);
+    s.apply(G,j);save();draw();refreshQuests();
+    stepIdx++;
+    toast(`Step ${stepIdx}/6 · ${s.title} applied`);
+  }catch(e){if(e.message!=="cancelled")toast("✗ "+e.message);}
+}
+
+/* Q6 BUILD & VALIDATE — the VGC pivot. JS runs in-studio; else external runbook. */
+async function openBuildValidate(){
+  const runnable=isBrowserRunnable(G);
+  modal(`<h2>Build & Validate</h2>
+    <p class="muted">The VGC gate: build it, run the oracle, record pass/fail. Only a genuine
+    pass verifies an element. ${runnable===true?'This system is <span class="k">browser-runnable</span> — test it here.':
+      runnable===false?'This system needs an <span class="k">external</span> build — use the runbook.':
+      'Pick where this runs.'}</p>
+    ${runnable!==false?`
+    <label class="f">System code (JS) — the AI's build output</label>
+    <textarea class="f" id="bCode" style="min-height:90px" placeholder="// paste the JS the AI built"></textarea>
+    <label class="f">Oracle (JS that returns true on pass, or throws on fail)</label>
+    <textarea class="f" id="bOracle" style="min-height:60px" placeholder="return typeof shorten==='function' && shorten('x').length>0;">${firstOracle()}</textarea>
+    <button class="btn" id="bRun">▶ Run in studio</button>
+    <div id="bOut" style="font:11px var(--mono);margin-top:.5rem;white-space:pre-wrap"></div>`:''}
+    ${runnable!==true?`
+    <label class="f">External runbook — run this, then paste the tail</label>
+    <pre id="bRb">${externalRunbook(G).replace(/</g,'&lt;')}</pre>
+    <button class="btn ghost" id="bCopyRb">⧉ Copy runbook</button>
+    <label class="f">Paste the result (must contain ALL ORACLES PASSED to verify)</label>
+    <textarea class="f" id="bRes" style="min-height:60px"></textarea>
+    <button class="btn" id="bRecord">Record external result</button>
+    <div id="bOut2" style="font:11px var(--mono);margin-top:.5rem"></div>`:''}
+    <button class="btn ghost" id="bClose" style="margin-top:.6rem">Close</button>`);
+  if(runnable!==false){
+    document.getElementById('bRun').onclick=async()=>{
+      const out=document.getElementById('bOut');out.textContent="running…";
+      const r=await runInSandbox(document.getElementById('bCode').value,
+        document.getElementById('bOracle').value||"return true;");
+      out.style.color=r.pass?'#4fd08a':'#e0685a';
+      out.textContent=(r.pass?"✓ PASS":"✗ FAIL")+(r.log?"\n"+r.log:"")+(r.err?"\n"+r.err:"");
+      if(r.pass){markAllVerified("in-studio JS run: oracle passed");refreshQuests();}
+    };
+  }
+  if(runnable!==true){
+    document.getElementById('bCopyRb').onclick=async()=>{try{await navigator.clipboard.writeText(externalRunbook(G));}catch(e){}
+      document.getElementById('bCopyRb').textContent="✓ copied";};
+    document.getElementById('bRecord').onclick=()=>{
+      const res=document.getElementById('bRes').value;
+      const out=document.getElementById('bOut2');
+      if(/ALL ORACLES PASSED/.test(res)){out.style.color='#4fd08a';out.textContent="✓ recorded — verified";
+        markAllVerified("external runbook: ALL ORACLES PASSED");refreshQuests();}
+      else{out.style.color='#e0685a';out.textContent="✗ result does not show ALL ORACLES PASSED — not verified";}
+    };
+  }
+  document.getElementById('bClose').onclick=closeModal;
+}
+function firstOracle(){const n=G.nodes.find(n=>n.oracle);return n?n.oracle.replace(/</g,'&lt;'):"";}
+function markAllVerified(why){G.nodes.forEach(n=>{if(n.oracle||n.kind==="gate"){n.state="verified";}});
+  save();draw();toast("✓ elements verified — "+why);}
+
+/* Q7 SHIP — GitHub compose-URL seeding, browser OTS, Zenodo */
+function openShip(){
+  modal(`<h2>Ship & prove</h2>
+    <p class="muted">Seed to GitHub (keyless click-to-commit), timestamp with OpenTimestamps,
+    then a DOI via your token or misty-doi.</p>
+    <h3 style="padding:0;margin:.6rem 0 .2rem;color:var(--water)">1 · Seed to GitHub</h3>
+    <div class="row">
+      <input class="f" id="gOwner" placeholder="owner" style="flex:1">
+      <input class="f" id="gRepo" placeholder="repo" style="flex:1">
+      <input class="f" id="gBranch" placeholder="main" style="flex:0 0 90px">
+    </div>
+    <button class="btn" id="gSeed">Open commit pages</button>
+    <div id="gOut" style="font:11px var(--mono);margin-top:.4rem"></div>
+    <h3 style="padding:0;margin:.9rem 0 .2rem;color:var(--water)">2 · Timestamp (OTS)</h3>
+    <button class="btn ghost" id="oStamp">SHA-256 + OpenTimestamps</button>
+    <div id="oOut" style="font:11px var(--mono);margin-top:.4rem;word-break:break-all"></div>
+    <h3 style="padding:0;margin:.9rem 0 .2rem;color:var(--water)">3 · DOI (Zenodo)</h3>
+    <div class="row">
+      <button class="btn ghost" id="zTools">Use misty-doi</button>
+      <button class="btn ghost" id="zToken">I have a token</button>
+    </div>
+    <div id="zOut" style="font:11px var(--mono);margin-top:.4rem;white-space:pre-wrap"></div>
+    <button class="btn ghost" id="sClose" style="margin-top:.7rem">Close</button>`);
+  const manifest=()=>JSON.stringify(buildManifestV2(),null,2);
+  document.getElementById('gSeed').onclick=()=>{
+    const owner=document.getElementById('gOwner').value.trim()||"OWNER";
+    const repo=document.getElementById('gRepo').value.trim()||"REPO";
+    const branch=document.getElementById('gBranch').value.trim()||"main";
+    const files=[
+      {filename:"aab-manifest.json",content:manifest()},
+      {filename:"README.md",content:"# "+(G.intent||"AAB system").slice(0,60)+"\n\nPainted with AAB (آب). VGC method.\n\n© 1993–2026 Abhishek Choudhary · AyeAI\n"}
+    ];
+    const seeded=seedFiles(owner,repo,branch,files);
+    const out=document.getElementById('gOut');out.innerHTML='';
+    seeded.forEach(s=>{if(s.tooLong){out.innerHTML+=`⚠ ${s.filename}: too large for URL — paste manually<br>`;}
+      else{window.open(s.url,"_blank","noopener");out.innerHTML+=`✓ opened commit page for ${s.filename}<br>`;}});
+  };
+  document.getElementById('oStamp').onclick=async()=>{
+    const out=document.getElementById('oOut');out.textContent="hashing + stamping…";
+    const r=await otsStamp(manifest());
+    if(r.ok){out.innerHTML=`✓ SHA-256: ${r.sha256}<br>calendar: ${r.calendar}<br>${r.note}`;
+      const blob=new Blob([r.proofBytes],{type:"application/octet-stream"});
+      const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download="aab-manifest.json.ots";a.click();}
+    else{out.innerHTML=`SHA-256: ${r.sha256}<br>⚠ ${r.error}<br>${r.note}`;}
+  };
+  document.getElementById('zTools').onclick=()=>{
+    const g=zenodoGuidance(false);
+    document.getElementById('zOut').textContent=g.steps.join("\n");};
+  document.getElementById('zToken').onclick=()=>{
+    const g=zenodoGuidance(true);
+    document.getElementById('zOut').textContent=g.steps.join("\n")+
+      "\n(Paste your token when prompted; the studio prepares the deposition, you publish.)";};
+  document.getElementById('sClose').onclick=closeModal;
+}
+function buildManifestV2(){
+  return {system_intent:G.intent||"",
+    elements:G.nodes.map(n=>({kind:n.kind,name:n.label,state:n.state,intent:n.note,oracle:n.oracle})),
+    flows:G.edges.map(e=>{const a=G.nodes.find(n=>n.id===e.a),b=G.nodes.find(n=>n.id===e.b);
+      return {from:a&&a.label,to:b&&b.label,label:e.label||""};}),
+    provenance:G.publish||{},
+    method:"AAB (آب) · VGC", rules:AAB_RULES,
+    copyright:"© 1993–2026 Abhishek Choudhary · AyeAI"};
+}
+
+/* settings: pick provider (manual / key / hosted-when-enabled) */
+function openSettings(){
+  modal(`<h2>AI provider</h2>
+    <p class="muted">Default is keyless: prompt out, JSON back. Add your own key for one-tap live
+    painting. The hosted option lights up when internal API calls are enabled.</p>
+    <label class="f">Mode</label>
+    <select class="f" id="pMode">
+      <option value="manual">Manual — keyless, paste JSON (default)</option>
+      <option value="key">My API key — live round-trip</option>
+      <option value="hosted"${AAB_CONFIG.hostedEndpoint?'':' disabled'}>Hosted — internal AI ${AAB_CONFIG.hostedEndpoint?'':'(not enabled yet)'}</option>
+    </select>
+    <div id="pKeyWrap" style="display:none">
+      <label class="f">API key (stored locally only)</label>
+      <input class="f" id="pKey" type="password" placeholder="sk-ant-…">
+    </div>
+    <div class="row"><button class="btn" id="pSave">Save</button>
+    <button class="btn ghost" id="pClose">Close</button></div>`);
+  const sel=document.getElementById('pMode');sel.value=AAB_CONFIG.provider;
+  const kw=document.getElementById('pKeyWrap');
+  const upd=()=>{kw.style.display=sel.value==="key"?"block":"none";};sel.onchange=upd;upd();
+  document.getElementById('pSave').onclick=()=>{
+    setProvider({provider:sel.value,hostedEndpoint:AAB_CONFIG.hostedEndpoint,model:AAB_CONFIG.model},
+      document.getElementById('pKey')?document.getElementById('pKey').value:"");
+    closeModal();toast("Provider: "+AAB_CONFIG.provider);};
+  document.getElementById('pClose').onclick=closeModal;
+}
+
+/* expose to the shell buttons */
+window.AABv2={paintOneShot,paintStep,openBuildValidate,openShip,openSettings,
+  resetSteps:()=>{stepIdx=0;}};
+
+</script>
+</body></html>

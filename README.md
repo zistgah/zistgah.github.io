@@ -1,13 +1,40 @@
-# zistgah — The PEDLER · PRATIK · Hindawi Disclosure Corpus
+# Zistgah PWA + Android home-screen widget
+© 1993–2026 Abhishek Choudhary · AyeAI · model: Claude Opus 4.8
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21284710.svg)](https://zenodo.org/record/21284710)
+Installable outside any store, works offline. The widget is a standalone surface
+driven by the pure CHAKRA dial (project-ilm/chakra).
 
-Architectural-disclosure posters for the **AyeAI Triad**: the PEDLER developmental algebra, the PRATIK decentralized execution fabric, and the Hindawi / Project ILM / Romenagri compiler and linguistic-equity layer.
+## Files
+    index.html                the full Zistgah portal, PWA-enabled (manifest + service worker + install prompt)
+    widget.html               the home-screen widget: CHAKRA dial + today's calendars, offline, taps through to the portal
+    manifest.webmanifest       app identity, icons, the "Time dial" shortcut
+    sw.js                      cache-first service worker (offline shell + runtime cache)
+    icon-192.png / 512 / maskable-512   generated app icons (dome glyph on night ground)
 
-Live: <https://zistgah.github.io/>
+## Deploy (any static host over HTTPS — GitHub Pages works)
+    # copy the whole folder to the site root, e.g. zistgah/zistgah.github.io
+    cp -r * /path/to/zistgah.github.io/
+    cd /path/to/zistgah.github.io && git add -A && git commit -m "Zistgah PWA v1" && git push
+HTTPS is required for service workers (GitHub Pages, Netlify, Cloudflare Pages all qualify).
 
-DOI: `10.5281/zenodo.21284710` · https://zenodo.org/record/21284710
+## Install — Android (outside the Play Store)
+Open the URL in Chrome → menu → **Install app** (or the ⤓ Install button that appears).
+It lands on the home screen as a standalone app. No store account, no APK sideload.
 
-Provenance: SHA-256 in `SHA256SUMS.txt`; OpenTimestamps proof in `provenance/` once minted.
+## Install — iPhone
+Open in Safari → Share → **Add to Home Screen**. Runs full-screen, offline.
 
-© 1993–2026 Abhishek Choudhary · content CC-BY-SA-4.0.
+## The Android home-screen widget
+Two honest paths, in order of effort:
+
+1. **Now (zero build):** long-press the home screen → Widgets → Chrome → **Bookmark/Shortcut**
+   to `widget.html`. It opens the live dial. This works today.
+2. **Native AppWidget (small wrapper, later):** a thin Android project whose
+   `AppWidgetProvider` hosts a WebView pointed at `widget.html`, refreshed on the widget update
+   interval. The widget UI itself is already built and offline — the wrapper only places it in a
+   real home-screen cell. This is the Play-Store path and is the next mobile task.
+
+## What is NOT done (honest)
+- Native APK build + Play Store submission — the wrapper above.
+- iOS App Store build.
+Both were flagged as post-PWA. The PWA is the installable-today deliverable.

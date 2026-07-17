@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zistgah · CHAKRA widget</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#050a18">
+<!-- Zistgah CHAKRA widget host — © 1993–2026 Abhishek Choudhary · AyeAI · model: Claude Opus 4.8
+     Reuses project-ilm/chakra renderers via ChakraUI.mountWidget. No renderer reimplemented.
+     ?view=orrery|lagna|sky|almanac|dial   (dial falls back to the standalone dial widget) -->
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#050a18;color:#f2ecdd;overflow:hidden;
+    font:13px ui-monospace,Menlo,Consolas,monospace}
+  #w{position:absolute;inset:2.2rem .4rem 1.6rem}
+  #cap{position:absolute;top:.5rem;left:0;right:0;text-align:center;color:#c9b47e;
+    font-weight:600;letter-spacing:.05em}
+  #brand{position:absolute;top:.5rem;right:.7rem;letter-spacing:.22em;color:#c9a44e;opacity:.85;
+    font-size:9px;font-weight:600}
+  #hint{position:absolute;bottom:.5rem;left:0;right:0;text-align:center;color:#8d94a8;font-size:11px}
+  svg{width:100%;height:100%}
+  :root{--sun:#e6b450;--merc:#9fb0c0;--ven:#d08a5a;--mars:#e0685a;--jup:#d9b24a;--sat:#8a97b8;
+    --ura:#7fd4e8;--nep:#6f8bd0;--cy2:#7fd4e8;--ink:#f2ecdd;--faint:#5a6478;--dim:#8d94a8;
+    --amber:#c9a44e;--mono:ui-monospace,Menlo,monospace}
+  @media (prefers-color-scheme:light){html,body{background:#e7d9be;color:#2a2318}#cap{color:#6b5a3e}}
+</style></head><body>
+<div id="cap">CHAKRA</div><span id="brand">ZISTGAH</span>
+<div id="w"></div>
+<div id="hint">drag to crank the epoch · double-tap for now · tap title for the full observatory</div>
+<script src="chakra-core.js"></script>
+<script src="chakra-kernel.js"></script>
+<script src="chakra-ui.js"></script>
+<script>
+(function(){
+  var p=new URLSearchParams(location.search), view=p.get('view')||'orrery';
+  var CAP={orrery:'Heliocentric orrery',lagna:'Lagna · rising chart',sky:'Local sky',almanac:'Almanac'};
+  document.getElementById('cap').textContent=CAP[view]||'CHAKRA';
+  document.getElementById('cap').onclick=function(){location.href='index.html';};
+  // observer location (persisted; defaults Hyderabad)
+  var geo={lat:17.385,lon:78.4867};
+  try{var g=JSON.parse(localStorage.getItem('zistgah-geo')||'null');if(g)geo=g;}catch(e){}
+  if(window.ChakraUI && ChakraUI.mountWidget){
+    ChakraUI.mountWidget(document.getElementById('w'), view, {
+      lat:geo.lat, lon:geo.lon, now:true,
+      scrubSpan: view==='sky'?0.02 : view==='lagna'?0.05 : 2   // sky=hours, lagna=~day, orrery=years
+    });
+  } else {
+    document.getElementById('w').innerHTML='<p style="padding:2rem;color:#e0685a">'+
+      'ChakraUI.mountWidget not found — apply the mountWidget PR to chakra-ui.js.</p>';
+  }
+  if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});
+})();
+</script>
+</body></html>

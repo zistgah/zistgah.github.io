@@ -1,0 +1,18 @@
+{
+  "name": "AAB — paint a system, ship software",
+  "short_name": "AAB",
+  "description": "آب · water. Paint a system; the AI and the Verification-Gated process implement it.",
+  "id": "/aab/",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#06131f",
+  "theme_color": "#06131f",
+  "categories": ["productivity", "developer", "education"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
