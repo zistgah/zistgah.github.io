@@ -2,16 +2,17 @@
 
 > A federated estate of independently implementable components: knowledge, intelligence, realization and continuity. Every component is sovereign, carries its own contract, and can be used without the rest.
 
-Walked 2026-09-18T16:50:30Z. 85 repositories across zistgah, project-ilm; 25 carry a DOI.
+Walked 2026-09-18T17:18:27Z. 85 repositories across zistgah, project-ilm; 26 carry a DOI, 55 do not.
 
 ## Read these first
 
-- [Master contract](https://github.com/zistgah/governance/blob/main/CONTRACT.md): the rules every repository inherits.
-- [Context](https://github.com/zistgah/governance/blob/main/CONTEXT.md): what the estate is and how the parts relate.
-- [Agent instructions](https://zistgah.org/AGENTS.md): what an agent may do here.
-- [Machine index](https://zistgah.org/index.json): every repository as JSON.
-- [Catalogue](https://zistgah.org/catalog.json): a typed graph of organisations, repositories, published pages and deposited works, with every entry file linked by its raw URL so nothing has to be guessed.
+- [Ontology](https://zistgah.org/ontology.md): the classes and relations this estate is described with, and the worklist of what is not yet populated. Start here to build on it.
+- [Catalogue](https://zistgah.org/catalog.json): a typed graph of organisations, repositories, published pages and deposited works, with every entry file linked by raw URL so nothing has to be guessed.
+- [Contributing](https://zistgah.org/contributing.md): how to take work and where to send it.
+- [Agent instructions](https://zistgah.org/AGENTS.md): what you may do, and what only the author does.
+- [Machine index](https://zistgah.org/index.json): the raw walk.
 - [Memory reconciliation](https://zistgah.org/memory-reconciliation.json): what an AI assistant believed about this estate, checked against the forge. Read it before trusting any second-hand account of what exists here, including its own.
+- [Master contract](https://github.com/zistgah/governance/blob/main/CONTRACT.md): the rules every repository inherits.
 
 ## How to work here
 
@@ -31,6 +32,7 @@ Walked 2026-09-18T16:50:30Z. 85 repositories across zistgah, project-ilm; 25 car
 - [zistgah/dhancha](https://github.com/zistgah/dhancha): The domain-invariant skeleton every FAKIR domain is built on: ten invariants, a machine-readable domain descriptor, a validator, a cross-domain vocabulary leak check, a correlation graph, and PANINI cycler configuration so the work can be done by any model. (doi:10.5281/zenodo.22821645)
 - [zistgah/dome](https://github.com/zistgah/dome): no description (doi:10.5281/zenodo.21449034)
 - [zistgah/dukedom](https://github.com/zistgah/dukedom): The Dukedom of Humanesque (doi:10.5281/zenodo.21397274)
+- [zistgah/ertabat](https://github.com/zistgah/ertabat): A FAKIR domain for communication engineering: one capability surface for a link whose geometry is changing, nine conformance conditions with units (two honestly unestablished), a closed four-point integration boundary, and twenty-eight work packages with executable acceptance criteria. (doi:10.5281/zenodo.22821651)
 - [zistgah/fakir](https://github.com/zistgah/fakir): no description (doi:10.5281/zenodo.21264248)
 - [zistgah/fiza](https://github.com/zistgah/fiza): no description (doi:10.5281/zenodo.21303401)
 - [zistgah/jugaad28](https://github.com/zistgah/jugaad28): Integrated circuits taped out on 28 nm: evidence-gated descriptors and a low-cost open laboratory (doi:10.5281/zenodo.22818408)
@@ -52,3 +54,4 @@ Walked 2026-09-18T16:50:30Z. 85 repositories across zistgah, project-ilm; 25 car
 ## Optional
 
 - [Full index](https://zistgah.org/llms-full.txt): every repository, not only the cited ones.
+- [Not minted](https://zistgah.org/unminted.json): live and carrying no DOI.

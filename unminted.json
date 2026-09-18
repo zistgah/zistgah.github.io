@@ -1,0 +1,282 @@
+{
+  "generated_utc": "2026-09-18T17:18:27Z",
+  "rule": "Live on the forge and carrying no DOI in CITATION.cff, MANIFEST.yaml or the README. A repository whose files could not be read is listed under 'unknown' instead, because a failed read is not an absent DOI.",
+  "not_minted": [
+    {
+      "slug": "project-ilm/.github",
+      "url": "https://github.com/project-ilm/.github",
+      "description": "Org profile for project-ilm"
+    },
+    {
+      "slug": "project-ilm/ai-scratch",
+      "url": "https://github.com/project-ilm/ai-scratch",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/chakra",
+      "url": "https://github.com/project-ilm/chakra",
+      "description": "CHAKRA \u2014 Temporal Cycle Observatory: offline multi-tradition astronomical/calendrical observatory, tested library, and URL\u2192JSON API. GPL-3.0."
+    },
+    {
+      "slug": "project-ilm/cognitive-fabric",
+      "url": "https://github.com/project-ilm/cognitive-fabric",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/foundry",
+      "url": "https://github.com/project-ilm/foundry",
+      "description": "Canonical engineering substrate for Project ILM."
+    },
+    {
+      "slug": "project-ilm/ilm-data",
+      "url": "https://github.com/project-ilm/ilm-data",
+      "description": "Data: canonical corpora, dialect maps, phoneme-audio pairs, aligned scripts, acoustic training data, lexical resources."
+    },
+    {
+      "slug": "project-ilm/ilm-devtools",
+      "url": "https://github.com/project-ilm/ilm-devtools",
+      "description": "Devtools: reversible compiler infra, script-aware IDEs, debug harnesses. Consumers of core ILM layers, not core layers themselves."
+    },
+    {
+      "slug": "project-ilm/ilm-interface",
+      "url": "https://github.com/project-ilm/ilm-interface",
+      "description": "Layer 5: Interface & application \u2013 multiscript IMEs, NLP/NLU APIs (TTS, ASR, QA), mother-tongue IDEs, educational tools."
+    },
+    {
+      "slug": "project-ilm/ilm-lexicon",
+      "url": "https://github.com/project-ilm/ilm-lexicon",
+      "description": "Layer 3: Morpho-lexical layer \u2013 multilingual lexicons, WordNets, morphology analyzers, clitics, affixation, reduplication."
+    },
+    {
+      "slug": "project-ilm/ilm-meta",
+      "url": "https://github.com/project-ilm/ilm-meta",
+      "description": "Meta repo for ILM / \u0639\u0644\u0645: vision docs, architecture diagrams, manifestos, research summaries, roadmap, cultural-philosophical grounding."
+    },
+    {
+      "slug": "project-ilm/ilm-orthography",
+      "url": "https://github.com/project-ilm/ilm-orthography",
+      "description": "Layer 2: Orthographic engine \u2013 script-specific shaping, Unicode normalization, ZWJ/ZWNJ handling, grapheme clustering."
+    },
+    {
+      "slug": "project-ilm/ilm-phonology",
+      "url": "https://github.com/project-ilm/ilm-phonology",
+      "description": "Layer 0: Phonological base \u2013 IPA core, phonotactics, prosody, dialect normalization, audio alignment. Reversible sound mapping foundation."
+    },
+    {
+      "slug": "project-ilm/ilm-site",
+      "url": "https://github.com/project-ilm/ilm-site",
+      "description": "A layered, open-source effort for phonetically accurate, reversible, culturally respectful language tooling across world scripts."
+    },
+    {
+      "slug": "project-ilm/ilm-syntax-semantics",
+      "url": "https://github.com/project-ilm/ilm-syntax-semantics",
+      "description": "Layer 4: Syntax-semantics \u2013 UD parsing, SRL, AMR/UCCA, discourse segmentation, code-switching awareness."
+    },
+    {
+      "slug": "project-ilm/ilm-transliteration",
+      "url": "https://github.com/project-ilm/ilm-transliteration",
+      "description": "Layer 1: Transliteration pivot \u2013 reversible, compiler-friendly Romanized layer with diacritics; bridges phonology and scripts."
+    },
+    {
+      "slug": "project-ilm/ilm-validation",
+      "url": "https://github.com/project-ilm/ilm-validation",
+      "description": "Validation: native speaker QA, annotation tools, field instruments, crowdsourced schema, cultural-linguistic QA loops."
+    },
+    {
+      "slug": "project-ilm/ilm.codes",
+      "url": "https://github.com/project-ilm/ilm.codes",
+      "description": "ILM / Project ILM \u2014 Integrative Linguistic Multiscript (BETA)"
+    },
+    {
+      "slug": "project-ilm/language-specs",
+      "url": "https://github.com/project-ilm/language-specs",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/legacy",
+      "url": "https://github.com/project-ilm/legacy",
+      "description": "Initial fork of Project ILM from Project Hindawi"
+    },
+    {
+      "slug": "project-ilm/linguistics-labs",
+      "url": "https://github.com/project-ilm/linguistics-labs",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/ops",
+      "url": "https://github.com/project-ilm/ops",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/praat",
+      "url": "https://github.com/project-ilm/praat",
+      "description": "Praat: Doing Phonetics By Computer"
+    },
+    {
+      "slug": "project-ilm/record",
+      "url": "https://github.com/project-ilm/record",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/research-kundali",
+      "url": "https://github.com/project-ilm/research-kundali",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/romenagri",
+      "url": "https://github.com/project-ilm/romenagri",
+      "description": "Romenagri: reversible transliteration library (Perso-Arabic seed). HPS/ILM. GPL. \u00a9 1993-2026 Abhishek Choudhary."
+    },
+    {
+      "slug": "project-ilm/scripts",
+      "url": "https://github.com/project-ilm/scripts",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/spi-scan",
+      "url": "https://github.com/project-ilm/spi-scan",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/vscode-ilm",
+      "url": "https://github.com/project-ilm/vscode-ilm",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/alam",
+      "url": "https://github.com/zistgah/alam",
+      "description": "Small work, cycled with any AI. Part of the Zistgah ecosystem."
+    },
+    {
+      "slug": "zistgah/copa",
+      "url": "https://github.com/zistgah/copa",
+      "description": "COPA \u2014 Cost of Perceived Authority: a black-box behavioural methodology (measurement framework + open hypothesis)"
+    },
+    {
+      "slug": "zistgah/cycles",
+      "url": "https://github.com/zistgah/cycles",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/duke2",
+      "url": "https://github.com/zistgah/duke2",
+      "description": "The Dukedom of Humanesque, Volume II"
+    },
+    {
+      "slug": "zistgah/estate",
+      "url": "https://github.com/zistgah/estate",
+      "description": "IP estate: inventory, licensing, offerings, workspace sync"
+    },
+    {
+      "slug": "zistgah/genie",
+      "url": "https://github.com/zistgah/genie",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/genie-book",
+      "url": "https://github.com/zistgah/genie-book",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/governance",
+      "url": "https://github.com/zistgah/governance",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/humanesque",
+      "url": "https://github.com/zistgah/humanesque",
+      "description": "Humanesque merged release \u2014 PANINI, ILM, Hindawi, cyclers, Mez"
+    },
+    {
+      "slug": "zistgah/inclinations",
+      "url": "https://github.com/zistgah/inclinations",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/janapad",
+      "url": "https://github.com/zistgah/janapad",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/kitab",
+      "url": "https://github.com/zistgah/kitab",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/marham",
+      "url": "https://github.com/zistgah/marham",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/mez",
+      "url": "https://github.com/zistgah/mez",
+      "description": "mez \u2014 the desk. \u0645\u06cc\u0632. Local-first, no account, no vendor."
+    },
+    {
+      "slug": "zistgah/mrd",
+      "url": "https://github.com/zistgah/mrd",
+      "description": "Market Requirements for the Zistgah / AyeAI estate"
+    },
+    {
+      "slug": "zistgah/panini_by_claude",
+      "url": "https://github.com/zistgah/panini_by_claude",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/panini_by_grok",
+      "url": "https://github.com/zistgah/panini_by_grok",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/panini_by_grok_toolchain",
+      "url": "https://github.com/zistgah/panini_by_grok_toolchain",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/panini_by_grok_toolchain_cgpt_fix",
+      "url": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/paradox",
+      "url": "https://github.com/zistgah/paradox",
+      "description": "The Paradox of Innovation"
+    },
+    {
+      "slug": "zistgah/qaem",
+      "url": "https://github.com/zistgah/qaem",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/tarbiyat",
+      "url": "https://github.com/zistgah/tarbiyat",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/urdu-ilm",
+      "url": "https://github.com/zistgah/urdu-ilm",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/vakil",
+      "url": "https://github.com/zistgah/vakil",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/wake",
+      "url": "https://github.com/zistgah/wake",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/zindagi",
+      "url": "https://github.com/zistgah/zindagi",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/zistgah.github.io",
+      "url": "https://github.com/zistgah/zistgah.github.io",
+      "description": "Zistgah"
+    }
+  ],
+  "unknown": []
+}

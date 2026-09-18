@@ -2,9 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://zistgah.org/</loc></url>
   <url><loc>https://zistgah.org/index.json</loc></url>
+  <url><loc>https://zistgah.org/catalog.json</loc></url>
+  <url><loc>https://zistgah.org/ontology.json</loc></url>
+  <url><loc>https://zistgah.org/ontology.md</loc></url>
+  <url><loc>https://zistgah.org/contributing.md</loc></url>
   <url><loc>https://zistgah.org/llms.txt</loc></url>
   <url><loc>https://zistgah.org/llms-full.txt</loc></url>
   <url><loc>https://zistgah.org/AGENTS.md</loc></url>
+  <url><loc>https://zistgah.org/unminted.json</loc></url>
   <url><loc>https://project-ilm.github.io/ai-scratch/</loc></url>
   <url><loc>https://project-ilm.github.io/chakra/</loc></url>
   <url><loc>https://project-ilm.github.io/ilm-site/</loc></url>

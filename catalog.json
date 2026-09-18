@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-18T16:50:30Z",
+  "generated_utc": "2026-09-18T17:18:27Z",
   "base": "https://zistgah.org",
   "node_types": [
     "organisation",
@@ -34,6 +34,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/.github",
       "links": {
         "repo": "https://github.com/project-ilm/.github",
@@ -62,6 +64,8 @@
       "topics": [],
       "licence": "GPL-2.0",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ai-scratch",
       "links": {
         "repo": "https://github.com/project-ilm/ai-scratch",
@@ -111,6 +115,8 @@
       ],
       "licence": "GPL-3.0",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/chakra",
       "links": {
         "repo": "https://github.com/project-ilm/chakra",
@@ -146,6 +152,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/cognitive-fabric",
       "links": {
         "repo": "https://github.com/project-ilm/cognitive-fabric",
@@ -174,6 +182,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/foundry",
       "links": {
         "repo": "https://github.com/project-ilm/foundry",
@@ -202,6 +212,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-data",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-data",
@@ -230,6 +242,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-devtools",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-devtools",
@@ -258,6 +272,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-interface",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-interface",
@@ -286,6 +302,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-lexicon",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-lexicon",
@@ -314,6 +332,8 @@
       "topics": [],
       "licence": null,
       "state": "empty",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-lsp",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-lsp",
@@ -342,6 +362,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-meta",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-meta",
@@ -370,6 +392,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-orthography",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-orthography",
@@ -398,6 +422,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-phonology",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-phonology",
@@ -426,6 +452,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-site",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-site",
@@ -461,6 +489,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-syntax-semantics",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-syntax-semantics",
@@ -489,6 +519,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-transliteration",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-transliteration",
@@ -517,6 +549,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm-validation",
       "links": {
         "repo": "https://github.com/project-ilm/ilm-validation",
@@ -545,6 +579,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ilm.codes",
       "links": {
         "repo": "https://github.com/project-ilm/ilm.codes",
@@ -580,6 +616,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/language-specs",
       "links": {
         "repo": "https://github.com/project-ilm/language-specs",
@@ -608,6 +646,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/legacy",
       "links": {
         "repo": "https://github.com/project-ilm/legacy",
@@ -636,6 +676,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/linguistics-labs",
       "links": {
         "repo": "https://github.com/project-ilm/linguistics-labs",
@@ -664,6 +706,8 @@
       "topics": [],
       "licence": "GPL-3.0",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/project-ilm/misty-doi",
       "links": {
         "repo": "https://github.com/project-ilm/misty-doi",
@@ -706,6 +750,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/ops",
       "links": {
         "repo": "https://github.com/project-ilm/ops",
@@ -734,6 +780,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/praat",
       "links": {
         "repo": "https://github.com/project-ilm/praat",
@@ -762,6 +810,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/project-ilm/qedler",
       "links": {
         "repo": "https://github.com/project-ilm/qedler",
@@ -804,6 +854,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/record",
       "links": {
         "repo": "https://github.com/project-ilm/record",
@@ -832,6 +884,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/research-kundali",
       "links": {
         "repo": "https://github.com/project-ilm/research-kundali",
@@ -860,6 +914,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/romenagri",
       "links": {
         "repo": "https://github.com/project-ilm/romenagri",
@@ -895,6 +951,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/scripts",
       "links": {
         "repo": "https://github.com/project-ilm/scripts",
@@ -923,6 +981,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/spi-scan",
       "links": {
         "repo": "https://github.com/project-ilm/spi-scan",
@@ -951,6 +1011,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/project-ilm/tok-doi",
       "links": {
         "repo": "https://github.com/project-ilm/tok-doi",
@@ -999,6 +1061,8 @@
       "topics": [],
       "licence": null,
       "state": "empty",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/vgc-notes",
       "links": {
         "repo": "https://github.com/project-ilm/vgc-notes",
@@ -1027,6 +1091,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/project-ilm/vscode-ilm",
       "links": {
         "repo": "https://github.com/project-ilm/vscode-ilm",
@@ -1055,6 +1121,8 @@
       "topics": [],
       "licence": null,
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/aab",
       "links": {
         "repo": "https://github.com/zistgah/aab",
@@ -1097,6 +1165,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/alam",
       "links": {
         "repo": "https://github.com/zistgah/alam",
@@ -1132,6 +1202,8 @@
       "topics": [],
       "licence": null,
       "state": "empty",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/asab",
       "links": {
         "repo": "https://github.com/zistgah/asab",
@@ -1160,6 +1232,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/awaz",
       "links": {
         "repo": "https://github.com/zistgah/awaz",
@@ -1202,6 +1276,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/copa",
       "links": {
         "repo": "https://github.com/zistgah/copa",
@@ -1237,6 +1313,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/cycles",
       "links": {
         "repo": "https://github.com/zistgah/cycles",
@@ -1272,6 +1350,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/dhancha",
       "links": {
         "repo": "https://github.com/zistgah/dhancha",
@@ -1314,6 +1394,8 @@
       "topics": [],
       "licence": null,
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/dome",
       "links": {
         "repo": "https://github.com/zistgah/dome",
@@ -1356,6 +1438,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/duke2",
       "links": {
         "repo": "https://github.com/zistgah/duke2",
@@ -1391,6 +1475,8 @@
       "topics": [],
       "licence": null,
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/dukedom",
       "links": {
         "repo": "https://github.com/zistgah/dukedom",
@@ -1432,7 +1518,9 @@
       "title": "A FAKIR domain for communication engineering: one capability surface for a link whose geometry is changing, nine conformance conditions with units (two honestly unestablished), a closed four-point integration boundary, and twenty-eight work packages with executable acceptance criteria.",
       "topics": [],
       "licence": null,
-      "state": "seeded",
+      "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/ertabat",
       "links": {
         "repo": "https://github.com/zistgah/ertabat",
@@ -1451,7 +1539,8 @@
         "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/ertabat/main/MANIFEST.sha256",
         "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/ertabat/main/roadmap/packages.json",
         "descriptor.json": "https://raw.githubusercontent.com/zistgah/ertabat/main/descriptor.json",
-        "pages": "https://zistgah.github.io/ertabat/"
+        "pages": "https://zistgah.github.io/ertabat/",
+        "doi": "https://doi.org/10.5281/zenodo.22821651"
       }
     },
     {
@@ -1461,6 +1550,12 @@
       "url": "https://zistgah.github.io/ertabat/"
     },
     {
+      "id": "work:10.5281/zenodo.22821651",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22821651",
+      "url": "https://doi.org/10.5281/zenodo.22821651"
+    },
+    {
       "id": "repo:zistgah/estate",
       "type": "repository",
       "name": "zistgah/estate",
@@ -1468,6 +1563,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/estate",
       "links": {
         "repo": "https://github.com/zistgah/estate",
@@ -1496,6 +1593,8 @@
       "topics": [],
       "licence": null,
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/fakir",
       "links": {
         "repo": "https://github.com/zistgah/fakir",
@@ -1556,6 +1655,8 @@
       "topics": [],
       "licence": null,
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/fiza",
       "links": {
         "repo": "https://github.com/zistgah/fiza",
@@ -1598,6 +1699,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/genie",
       "links": {
         "repo": "https://github.com/zistgah/genie",
@@ -1633,6 +1736,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/genie-book",
       "links": {
         "repo": "https://github.com/zistgah/genie-book",
@@ -1668,6 +1773,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/governance",
       "links": {
         "repo": "https://github.com/zistgah/governance",
@@ -1696,6 +1803,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/humanesque",
       "links": {
         "repo": "https://github.com/zistgah/humanesque",
@@ -1731,6 +1840,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/inclinations",
       "links": {
         "repo": "https://github.com/zistgah/inclinations",
@@ -1766,6 +1877,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/janapad",
       "links": {
         "repo": "https://github.com/zistgah/janapad",
@@ -1801,6 +1914,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/jugaad28",
       "links": {
         "repo": "https://github.com/zistgah/jugaad28",
@@ -1843,6 +1958,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/khwab",
       "links": {
         "repo": "https://github.com/zistgah/khwab",
@@ -1885,6 +2002,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/kitab",
       "links": {
         "repo": "https://github.com/zistgah/kitab",
@@ -1920,6 +2039,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/marham",
       "links": {
         "repo": "https://github.com/zistgah/marham",
@@ -1948,6 +2069,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/matba",
       "links": {
         "repo": "https://github.com/zistgah/matba",
@@ -1990,6 +2113,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/mez",
       "links": {
         "repo": "https://github.com/zistgah/mez",
@@ -2025,6 +2150,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/mrd",
       "links": {
         "repo": "https://github.com/zistgah/mrd",
@@ -2060,6 +2187,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/panini",
       "links": {
         "repo": "https://github.com/zistgah/panini",
@@ -2102,6 +2231,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/panini_by_claude",
       "links": {
         "repo": "https://github.com/zistgah/panini_by_claude",
@@ -2130,6 +2261,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/panini_by_grok",
       "links": {
         "repo": "https://github.com/zistgah/panini_by_grok",
@@ -2165,6 +2298,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/panini_by_grok_toolchain",
       "links": {
         "repo": "https://github.com/zistgah/panini_by_grok_toolchain",
@@ -2193,6 +2328,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix",
       "links": {
         "repo": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix",
@@ -2221,6 +2358,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/paradox",
       "links": {
         "repo": "https://github.com/zistgah/paradox",
@@ -2256,6 +2395,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/pench",
       "links": {
         "repo": "https://github.com/zistgah/pench",
@@ -2298,6 +2439,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/poie",
       "links": {
         "repo": "https://github.com/zistgah/poie",
@@ -2346,6 +2489,8 @@
       "topics": [],
       "licence": "GPL-3.0",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/pratik_core_mvp",
       "links": {
         "repo": "https://github.com/zistgah/pratik_core_mvp",
@@ -2388,6 +2533,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/qaem",
       "links": {
         "repo": "https://github.com/zistgah/qaem",
@@ -2423,6 +2570,8 @@
       "topics": [],
       "licence": null,
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/tabdili",
       "links": {
         "repo": "https://github.com/zistgah/tabdili",
@@ -2465,6 +2614,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/tarbiyat",
       "links": {
         "repo": "https://github.com/zistgah/tarbiyat",
@@ -2500,6 +2651,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/tilasm",
       "links": {
         "repo": "https://github.com/zistgah/tilasm",
@@ -2542,6 +2695,8 @@
       "topics": [],
       "licence": "GPL-3.0",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/transeg",
       "links": {
         "repo": "https://github.com/zistgah/transeg",
@@ -2589,6 +2744,8 @@
       "topics": [],
       "licence": "GPL-3.0",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/transeg-idgov",
       "links": {
         "repo": "https://github.com/zistgah/transeg-idgov",
@@ -2624,6 +2781,8 @@
       "topics": [],
       "licence": "GPL-3.0",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/transeg-research",
       "links": {
         "repo": "https://github.com/zistgah/transeg-research",
@@ -2659,6 +2818,8 @@
       "topics": [],
       "licence": null,
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/urdu-ilm",
       "links": {
         "repo": "https://github.com/zistgah/urdu-ilm",
@@ -2694,6 +2855,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/vakil",
       "links": {
         "repo": "https://github.com/zistgah/vakil",
@@ -2722,6 +2885,8 @@
       "topics": [],
       "licence": null,
       "state": "empty",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/varzish",
       "links": {
         "repo": "https://github.com/zistgah/varzish",
@@ -2750,6 +2915,8 @@
       "topics": [],
       "licence": "GPL-3.0",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/wake",
       "links": {
         "repo": "https://github.com/zistgah/wake",
@@ -2785,6 +2952,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/yadein",
       "links": {
         "repo": "https://github.com/zistgah/yadein",
@@ -2827,6 +2996,8 @@
       "topics": [],
       "licence": "GPL-3.0",
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/zamin",
       "links": {
         "repo": "https://github.com/zistgah/zamin",
@@ -2869,6 +3040,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/zindagi",
       "links": {
         "repo": "https://github.com/zistgah/zindagi",
@@ -2904,6 +3077,8 @@
       "topics": [],
       "licence": "NOASSERTION",
       "state": "seeded",
+      "minted": false,
+      "mint_status": "not minted",
       "url": "https://github.com/zistgah/zistgah.github.io",
       "links": {
         "repo": "https://github.com/zistgah/zistgah.github.io",
@@ -2939,6 +3114,8 @@
       "topics": [],
       "licence": null,
       "state": "minted",
+      "minted": true,
+      "mint_status": "minted",
       "url": "https://github.com/zistgah/ztools",
       "links": {
         "repo": "https://github.com/zistgah/ztools",
@@ -3328,6 +3505,11 @@
       "from": "repo:zistgah/ertabat",
       "to": "page:zistgah/ertabat",
       "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/ertabat",
+      "to": "work:10.5281/zenodo.22821651",
+      "kind": "deposited_as"
     },
     {
       "from": "org:zistgah",

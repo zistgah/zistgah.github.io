@@ -1,0 +1,237 @@
+{
+  "name": "Zistgah / Project ILM estate ontology",
+  "version": "0.1",
+  "generated_utc": "2026-09-18T17:18:27Z",
+  "purpose": "A scaffold, not a finished ontology. The classes and relations are stable; the instances are seeded from a walk of the forge and are incomplete on purpose. Extend it.",
+  "rules": [
+    "Retrieve before asserting. The live state is in the repository.",
+    "If the corpus does not establish a relationship, do not infer it.",
+    "A relation of kind shares_primitive must be declared at both ends.",
+    "Where a value is unknown write 'not established'. Do not estimate.",
+    "An ontology position is not a domain, and a projection is not a stage.",
+    "Nothing here is a claim about the world; it is a claim about this estate."
+  ],
+  "classes": [
+    {
+      "name": "Organisation",
+      "definition": "A forge account that holds repositories.",
+      "relations": [
+        "contains"
+      ]
+    },
+    {
+      "name": "Repository",
+      "definition": "One sovereign component. Carries its own contract and runs without the rest.",
+      "relations": [
+        "publishes",
+        "deposited_as",
+        "conforms_to",
+        "consumes",
+        "supplies",
+        "shares_primitive"
+      ]
+    },
+    {
+      "name": "Component",
+      "definition": "What a repository IS, independent of where it is hosted. The repository is the container; the component is the thing.",
+      "relations": [
+        "realised_by"
+      ]
+    },
+    {
+      "name": "Domain",
+      "definition": "A field of practice a component serves, placed on the ISIC x ISCO x ISCED lattice crossed with AGI layers.",
+      "relations": [
+        "enabled_by",
+        "same_lattice_point"
+      ]
+    },
+    {
+      "name": "Lab",
+      "definition": "A reproducible environment for one domain, hardware through applications.",
+      "relations": [
+        "serves",
+        "priced_by"
+      ]
+    },
+    {
+      "name": "DepositedWork",
+      "definition": "A DOI record. A concept DOI and a version DOI are different nodes.",
+      "relations": [
+        "version_of"
+      ]
+    },
+    {
+      "name": "Page",
+      "definition": "A published surface readable without cloning.",
+      "relations": []
+    },
+    {
+      "name": "Contract",
+      "definition": "The rules a repository declares and can be judged against.",
+      "relations": [
+        "governs"
+      ]
+    },
+    {
+      "name": "Cycler",
+      "definition": "A configured prompt cycle. Classified by OUTPUT, never by input.",
+      "relations": [
+        "run_by"
+      ]
+    },
+    {
+      "name": "Poster",
+      "definition": "A plate. Belongs to a corpus; a new plate for an existing corpus is a VERSION, never a new deposit.",
+      "relations": [
+        "belongs_to_corpus"
+      ]
+    },
+    {
+      "name": "Claim",
+      "definition": "An assertion about the estate, with its source and date. Not a fact until checked against the forge.",
+      "relations": [
+        "confirmed_by",
+        "contradicted_by"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "name": "contains",
+      "from": "Organisation",
+      "to": "Repository",
+      "provenance": "the forge listing"
+    },
+    {
+      "name": "publishes",
+      "from": "Repository",
+      "to": "Page",
+      "provenance": "has_pages on the forge"
+    },
+    {
+      "name": "deposited_as",
+      "from": "Repository",
+      "to": "DepositedWork",
+      "provenance": "CITATION.cff, MANIFEST.yaml or the README"
+    },
+    {
+      "name": "version_of",
+      "from": "DepositedWork",
+      "to": "DepositedWork",
+      "provenance": "declared, never inferred"
+    },
+    {
+      "name": "realised_by",
+      "from": "Component",
+      "to": "Repository",
+      "provenance": "declared by the component"
+    },
+    {
+      "name": "conforms_to",
+      "from": "Repository",
+      "to": "Contract",
+      "provenance": "declared in the repository"
+    },
+    {
+      "name": "consumes",
+      "from": "Repository",
+      "to": "Repository",
+      "provenance": "declared at the consuming end"
+    },
+    {
+      "name": "supplies",
+      "from": "Repository",
+      "to": "Repository",
+      "provenance": "declared at the supplying end"
+    },
+    {
+      "name": "shares_primitive",
+      "from": "Repository",
+      "to": "Repository",
+      "provenance": "must be declared at BOTH ends, or it is a proposal and not a relation"
+    },
+    {
+      "name": "enabled_by",
+      "from": "Domain",
+      "to": "Lab",
+      "provenance": "declared"
+    },
+    {
+      "name": "same_lattice_point",
+      "from": "Repository",
+      "to": "Domain",
+      "provenance": "declared in descriptor.json"
+    },
+    {
+      "name": "governs",
+      "from": "Contract",
+      "to": "Repository",
+      "provenance": "declared"
+    },
+    {
+      "name": "run_by",
+      "from": "Cycler",
+      "to": "Component",
+      "provenance": "declared in the registry, never in code"
+    },
+    {
+      "name": "belongs_to_corpus",
+      "from": "Poster",
+      "to": "DepositedWork",
+      "provenance": "declared"
+    },
+    {
+      "name": "serves",
+      "from": "Lab",
+      "to": "Domain",
+      "provenance": "declared"
+    },
+    {
+      "name": "priced_by",
+      "from": "Lab",
+      "to": "DepositedWork",
+      "provenance": "a bill of materials whose prices carry a source"
+    }
+  ],
+  "seeded_instances": {
+    "counts": {
+      "organisation": 2,
+      "repository": 85,
+      "page": 47,
+      "deposited_work": 34
+    },
+    "note": "Only four classes are populated by the walk: the forge knows about organisations, repositories, pages and deposited works and nothing else. Component, Domain, Lab, Contract, Cycler and Poster are UNPOPULATED, and filling them is the work.",
+    "source": "https://zistgah.org/catalog.json"
+  },
+  "worklist": [
+    {
+      "class": "Component",
+      "how": "read each repository's CONTEXT.md and CONTRACT.md; one component per repository unless the repository says otherwise"
+    },
+    {
+      "class": "Domain",
+      "how": "read descriptor.json where it exists; it already carries the ISIC, ISCO, ISCED and AGI-layer placement"
+    },
+    {
+      "class": "Lab",
+      "how": "the domain registry in the spine repository lists the enablement per domain; a lab kit is generated from it"
+    },
+    {
+      "class": "Contract",
+      "how": "every CONTRACT.md in the estate, and the master one in the governance repository that the rest inherit"
+    },
+    {
+      "class": "Cycler",
+      "how": "the .pni configuration files; classified by OUTPUT"
+    },
+    {
+      "class": "Poster",
+      "how": "the poster repositories; a corpus is one concept DOI with versions beneath it"
+    },
+    {
+      "class": "Claim",
+      "how": "https://zistgah.org/memory-reconciliation.json is a worked example: assertions with sources, checked against the forge"
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-09-18T16:50:30Z",
+  "generated_utc": "2026-09-18T17:18:27Z",
   "walk_orgs": [
     "project-ilm",
     "zistgah"
   ],
   "claims_as_of": "2026-09-18",
   "counts": {
-    "CONFIRMED": 19,
-    "CONTRADICTED": 13,
+    "CONFIRMED": 20,
+    "CONTRADICTED": 12,
     "UNVERIFIABLE": 23,
     "UNCLAIMED": 36
   },
@@ -23,8 +23,8 @@
     },
     {
       "slug": "zistgah/ertabat",
-      "verdict": "CONTRADICTED",
-      "detail": "claimed minted, but no DOI appears in CITATION.cff, MANIFEST.yaml or the README",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.22821651",
       "claimed": "minted",
       "source": "areas/ertabat.md",
       "as_of": "2026-09-18",
