@@ -1,0 +1,138 @@
+# Zistgah / Project ILM
+
+> A federated estate of independently implementable components: knowledge, intelligence, realization and continuity. Every component is sovereign, carries its own contract, and can be used without the rest.
+
+Walked 2026-09-18T16:50:30Z. 85 repositories across zistgah, project-ilm; 25 carry a DOI.
+
+## Read these first
+
+- [Master contract](https://github.com/zistgah/governance/blob/main/CONTRACT.md): the rules every repository inherits.
+- [Context](https://github.com/zistgah/governance/blob/main/CONTEXT.md): what the estate is and how the parts relate.
+- [Agent instructions](https://zistgah.org/AGENTS.md): what an agent may do here.
+- [Machine index](https://zistgah.org/index.json): every repository as JSON.
+- [Catalogue](https://zistgah.org/catalog.json): a typed graph of organisations, repositories, published pages and deposited works, with every entry file linked by its raw URL so nothing has to be guessed.
+- [Memory reconciliation](https://zistgah.org/memory-reconciliation.json): what an AI assistant believed about this estate, checked against the forge. Read it before trusting any second-hand account of what exists here, including its own.
+
+## How to work here
+
+- Retrieve before you assert. A repository's live state is in the repository.
+- Where a value is unknown, write `not established`. Do not estimate.
+- A claim needs a measurement in the same change.
+- One work package, one pull request, one proof.
+- Nothing is pushed or minted except by the author, under a typed gate.
+
+## Cited work
+
+- [project-ilm/misty-doi](https://github.com/project-ilm/misty-doi): Automation-first DOI minting & research publication packaging. Muh Mitha Kijiye! (doi:10.5281/zenodo.20719388)
+- [project-ilm/qedler](https://github.com/project-ilm/qedler): no description (doi:10.5281/zenodo.17497559)
+- [project-ilm/tok-doi](https://github.com/project-ilm/tok-doi): Tok DoI (doi:10.5281/zenodo.21397274)
+- [zistgah/aab](https://github.com/zistgah/aab): no description (doi:10.5281/zenodo.21264248)
+- [zistgah/awaz](https://github.com/zistgah/awaz): awaz — the listening room (doi:10.5281/zenodo.22005575)
+- [zistgah/dhancha](https://github.com/zistgah/dhancha): The domain-invariant skeleton every FAKIR domain is built on: ten invariants, a machine-readable domain descriptor, a validator, a cross-domain vocabulary leak check, a correlation graph, and PANINI cycler configuration so the work can be done by any model. (doi:10.5281/zenodo.22821645)
+- [zistgah/dome](https://github.com/zistgah/dome): no description (doi:10.5281/zenodo.21449034)
+- [zistgah/dukedom](https://github.com/zistgah/dukedom): The Dukedom of Humanesque (doi:10.5281/zenodo.21397274)
+- [zistgah/fakir](https://github.com/zistgah/fakir): no description (doi:10.5281/zenodo.21264248)
+- [zistgah/fiza](https://github.com/zistgah/fiza): no description (doi:10.5281/zenodo.21303401)
+- [zistgah/jugaad28](https://github.com/zistgah/jugaad28): Integrated circuits taped out on 28 nm: evidence-gated descriptors and a low-cost open laboratory (doi:10.5281/zenodo.22818408)
+- [zistgah/khwab](https://github.com/zistgah/khwab): no description (doi:10.5281/zenodo.22005507)
+- [zistgah/matba](https://github.com/zistgah/matba): matba — the press. Posters in, book out, sealed, pushed, minted. (doi:10.5281/zenodo.21948734)
+- [zistgah/panini](https://github.com/zistgah/panini): PANINI — a language for prompt cycles (doi:10.5281/zenodo.22103243)
+- [zistgah/pench](https://github.com/zistgah/pench): pench — the embodied cycler. Robotics, cyberphysical, sim2real, real2sim. (doi:10.5281/zenodo.22010962)
+- [zistgah/poie](https://github.com/zistgah/poie): Proclamation of Individual Equity (doi:10.5281/zenodo.21397274)
+- [zistgah/pratik_core_mvp](https://github.com/zistgah/pratik_core_mvp): PRATIK Kernel Core — balanced-ternary, event-driven developmental kernel (PEDLER/AyeAI Triad) (doi:10.5281/zenodo.21288232)
+- [zistgah/tabdili](https://github.com/zistgah/tabdili): no description (doi:10.5281/zenodo.21764943)
+- [zistgah/tilasm](https://github.com/zistgah/tilasm): tilasm — the immersive cycler. AR, XR, VR. (doi:10.5281/zenodo.22010869)
+- [zistgah/transeg](https://github.com/zistgah/transeg): Project TransEg — local digital twin reference implementation (identity continuity research platform) (doi:10.5281/zenodo.17497559)
+- [zistgah/transeg-idgov](https://github.com/zistgah/transeg-idgov): TransEg identity governance — typed layers, envelope, staged policies, audit (doi:10.5281/zenodo.17497559)
+- [zistgah/transeg-research](https://github.com/zistgah/transeg-research): TransEg research — 9-benchmark framework + 7 reference experiments (doi:10.5281/zenodo.17497559)
+- [zistgah/yadein](https://github.com/zistgah/yadein): yadein — the record. A multimodal diary, staggered, toward TransEg. (doi:10.5281/zenodo.22011073)
+- [zistgah/zamin](https://github.com/zistgah/zamin): Zamin — PRATIK ternary silicon: physicalizing the poised-zero substrate (PEDLER/AyeAI Triad) (doi:10.5281/zenodo.21297556)
+- [zistgah/ztools](https://github.com/zistgah/ztools): no description (doi:10.5281/zenodo.21303400)
+
+## Every repository
+
+- [project-ilm/.github](https://github.com/project-ilm/.github): Org profile for project-ilm [seeded]
+- [project-ilm/ai-scratch](https://github.com/project-ilm/ai-scratch): no description [seeded; https://project-ilm.github.io/ai-scratch/]
+- [project-ilm/chakra](https://github.com/project-ilm/chakra): CHAKRA — Temporal Cycle Observatory: offline multi-tradition astronomical/calendrical observatory, tested library, and URL→JSON API. GPL-3.0. [seeded; https://project-ilm.github.io/chakra/]
+- [project-ilm/cognitive-fabric](https://github.com/project-ilm/cognitive-fabric): no description [seeded]
+- [project-ilm/foundry](https://github.com/project-ilm/foundry): Canonical engineering substrate for Project ILM. [seeded]
+- [project-ilm/ilm-data](https://github.com/project-ilm/ilm-data): Data: canonical corpora, dialect maps, phoneme-audio pairs, aligned scripts, acoustic training data, lexical resources. [seeded]
+- [project-ilm/ilm-devtools](https://github.com/project-ilm/ilm-devtools): Devtools: reversible compiler infra, script-aware IDEs, debug harnesses. Consumers of core ILM layers, not core layers themselves. [seeded]
+- [project-ilm/ilm-interface](https://github.com/project-ilm/ilm-interface): Layer 5: Interface & application – multiscript IMEs, NLP/NLU APIs (TTS, ASR, QA), mother-tongue IDEs, educational tools. [seeded]
+- [project-ilm/ilm-lexicon](https://github.com/project-ilm/ilm-lexicon): Layer 3: Morpho-lexical layer – multilingual lexicons, WordNets, morphology analyzers, clitics, affixation, reduplication. [seeded]
+- [project-ilm/ilm-lsp](https://github.com/project-ilm/ilm-lsp): no description [empty]
+- [project-ilm/ilm-meta](https://github.com/project-ilm/ilm-meta): Meta repo for ILM / علم: vision docs, architecture diagrams, manifestos, research summaries, roadmap, cultural-philosophical grounding. [seeded]
+- [project-ilm/ilm-orthography](https://github.com/project-ilm/ilm-orthography): Layer 2: Orthographic engine – script-specific shaping, Unicode normalization, ZWJ/ZWNJ handling, grapheme clustering. [seeded]
+- [project-ilm/ilm-phonology](https://github.com/project-ilm/ilm-phonology): Layer 0: Phonological base – IPA core, phonotactics, prosody, dialect normalization, audio alignment. Reversible sound mapping foundation. [seeded]
+- [project-ilm/ilm-site](https://github.com/project-ilm/ilm-site): A layered, open-source effort for phonetically accurate, reversible, culturally respectful language tooling across world scripts. [seeded; https://project-ilm.github.io/ilm-site/]
+- [project-ilm/ilm-syntax-semantics](https://github.com/project-ilm/ilm-syntax-semantics): Layer 4: Syntax-semantics – UD parsing, SRL, AMR/UCCA, discourse segmentation, code-switching awareness. [seeded]
+- [project-ilm/ilm-transliteration](https://github.com/project-ilm/ilm-transliteration): Layer 1: Transliteration pivot – reversible, compiler-friendly Romanized layer with diacritics; bridges phonology and scripts. [seeded]
+- [project-ilm/ilm-validation](https://github.com/project-ilm/ilm-validation): Validation: native speaker QA, annotation tools, field instruments, crowdsourced schema, cultural-linguistic QA loops. [seeded]
+- [project-ilm/ilm.codes](https://github.com/project-ilm/ilm.codes): ILM / Project ILM — Integrative Linguistic Multiscript (BETA) [seeded; https://project-ilm.github.io/ilm.codes/]
+- [project-ilm/language-specs](https://github.com/project-ilm/language-specs): no description [seeded]
+- [project-ilm/legacy](https://github.com/project-ilm/legacy): Initial fork of Project ILM from Project Hindawi [seeded]
+- [project-ilm/linguistics-labs](https://github.com/project-ilm/linguistics-labs): no description [seeded]
+- [project-ilm/misty-doi](https://github.com/project-ilm/misty-doi): Automation-first DOI minting & research publication packaging. Muh Mitha Kijiye! [minted; https://project-ilm.github.io/misty-doi/]
+- [project-ilm/ops](https://github.com/project-ilm/ops): no description [seeded]
+- [project-ilm/praat](https://github.com/project-ilm/praat): Praat: Doing Phonetics By Computer [seeded]
+- [project-ilm/qedler](https://github.com/project-ilm/qedler): no description [minted; https://project-ilm.github.io/qedler/]
+- [project-ilm/record](https://github.com/project-ilm/record): no description [seeded]
+- [project-ilm/research-kundali](https://github.com/project-ilm/research-kundali): no description [seeded]
+- [project-ilm/romenagri](https://github.com/project-ilm/romenagri): Romenagri: reversible transliteration library (Perso-Arabic seed). HPS/ILM. GPL. © 1993-2026 Abhishek Choudhary. [seeded; https://project-ilm.github.io/romenagri/]
+- [project-ilm/scripts](https://github.com/project-ilm/scripts): no description [seeded]
+- [project-ilm/spi-scan](https://github.com/project-ilm/spi-scan): no description [seeded]
+- [project-ilm/tok-doi](https://github.com/project-ilm/tok-doi): Tok DoI [minted; https://project-ilm.github.io/tok-doi/]
+- [project-ilm/vgc-notes](https://github.com/project-ilm/vgc-notes): Notes on verification-gated human-AI co-development [empty]
+- [project-ilm/vscode-ilm](https://github.com/project-ilm/vscode-ilm): no description [seeded]
+- [zistgah/aab](https://github.com/zistgah/aab): no description [minted; https://zistgah.github.io/aab/]
+- [zistgah/alam](https://github.com/zistgah/alam): Small work, cycled with any AI. Part of the Zistgah ecosystem. [seeded; https://zistgah.github.io/alam/]
+- [zistgah/asab](https://github.com/zistgah/asab): no description [empty]
+- [zistgah/awaz](https://github.com/zistgah/awaz): awaz — the listening room [minted; https://zistgah.github.io/awaz/]
+- [zistgah/copa](https://github.com/zistgah/copa): COPA — Cost of Perceived Authority: a black-box behavioural methodology (measurement framework + open hypothesis) [seeded; https://zistgah.github.io/copa/]
+- [zistgah/cycles](https://github.com/zistgah/cycles): no description [seeded; https://zistgah.github.io/cycles/]
+- [zistgah/dhancha](https://github.com/zistgah/dhancha): The domain-invariant skeleton every FAKIR domain is built on: ten invariants, a machine-readable domain descriptor, a validator, a cross-domain vocabulary leak check, a correlation graph, and PANINI cycler configuration so the work can be done by any model. [minted; https://zistgah.github.io/dhancha/]
+- [zistgah/dome](https://github.com/zistgah/dome): no description [minted; https://zistgah.github.io/dome/]
+- [zistgah/duke2](https://github.com/zistgah/duke2): The Dukedom of Humanesque, Volume II [seeded; https://zistgah.github.io/duke2/]
+- [zistgah/dukedom](https://github.com/zistgah/dukedom): The Dukedom of Humanesque [minted; https://zistgah.github.io/dukedom/]
+- [zistgah/ertabat](https://github.com/zistgah/ertabat): A FAKIR domain for communication engineering: one capability surface for a link whose geometry is changing, nine conformance conditions with units (two honestly unestablished), a closed four-point integration boundary, and twenty-eight work packages with executable acceptance criteria. [seeded; https://zistgah.github.io/ertabat/]
+- [zistgah/estate](https://github.com/zistgah/estate): IP estate: inventory, licensing, offerings, workspace sync [seeded]
+- [zistgah/fakir](https://github.com/zistgah/fakir): no description [minted; https://zistgah.github.io/fakir/]
+- [zistgah/fiza](https://github.com/zistgah/fiza): no description [minted; https://zistgah.github.io/fiza/]
+- [zistgah/genie](https://github.com/zistgah/genie): no description [seeded; https://zistgah.github.io/genie/]
+- [zistgah/genie-book](https://github.com/zistgah/genie-book): no description [seeded; https://zistgah.github.io/genie-book/]
+- [zistgah/governance](https://github.com/zistgah/governance): no description [seeded]
+- [zistgah/humanesque](https://github.com/zistgah/humanesque): Humanesque merged release — PANINI, ILM, Hindawi, cyclers, Mez [seeded; https://zistgah.github.io/humanesque/]
+- [zistgah/inclinations](https://github.com/zistgah/inclinations): no description [seeded; https://zistgah.github.io/inclinations/]
+- [zistgah/janapad](https://github.com/zistgah/janapad): no description [seeded; https://zistgah.github.io/janapad/]
+- [zistgah/jugaad28](https://github.com/zistgah/jugaad28): Integrated circuits taped out on 28 nm: evidence-gated descriptors and a low-cost open laboratory [minted; https://zistgah.github.io/jugaad28/]
+- [zistgah/khwab](https://github.com/zistgah/khwab): no description [minted; https://zistgah.github.io/khwab/]
+- [zistgah/kitab](https://github.com/zistgah/kitab): no description [seeded; https://zistgah.github.io/kitab/]
+- [zistgah/marham](https://github.com/zistgah/marham): no description [seeded]
+- [zistgah/matba](https://github.com/zistgah/matba): matba — the press. Posters in, book out, sealed, pushed, minted. [minted; https://zistgah.github.io/matba/]
+- [zistgah/mez](https://github.com/zistgah/mez): mez — the desk. میز. Local-first, no account, no vendor. [seeded; https://zistgah.github.io/mez/]
+- [zistgah/mrd](https://github.com/zistgah/mrd): Market Requirements for the Zistgah / AyeAI estate [seeded; https://zistgah.github.io/mrd/]
+- [zistgah/panini](https://github.com/zistgah/panini): PANINI — a language for prompt cycles [minted; https://zistgah.github.io/panini/]
+- [zistgah/panini_by_claude](https://github.com/zistgah/panini_by_claude): no description [seeded]
+- [zistgah/panini_by_grok](https://github.com/zistgah/panini_by_grok): no description [seeded; https://zistgah.github.io/panini_by_grok/]
+- [zistgah/panini_by_grok_toolchain](https://github.com/zistgah/panini_by_grok_toolchain): no description [seeded]
+- [zistgah/panini_by_grok_toolchain_cgpt_fix](https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix): no description [seeded]
+- [zistgah/paradox](https://github.com/zistgah/paradox): The Paradox of Innovation [seeded; https://zistgah.github.io/paradox/]
+- [zistgah/pench](https://github.com/zistgah/pench): pench — the embodied cycler. Robotics, cyberphysical, sim2real, real2sim. [minted; https://zistgah.github.io/pench/]
+- [zistgah/poie](https://github.com/zistgah/poie): Proclamation of Individual Equity [minted; https://zistgah.github.io/poie/]
+- [zistgah/pratik_core_mvp](https://github.com/zistgah/pratik_core_mvp): PRATIK Kernel Core — balanced-ternary, event-driven developmental kernel (PEDLER/AyeAI Triad) [minted; https://zistgah.github.io/pratik_core_mvp/]
+- [zistgah/qaem](https://github.com/zistgah/qaem): no description [seeded; https://zistgah.github.io/qaem/]
+- [zistgah/tabdili](https://github.com/zistgah/tabdili): no description [minted; https://zistgah.github.io/tabdili/]
+- [zistgah/tarbiyat](https://github.com/zistgah/tarbiyat): no description [seeded; https://zistgah.github.io/tarbiyat/]
+- [zistgah/tilasm](https://github.com/zistgah/tilasm): tilasm — the immersive cycler. AR, XR, VR. [minted; https://zistgah.github.io/tilasm/]
+- [zistgah/transeg](https://github.com/zistgah/transeg): Project TransEg — local digital twin reference implementation (identity continuity research platform) [minted]
+- [zistgah/transeg-idgov](https://github.com/zistgah/transeg-idgov): TransEg identity governance — typed layers, envelope, staged policies, audit [minted]
+- [zistgah/transeg-research](https://github.com/zistgah/transeg-research): TransEg research — 9-benchmark framework + 7 reference experiments [minted]
+- [zistgah/urdu-ilm](https://github.com/zistgah/urdu-ilm): no description [seeded; https://zistgah.github.io/urdu-ilm/]
+- [zistgah/vakil](https://github.com/zistgah/vakil): no description [seeded]
+- [zistgah/varzish](https://github.com/zistgah/varzish): no description [empty]
+- [zistgah/wake](https://github.com/zistgah/wake): no description [seeded; https://zistgah.github.io/wake/]
+- [zistgah/yadein](https://github.com/zistgah/yadein): yadein — the record. A multimodal diary, staggered, toward TransEg. [minted; https://zistgah.github.io/yadein/]
+- [zistgah/zamin](https://github.com/zistgah/zamin): Zamin — PRATIK ternary silicon: physicalizing the poised-zero substrate (PEDLER/AyeAI Triad) [minted; https://zistgah.github.io/zamin/]
+- [zistgah/zindagi](https://github.com/zistgah/zindagi): no description [seeded; https://zistgah.github.io/zindagi/]
+- [zistgah/zistgah.github.io](https://github.com/zistgah/zistgah.github.io): Zistgah [seeded; https://zistgah.github.io/zistgah.github.io/]
+- [zistgah/ztools](https://github.com/zistgah/ztools): no description [minted]

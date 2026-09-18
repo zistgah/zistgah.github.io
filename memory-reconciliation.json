@@ -1,0 +1,810 @@
+{
+  "generated_utc": "2026-09-18T16:50:30Z",
+  "walk_orgs": [
+    "project-ilm",
+    "zistgah"
+  ],
+  "claims_as_of": "2026-09-18",
+  "counts": {
+    "CONFIRMED": 19,
+    "CONTRADICTED": 13,
+    "UNVERIFIABLE": 23,
+    "UNCLAIMED": 36
+  },
+  "verdicts": [
+    {
+      "slug": "zistgah/dhancha",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.22821645",
+      "claimed": "minted",
+      "source": "areas/dhancha.md",
+      "as_of": "2026-09-18",
+      "note": null
+    },
+    {
+      "slug": "zistgah/ertabat",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed minted, but no DOI appears in CITATION.cff, MANIFEST.yaml or the README",
+      "claimed": "minted",
+      "source": "areas/ertabat.md",
+      "as_of": "2026-09-18",
+      "note": null
+    },
+    {
+      "slug": "zistgah/asab",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge. It exists and is empty, so the claim is half right: the remote was made, the work was not pushed",
+      "claimed": "not_pushed",
+      "source": "areas/zasab.md",
+      "as_of": "2026-09-17",
+      "note": "memory says the gates were never typed; his 17 Sep run shows he created the remote by hand and the push gate refused on a stale generated site"
+    },
+    {
+      "slug": "zistgah/panini",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-24",
+      "note": null
+    },
+    {
+      "slug": "zistgah/panini_by_claude",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-28",
+      "note": null
+    },
+    {
+      "slug": "zistgah/panini_by_grok",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-27",
+      "note": null
+    },
+    {
+      "slug": "zistgah/panini_by_grok_toolchain",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-30",
+      "note": null
+    },
+    {
+      "slug": "zistgah/panini_by_grok_toolchain_cgpt_fix",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-30",
+      "note": null
+    },
+    {
+      "slug": "zistgah/humanesque",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-30",
+      "note": null
+    },
+    {
+      "slug": "zistgah/mez",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/mez.md",
+      "as_of": "2026-07-30",
+      "note": "memory says Pages live and NO DOI"
+    },
+    {
+      "slug": "zistgah/fakir",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.21264248",
+      "claimed": "minted",
+      "source": "areas/fakir.md",
+      "as_of": "2026-07-25",
+      "note": null
+    },
+    {
+      "slug": "zistgah/dome",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/zistgah-dome.md",
+      "as_of": "2026-07-19",
+      "note": "memory says seeded via seed_dome.sh awaiting his run; DOI recorded as null"
+    },
+    {
+      "slug": "zistgah/governance",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/governance-bundle.md",
+      "as_of": "2026-07-29",
+      "note": null
+    },
+    {
+      "slug": "zistgah/transeg",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/transeg.md",
+      "as_of": "2026-07-29",
+      "note": "the live README once carried a placeholder tail on this DOI"
+    },
+    {
+      "slug": "zistgah/transeg-idgov",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/mez.md",
+      "as_of": "2026-07-29",
+      "note": null
+    },
+    {
+      "slug": "zistgah/transeg-research",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/mez.md",
+      "as_of": "2026-07-29",
+      "note": null
+    },
+    {
+      "slug": "zistgah/matba",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.21948734",
+      "claimed": "minted",
+      "source": "areas/cyclers.md",
+      "as_of": "2026-08-19",
+      "note": null
+    },
+    {
+      "slug": "zistgah/khwab",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.22005507",
+      "claimed": "minted",
+      "source": "areas/cyclers.md",
+      "as_of": "2026-08-19",
+      "note": null
+    },
+    {
+      "slug": "zistgah/awaz",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.22005575",
+      "claimed": "minted",
+      "source": "areas/cyclers.md",
+      "as_of": "2026-08-19",
+      "note": null
+    },
+    {
+      "slug": "zistgah/tilasm",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.22010869",
+      "claimed": "minted",
+      "source": "areas/cyclers.md",
+      "as_of": "2026-08-19",
+      "note": null
+    },
+    {
+      "slug": "zistgah/pench",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.22010962",
+      "claimed": "minted",
+      "source": "areas/cyclers.md",
+      "as_of": "2026-08-19",
+      "note": null
+    },
+    {
+      "slug": "zistgah/yadein",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.22011073",
+      "claimed": "minted",
+      "source": "areas/cyclers.md",
+      "as_of": "2026-08-19",
+      "note": null
+    },
+    {
+      "slug": "zistgah/janapad",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/cyclers.md",
+      "as_of": "2026-08-19",
+      "note": "memory says he seeded it himself with matba"
+    },
+    {
+      "slug": "zistgah/kitab",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/kitab.md",
+      "as_of": "2026-08-14",
+      "note": null
+    },
+    {
+      "slug": "zistgah/vakil",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/kitab.md",
+      "as_of": "2026-08-14",
+      "note": "memory records a skeleton only"
+    },
+    {
+      "slug": "zistgah/tabdili",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/tabdili.md",
+      "as_of": "2026-08-13",
+      "note": null
+    },
+    {
+      "slug": "zistgah/tarbiyat",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/tarbiyat.md",
+      "as_of": "2026-08-13",
+      "note": null
+    },
+    {
+      "slug": "zistgah/zindagi",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/zindagi.md",
+      "as_of": "2026-08-13",
+      "note": null
+    },
+    {
+      "slug": "zistgah/qaem",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/qaem.md",
+      "as_of": "2026-08-13",
+      "note": null
+    },
+    {
+      "slug": "zistgah/dukedom",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/dukedom.md",
+      "as_of": "2026-08-13",
+      "note": null
+    },
+    {
+      "slug": "zistgah/duke2",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/duke2.md",
+      "as_of": "2026-08-14",
+      "note": null
+    },
+    {
+      "slug": "zistgah/paradox",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/paradox.md",
+      "as_of": "2026-08-13",
+      "note": null
+    },
+    {
+      "slug": "zistgah/amal",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory names it but asserts no state, and it is not visible here. Nothing is claimed either way.",
+      "claimed": "unknown",
+      "source": "areas/amal.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "zistgah/genie",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/genie.md",
+      "as_of": "2026-08-10",
+      "note": null
+    },
+    {
+      "slug": "zistgah/mrd",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-25",
+      "note": null
+    },
+    {
+      "slug": "zistgah/tasvir",
+      "verdict": "CONFIRMED",
+      "detail": "not on the forge, as claimed",
+      "claimed": "not_pushed",
+      "source": "areas/tasvir.md",
+      "as_of": "2026-09-17",
+      "note": "his 17 Sep run shows the seeder committing locally and dying on a short manifest, twice"
+    },
+    {
+      "slug": "zistgah/jugaad28",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/jugaad28.md",
+      "as_of": "2026-09-17",
+      "note": null
+    },
+    {
+      "slug": "zistgah/estate",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/estate.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "zistgah/zamin",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/zamin.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "zistgah/aab",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/aab-fiza.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "zistgah/fiza",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed not_pushed, but the repository EXISTS on the forge",
+      "claimed": "not_pushed",
+      "source": "areas/governance-bundle.md",
+      "as_of": "2026-07-30",
+      "note": "memory records it as still owed"
+    },
+    {
+      "slug": "zistgah/copa",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/copa.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "zistgah/ztools",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/governance-bundle.md",
+      "as_of": "2026-08-10",
+      "note": "memory names zseed/zseed.sh living here"
+    },
+    {
+      "slug": "zistgah/qedler",
+      "verdict": "CONTRADICTED",
+      "detail": "claimed live, but no such repository is visible to this token. A private repository reads identically to a missing one, so check visibility before correcting the memory",
+      "claimed": "live",
+      "source": "areas/governance-bundle.md",
+      "as_of": "2026-07-26",
+      "note": null
+    },
+    {
+      "slug": "zistgah/poie",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/proclamation-equity.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "zistgah/pratik_core_mvp",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/pratik.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "project-ilm/misty-doi",
+      "verdict": "CONFIRMED",
+      "detail": "live and carrying 10.5281/zenodo.20719388",
+      "claimed": "minted",
+      "source": "areas/misty-doi.md",
+      "as_of": "2026-07-27",
+      "note": "memory says the live repo is 1.1.2 and PyPI upload was never done; his box reports misty-doi 1.0.0"
+    },
+    {
+      "slug": "project-ilm/tok-doi",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, minted",
+      "claimed": "unknown",
+      "source": "areas/tok-doi.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "project-ilm/chakra",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/chakra.md",
+      "as_of": "2026-08-12",
+      "note": null
+    },
+    {
+      "slug": "project-ilm/research-kundali",
+      "verdict": "CONFIRMED",
+      "detail": "live, as claimed",
+      "claimed": "live",
+      "source": "areas/mez.md",
+      "as_of": "2026-07-29",
+      "note": null
+    },
+    {
+      "slug": "project-ilm/ilm.codes",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/ilm.md",
+      "as_of": "2026-07-01",
+      "note": null
+    },
+    {
+      "slug": "project-ilm/romenagri",
+      "verdict": "UNVERIFIABLE",
+      "detail": "memory asserts no state; the forge has it, seeded",
+      "claimed": "unknown",
+      "source": "areas/governance-bundle.md",
+      "as_of": "2026-07-29",
+      "note": null
+    },
+    {
+      "slug": "project-ilm/spiguard",
+      "verdict": "CONFIRMED",
+      "detail": "not on the forge, as claimed",
+      "claimed": "not_pushed",
+      "source": "areas/panini.md",
+      "as_of": "2026-08-25",
+      "note": "memory is explicit: spiguard still has no repository"
+    },
+    {
+      "slug": "pvjournal/pajr",
+      "verdict": "UNVERIFIABLE",
+      "detail": "pvjournal was not walked, so nothing is known either way",
+      "claimed": "live",
+      "source": "areas/pajr.md"
+    },
+    {
+      "slug": "pvjournal/pilla",
+      "verdict": "UNVERIFIABLE",
+      "detail": "pvjournal was not walked, so nothing is known either way",
+      "claimed": "minted",
+      "source": "areas/pilla.md"
+    }
+  ],
+  "unclaimed": [
+    {
+      "slug": "project-ilm/.github",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/.github",
+      "description": "Org profile for project-ilm"
+    },
+    {
+      "slug": "project-ilm/ai-scratch",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ai-scratch",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/cognitive-fabric",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/cognitive-fabric",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/foundry",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/foundry",
+      "description": "Canonical engineering substrate for Project ILM."
+    },
+    {
+      "slug": "project-ilm/ilm-data",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-data",
+      "description": "Data: canonical corpora, dialect maps, phoneme-audio pairs, aligned scripts, acoustic training data, lexical resources."
+    },
+    {
+      "slug": "project-ilm/ilm-devtools",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-devtools",
+      "description": "Devtools: reversible compiler infra, script-aware IDEs, debug harnesses. Consumers of core ILM layers, not core layers themselves."
+    },
+    {
+      "slug": "project-ilm/ilm-interface",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-interface",
+      "description": "Layer 5: Interface & application \u2013 multiscript IMEs, NLP/NLU APIs (TTS, ASR, QA), mother-tongue IDEs, educational tools."
+    },
+    {
+      "slug": "project-ilm/ilm-lexicon",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-lexicon",
+      "description": "Layer 3: Morpho-lexical layer \u2013 multilingual lexicons, WordNets, morphology analyzers, clitics, affixation, reduplication."
+    },
+    {
+      "slug": "project-ilm/ilm-lsp",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "empty",
+      "url": "https://github.com/project-ilm/ilm-lsp",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/ilm-meta",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-meta",
+      "description": "Meta repo for ILM / \u0639\u0644\u0645: vision docs, architecture diagrams, manifestos, research summaries, roadmap, cultural-philosophical grounding."
+    },
+    {
+      "slug": "project-ilm/ilm-orthography",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-orthography",
+      "description": "Layer 2: Orthographic engine \u2013 script-specific shaping, Unicode normalization, ZWJ/ZWNJ handling, grapheme clustering."
+    },
+    {
+      "slug": "project-ilm/ilm-phonology",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-phonology",
+      "description": "Layer 0: Phonological base \u2013 IPA core, phonotactics, prosody, dialect normalization, audio alignment. Reversible sound mapping foundation."
+    },
+    {
+      "slug": "project-ilm/ilm-site",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-site",
+      "description": "A layered, open-source effort for phonetically accurate, reversible, culturally respectful language tooling across world scripts."
+    },
+    {
+      "slug": "project-ilm/ilm-syntax-semantics",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-syntax-semantics",
+      "description": "Layer 4: Syntax-semantics \u2013 UD parsing, SRL, AMR/UCCA, discourse segmentation, code-switching awareness."
+    },
+    {
+      "slug": "project-ilm/ilm-transliteration",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-transliteration",
+      "description": "Layer 1: Transliteration pivot \u2013 reversible, compiler-friendly Romanized layer with diacritics; bridges phonology and scripts."
+    },
+    {
+      "slug": "project-ilm/ilm-validation",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ilm-validation",
+      "description": "Validation: native speaker QA, annotation tools, field instruments, crowdsourced schema, cultural-linguistic QA loops."
+    },
+    {
+      "slug": "project-ilm/language-specs",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/language-specs",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/legacy",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/legacy",
+      "description": "Initial fork of Project ILM from Project Hindawi"
+    },
+    {
+      "slug": "project-ilm/linguistics-labs",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/linguistics-labs",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/ops",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/ops",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/praat",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/praat",
+      "description": "Praat: Doing Phonetics By Computer"
+    },
+    {
+      "slug": "project-ilm/qedler",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory, carrying 10.5281/zenodo.17497559",
+      "state_on_forge": "minted",
+      "url": "https://github.com/project-ilm/qedler",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/record",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/record",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/scripts",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/scripts",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/spi-scan",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/spi-scan",
+      "description": ""
+    },
+    {
+      "slug": "project-ilm/vgc-notes",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "empty",
+      "url": "https://github.com/project-ilm/vgc-notes",
+      "description": "Notes on verification-gated human-AI co-development"
+    },
+    {
+      "slug": "project-ilm/vscode-ilm",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/project-ilm/vscode-ilm",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/alam",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/alam",
+      "description": "Small work, cycled with any AI. Part of the Zistgah ecosystem."
+    },
+    {
+      "slug": "zistgah/cycles",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/cycles",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/genie-book",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/genie-book",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/inclinations",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/inclinations",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/marham",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/marham",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/urdu-ilm",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/urdu-ilm",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/varzish",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "empty",
+      "url": "https://github.com/zistgah/varzish",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/wake",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/wake",
+      "description": ""
+    },
+    {
+      "slug": "zistgah/zistgah.github.io",
+      "verdict": "UNCLAIMED",
+      "detail": "on the forge and absent from memory",
+      "state_on_forge": "seeded",
+      "url": "https://github.com/zistgah/zistgah.github.io",
+      "description": "Zistgah"
+    }
+  ],
+  "scale_claim": {
+    "registry_declares": {
+      "orgs": 5,
+      "repos": 25
+    },
+    "memory_believes_real": {
+      "orgs": 105,
+      "repos": 486
+    },
+    "source": "areas/governance-bundle.md",
+    "note": "REGISTRY.json in zistgah/governance declares 5 orgs and 25 repos. Memory records the real estate as 105 orgs and 486 repositories. Both numbers are claims; the walk counts the two orgs it is given and says nothing about the rest."
+  },
+  "authority": "The forge is the authority. Every CONTRADICTED line is an error in Claude's memory, to be corrected there before it is repeated. A repository absent from this walk may be private rather than missing: the two read identically to a token that cannot see it, and neither is asserted over the other here."
+}

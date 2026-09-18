@@ -1,0 +1,12 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicateType": "https://project-ilm.org/attestations/candor/v1",
+  "subject": [{"name": "zistgah/zistgah.github.io", "digest": {"gitCommit": "909d8c6929b37592ad9a5a0714ba4753109afb82"}}],
+  "predicate": {
+    "action": "PUBLISH",
+    "reason": "sync",
+    "utc": "20260918T165030Z",
+    "host": "ilm01-lin",
+    "tool": "zestate 1.0.0"
+  }
+}

@@ -1,0 +1,3803 @@
+{
+  "generated_utc": "2026-09-18T16:50:30Z",
+  "base": "https://zistgah.org",
+  "node_types": [
+    "organisation",
+    "repository",
+    "page",
+    "deposited_work"
+  ],
+  "edge_kinds": [
+    "contains",
+    "publishes",
+    "deposited_as"
+  ],
+  "rule": "Edges come from the walk. Nothing is inferred; two repositories that look related are not linked here unless the forge says so.",
+  "nodes": [
+    {
+      "id": "org:zistgah",
+      "type": "organisation",
+      "name": "zistgah",
+      "url": "https://github.com/zistgah"
+    },
+    {
+      "id": "org:project-ilm",
+      "type": "organisation",
+      "name": "project-ilm",
+      "url": "https://github.com/project-ilm"
+    },
+    {
+      "id": "repo:project-ilm/.github",
+      "type": "repository",
+      "name": "project-ilm/.github",
+      "title": "Org profile for project-ilm",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/.github",
+      "links": {
+        "repo": "https://github.com/project-ilm/.github",
+        "clone": "https://github.com/project-ilm/.github.git",
+        "api": "https://api.github.com/repos/project-ilm/.github",
+        "tree": "https://github.com/project-ilm/.github/tree/main",
+        "issues": "https://github.com/project-ilm/.github/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/.github/main",
+        "archive": "https://github.com/project-ilm/.github/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/.github/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/.github/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/.github/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/.github/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/.github/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/.github/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/.github/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/.github/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/.github/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ai-scratch",
+      "type": "repository",
+      "name": "project-ilm/ai-scratch",
+      "title": "",
+      "topics": [],
+      "licence": "GPL-2.0",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ai-scratch",
+      "links": {
+        "repo": "https://github.com/project-ilm/ai-scratch",
+        "clone": "https://github.com/project-ilm/ai-scratch.git",
+        "api": "https://api.github.com/repos/project-ilm/ai-scratch",
+        "tree": "https://github.com/project-ilm/ai-scratch/tree/main",
+        "issues": "https://github.com/project-ilm/ai-scratch/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main",
+        "archive": "https://github.com/project-ilm/ai-scratch/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ai-scratch/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/ai-scratch/"
+      }
+    },
+    {
+      "id": "page:project-ilm/ai-scratch",
+      "type": "page",
+      "name": "project-ilm/ai-scratch (site)",
+      "url": "https://project-ilm.github.io/ai-scratch/"
+    },
+    {
+      "id": "repo:project-ilm/chakra",
+      "type": "repository",
+      "name": "project-ilm/chakra",
+      "title": "CHAKRA \u2014 Temporal Cycle Observatory: offline multi-tradition astronomical/calendrical observatory, tested library, and URL\u2192JSON API. GPL-3.0.",
+      "topics": [
+        "astronomy",
+        "c99",
+        "calendar",
+        "ephemeris",
+        "gpl",
+        "hebrew-calendar",
+        "hijri",
+        "jyotisha",
+        "nanakshahi",
+        "offline-first",
+        "panchang",
+        "relativity",
+        "single-file"
+      ],
+      "licence": "GPL-3.0",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/chakra",
+      "links": {
+        "repo": "https://github.com/project-ilm/chakra",
+        "clone": "https://github.com/project-ilm/chakra.git",
+        "api": "https://api.github.com/repos/project-ilm/chakra",
+        "tree": "https://github.com/project-ilm/chakra/tree/main",
+        "issues": "https://github.com/project-ilm/chakra/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/chakra/main",
+        "archive": "https://github.com/project-ilm/chakra/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/chakra/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/chakra/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/chakra/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/chakra/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/chakra/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/chakra/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/chakra/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/chakra/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/chakra/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/chakra/"
+      }
+    },
+    {
+      "id": "page:project-ilm/chakra",
+      "type": "page",
+      "name": "project-ilm/chakra (site)",
+      "url": "https://project-ilm.github.io/chakra/"
+    },
+    {
+      "id": "repo:project-ilm/cognitive-fabric",
+      "type": "repository",
+      "name": "project-ilm/cognitive-fabric",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/cognitive-fabric",
+      "links": {
+        "repo": "https://github.com/project-ilm/cognitive-fabric",
+        "clone": "https://github.com/project-ilm/cognitive-fabric.git",
+        "api": "https://api.github.com/repos/project-ilm/cognitive-fabric",
+        "tree": "https://github.com/project-ilm/cognitive-fabric/tree/main",
+        "issues": "https://github.com/project-ilm/cognitive-fabric/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main",
+        "archive": "https://github.com/project-ilm/cognitive-fabric/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/cognitive-fabric/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/foundry",
+      "type": "repository",
+      "name": "project-ilm/foundry",
+      "title": "Canonical engineering substrate for Project ILM.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/foundry",
+      "links": {
+        "repo": "https://github.com/project-ilm/foundry",
+        "clone": "https://github.com/project-ilm/foundry.git",
+        "api": "https://api.github.com/repos/project-ilm/foundry",
+        "tree": "https://github.com/project-ilm/foundry/tree/main",
+        "issues": "https://github.com/project-ilm/foundry/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/foundry/main",
+        "archive": "https://github.com/project-ilm/foundry/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/foundry/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/foundry/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/foundry/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/foundry/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/foundry/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/foundry/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/foundry/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/foundry/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/foundry/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-data",
+      "type": "repository",
+      "name": "project-ilm/ilm-data",
+      "title": "Data: canonical corpora, dialect maps, phoneme-audio pairs, aligned scripts, acoustic training data, lexical resources.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-data",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-data",
+        "clone": "https://github.com/project-ilm/ilm-data.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-data",
+        "tree": "https://github.com/project-ilm/ilm-data/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-data/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-data/main",
+        "archive": "https://github.com/project-ilm/ilm-data/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-data/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-devtools",
+      "type": "repository",
+      "name": "project-ilm/ilm-devtools",
+      "title": "Devtools: reversible compiler infra, script-aware IDEs, debug harnesses. Consumers of core ILM layers, not core layers themselves.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-devtools",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-devtools",
+        "clone": "https://github.com/project-ilm/ilm-devtools.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-devtools",
+        "tree": "https://github.com/project-ilm/ilm-devtools/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-devtools/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main",
+        "archive": "https://github.com/project-ilm/ilm-devtools/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-devtools/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-interface",
+      "type": "repository",
+      "name": "project-ilm/ilm-interface",
+      "title": "Layer 5: Interface & application \u2013 multiscript IMEs, NLP/NLU APIs (TTS, ASR, QA), mother-tongue IDEs, educational tools.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-interface",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-interface",
+        "clone": "https://github.com/project-ilm/ilm-interface.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-interface",
+        "tree": "https://github.com/project-ilm/ilm-interface/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-interface/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main",
+        "archive": "https://github.com/project-ilm/ilm-interface/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-interface/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-lexicon",
+      "type": "repository",
+      "name": "project-ilm/ilm-lexicon",
+      "title": "Layer 3: Morpho-lexical layer \u2013 multilingual lexicons, WordNets, morphology analyzers, clitics, affixation, reduplication.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-lexicon",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-lexicon",
+        "clone": "https://github.com/project-ilm/ilm-lexicon.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-lexicon",
+        "tree": "https://github.com/project-ilm/ilm-lexicon/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-lexicon/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main",
+        "archive": "https://github.com/project-ilm/ilm-lexicon/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-lexicon/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-lsp",
+      "type": "repository",
+      "name": "project-ilm/ilm-lsp",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "empty",
+      "url": "https://github.com/project-ilm/ilm-lsp",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-lsp",
+        "clone": "https://github.com/project-ilm/ilm-lsp.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-lsp",
+        "tree": "https://github.com/project-ilm/ilm-lsp/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-lsp/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main",
+        "archive": "https://github.com/project-ilm/ilm-lsp/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-lsp/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-meta",
+      "type": "repository",
+      "name": "project-ilm/ilm-meta",
+      "title": "Meta repo for ILM / \u0639\u0644\u0645: vision docs, architecture diagrams, manifestos, research summaries, roadmap, cultural-philosophical grounding.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-meta",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-meta",
+        "clone": "https://github.com/project-ilm/ilm-meta.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-meta",
+        "tree": "https://github.com/project-ilm/ilm-meta/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-meta/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main",
+        "archive": "https://github.com/project-ilm/ilm-meta/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-meta/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-orthography",
+      "type": "repository",
+      "name": "project-ilm/ilm-orthography",
+      "title": "Layer 2: Orthographic engine \u2013 script-specific shaping, Unicode normalization, ZWJ/ZWNJ handling, grapheme clustering.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-orthography",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-orthography",
+        "clone": "https://github.com/project-ilm/ilm-orthography.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-orthography",
+        "tree": "https://github.com/project-ilm/ilm-orthography/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-orthography/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main",
+        "archive": "https://github.com/project-ilm/ilm-orthography/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-orthography/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-phonology",
+      "type": "repository",
+      "name": "project-ilm/ilm-phonology",
+      "title": "Layer 0: Phonological base \u2013 IPA core, phonotactics, prosody, dialect normalization, audio alignment. Reversible sound mapping foundation.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-phonology",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-phonology",
+        "clone": "https://github.com/project-ilm/ilm-phonology.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-phonology",
+        "tree": "https://github.com/project-ilm/ilm-phonology/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-phonology/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main",
+        "archive": "https://github.com/project-ilm/ilm-phonology/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-phonology/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-site",
+      "type": "repository",
+      "name": "project-ilm/ilm-site",
+      "title": "A layered, open-source effort for phonetically accurate, reversible, culturally respectful language tooling across world scripts.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-site",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-site",
+        "clone": "https://github.com/project-ilm/ilm-site.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-site",
+        "tree": "https://github.com/project-ilm/ilm-site/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-site/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-site/main",
+        "archive": "https://github.com/project-ilm/ilm-site/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-site/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/ilm-site/"
+      }
+    },
+    {
+      "id": "page:project-ilm/ilm-site",
+      "type": "page",
+      "name": "project-ilm/ilm-site (site)",
+      "url": "https://project-ilm.github.io/ilm-site/"
+    },
+    {
+      "id": "repo:project-ilm/ilm-syntax-semantics",
+      "type": "repository",
+      "name": "project-ilm/ilm-syntax-semantics",
+      "title": "Layer 4: Syntax-semantics \u2013 UD parsing, SRL, AMR/UCCA, discourse segmentation, code-switching awareness.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-syntax-semantics",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-syntax-semantics",
+        "clone": "https://github.com/project-ilm/ilm-syntax-semantics.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-syntax-semantics",
+        "tree": "https://github.com/project-ilm/ilm-syntax-semantics/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-syntax-semantics/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main",
+        "archive": "https://github.com/project-ilm/ilm-syntax-semantics/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-syntax-semantics/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-transliteration",
+      "type": "repository",
+      "name": "project-ilm/ilm-transliteration",
+      "title": "Layer 1: Transliteration pivot \u2013 reversible, compiler-friendly Romanized layer with diacritics; bridges phonology and scripts.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-transliteration",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-transliteration",
+        "clone": "https://github.com/project-ilm/ilm-transliteration.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-transliteration",
+        "tree": "https://github.com/project-ilm/ilm-transliteration/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-transliteration/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main",
+        "archive": "https://github.com/project-ilm/ilm-transliteration/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-transliteration/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm-validation",
+      "type": "repository",
+      "name": "project-ilm/ilm-validation",
+      "title": "Validation: native speaker QA, annotation tools, field instruments, crowdsourced schema, cultural-linguistic QA loops.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm-validation",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm-validation",
+        "clone": "https://github.com/project-ilm/ilm-validation.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm-validation",
+        "tree": "https://github.com/project-ilm/ilm-validation/tree/main",
+        "issues": "https://github.com/project-ilm/ilm-validation/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main",
+        "archive": "https://github.com/project-ilm/ilm-validation/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm-validation/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/ilm.codes",
+      "type": "repository",
+      "name": "project-ilm/ilm.codes",
+      "title": "ILM / Project ILM \u2014 Integrative Linguistic Multiscript (BETA)",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ilm.codes",
+      "links": {
+        "repo": "https://github.com/project-ilm/ilm.codes",
+        "clone": "https://github.com/project-ilm/ilm.codes.git",
+        "api": "https://api.github.com/repos/project-ilm/ilm.codes",
+        "tree": "https://github.com/project-ilm/ilm.codes/tree/main",
+        "issues": "https://github.com/project-ilm/ilm.codes/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main",
+        "archive": "https://github.com/project-ilm/ilm.codes/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ilm.codes/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/ilm.codes/"
+      }
+    },
+    {
+      "id": "page:project-ilm/ilm.codes",
+      "type": "page",
+      "name": "project-ilm/ilm.codes (site)",
+      "url": "https://project-ilm.github.io/ilm.codes/"
+    },
+    {
+      "id": "repo:project-ilm/language-specs",
+      "type": "repository",
+      "name": "project-ilm/language-specs",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/language-specs",
+      "links": {
+        "repo": "https://github.com/project-ilm/language-specs",
+        "clone": "https://github.com/project-ilm/language-specs.git",
+        "api": "https://api.github.com/repos/project-ilm/language-specs",
+        "tree": "https://github.com/project-ilm/language-specs/tree/main",
+        "issues": "https://github.com/project-ilm/language-specs/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/language-specs/main",
+        "archive": "https://github.com/project-ilm/language-specs/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/language-specs/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/language-specs/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/language-specs/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/language-specs/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/language-specs/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/language-specs/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/language-specs/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/language-specs/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/language-specs/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/legacy",
+      "type": "repository",
+      "name": "project-ilm/legacy",
+      "title": "Initial fork of Project ILM from Project Hindawi",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/legacy",
+      "links": {
+        "repo": "https://github.com/project-ilm/legacy",
+        "clone": "https://github.com/project-ilm/legacy.git",
+        "api": "https://api.github.com/repos/project-ilm/legacy",
+        "tree": "https://github.com/project-ilm/legacy/tree/master",
+        "issues": "https://github.com/project-ilm/legacy/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/legacy/master",
+        "archive": "https://github.com/project-ilm/legacy/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/legacy/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/legacy/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/legacy/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/legacy/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/legacy/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/legacy/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/legacy/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/legacy/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/legacy/master/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/linguistics-labs",
+      "type": "repository",
+      "name": "project-ilm/linguistics-labs",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/linguistics-labs",
+      "links": {
+        "repo": "https://github.com/project-ilm/linguistics-labs",
+        "clone": "https://github.com/project-ilm/linguistics-labs.git",
+        "api": "https://api.github.com/repos/project-ilm/linguistics-labs",
+        "tree": "https://github.com/project-ilm/linguistics-labs/tree/main",
+        "issues": "https://github.com/project-ilm/linguistics-labs/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main",
+        "archive": "https://github.com/project-ilm/linguistics-labs/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/linguistics-labs/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/misty-doi",
+      "type": "repository",
+      "name": "project-ilm/misty-doi",
+      "title": "Automation-first DOI minting & research publication packaging. Muh Mitha Kijiye!",
+      "topics": [],
+      "licence": "GPL-3.0",
+      "state": "minted",
+      "url": "https://github.com/project-ilm/misty-doi",
+      "links": {
+        "repo": "https://github.com/project-ilm/misty-doi",
+        "clone": "https://github.com/project-ilm/misty-doi.git",
+        "api": "https://api.github.com/repos/project-ilm/misty-doi",
+        "tree": "https://github.com/project-ilm/misty-doi/tree/main",
+        "issues": "https://github.com/project-ilm/misty-doi/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/misty-doi/main",
+        "archive": "https://github.com/project-ilm/misty-doi/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/misty-doi/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/misty-doi/",
+        "doi": "https://doi.org/10.5281/zenodo.20719388"
+      }
+    },
+    {
+      "id": "page:project-ilm/misty-doi",
+      "type": "page",
+      "name": "project-ilm/misty-doi (site)",
+      "url": "https://project-ilm.github.io/misty-doi/"
+    },
+    {
+      "id": "work:10.5281/zenodo.20719388",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.20719388",
+      "url": "https://doi.org/10.5281/zenodo.20719388"
+    },
+    {
+      "id": "repo:project-ilm/ops",
+      "type": "repository",
+      "name": "project-ilm/ops",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/ops",
+      "links": {
+        "repo": "https://github.com/project-ilm/ops",
+        "clone": "https://github.com/project-ilm/ops.git",
+        "api": "https://api.github.com/repos/project-ilm/ops",
+        "tree": "https://github.com/project-ilm/ops/tree/main",
+        "issues": "https://github.com/project-ilm/ops/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/ops/main",
+        "archive": "https://github.com/project-ilm/ops/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/ops/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/ops/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/ops/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/ops/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/ops/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/ops/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/ops/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/ops/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/ops/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/praat",
+      "type": "repository",
+      "name": "project-ilm/praat",
+      "title": "Praat: Doing Phonetics By Computer",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/praat",
+      "links": {
+        "repo": "https://github.com/project-ilm/praat",
+        "clone": "https://github.com/project-ilm/praat.git",
+        "api": "https://api.github.com/repos/project-ilm/praat",
+        "tree": "https://github.com/project-ilm/praat/tree/master",
+        "issues": "https://github.com/project-ilm/praat/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/praat/master",
+        "archive": "https://github.com/project-ilm/praat/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/praat/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/praat/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/praat/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/praat/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/praat/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/praat/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/praat/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/praat/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/praat/master/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/qedler",
+      "type": "repository",
+      "name": "project-ilm/qedler",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/project-ilm/qedler",
+      "links": {
+        "repo": "https://github.com/project-ilm/qedler",
+        "clone": "https://github.com/project-ilm/qedler.git",
+        "api": "https://api.github.com/repos/project-ilm/qedler",
+        "tree": "https://github.com/project-ilm/qedler/tree/main",
+        "issues": "https://github.com/project-ilm/qedler/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/qedler/main",
+        "archive": "https://github.com/project-ilm/qedler/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/qedler/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/qedler/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/qedler/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/qedler/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/qedler/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/qedler/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/qedler/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/qedler/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/qedler/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/qedler/",
+        "doi": "https://doi.org/10.5281/zenodo.17497559"
+      }
+    },
+    {
+      "id": "page:project-ilm/qedler",
+      "type": "page",
+      "name": "project-ilm/qedler (site)",
+      "url": "https://project-ilm.github.io/qedler/"
+    },
+    {
+      "id": "work:10.5281/zenodo.17497559",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.17497559",
+      "url": "https://doi.org/10.5281/zenodo.17497559"
+    },
+    {
+      "id": "repo:project-ilm/record",
+      "type": "repository",
+      "name": "project-ilm/record",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/record",
+      "links": {
+        "repo": "https://github.com/project-ilm/record",
+        "clone": "https://github.com/project-ilm/record.git",
+        "api": "https://api.github.com/repos/project-ilm/record",
+        "tree": "https://github.com/project-ilm/record/tree/main",
+        "issues": "https://github.com/project-ilm/record/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/record/main",
+        "archive": "https://github.com/project-ilm/record/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/record/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/record/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/record/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/record/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/record/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/record/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/record/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/record/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/record/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/research-kundali",
+      "type": "repository",
+      "name": "project-ilm/research-kundali",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/research-kundali",
+      "links": {
+        "repo": "https://github.com/project-ilm/research-kundali",
+        "clone": "https://github.com/project-ilm/research-kundali.git",
+        "api": "https://api.github.com/repos/project-ilm/research-kundali",
+        "tree": "https://github.com/project-ilm/research-kundali/tree/main",
+        "issues": "https://github.com/project-ilm/research-kundali/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/research-kundali/main",
+        "archive": "https://github.com/project-ilm/research-kundali/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/research-kundali/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/romenagri",
+      "type": "repository",
+      "name": "project-ilm/romenagri",
+      "title": "Romenagri: reversible transliteration library (Perso-Arabic seed). HPS/ILM. GPL. \u00a9 1993-2026 Abhishek Choudhary.",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/romenagri",
+      "links": {
+        "repo": "https://github.com/project-ilm/romenagri",
+        "clone": "https://github.com/project-ilm/romenagri.git",
+        "api": "https://api.github.com/repos/project-ilm/romenagri",
+        "tree": "https://github.com/project-ilm/romenagri/tree/main",
+        "issues": "https://github.com/project-ilm/romenagri/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/romenagri/main",
+        "archive": "https://github.com/project-ilm/romenagri/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/romenagri/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/romenagri/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/romenagri/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/romenagri/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/romenagri/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/romenagri/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/romenagri/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/romenagri/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/romenagri/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/romenagri/"
+      }
+    },
+    {
+      "id": "page:project-ilm/romenagri",
+      "type": "page",
+      "name": "project-ilm/romenagri (site)",
+      "url": "https://project-ilm.github.io/romenagri/"
+    },
+    {
+      "id": "repo:project-ilm/scripts",
+      "type": "repository",
+      "name": "project-ilm/scripts",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/scripts",
+      "links": {
+        "repo": "https://github.com/project-ilm/scripts",
+        "clone": "https://github.com/project-ilm/scripts.git",
+        "api": "https://api.github.com/repos/project-ilm/scripts",
+        "tree": "https://github.com/project-ilm/scripts/tree/master",
+        "issues": "https://github.com/project-ilm/scripts/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/scripts/master",
+        "archive": "https://github.com/project-ilm/scripts/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/scripts/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/scripts/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/scripts/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/scripts/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/scripts/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/scripts/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/scripts/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/scripts/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/scripts/master/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/spi-scan",
+      "type": "repository",
+      "name": "project-ilm/spi-scan",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/spi-scan",
+      "links": {
+        "repo": "https://github.com/project-ilm/spi-scan",
+        "clone": "https://github.com/project-ilm/spi-scan.git",
+        "api": "https://api.github.com/repos/project-ilm/spi-scan",
+        "tree": "https://github.com/project-ilm/spi-scan/tree/master",
+        "issues": "https://github.com/project-ilm/spi-scan/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/spi-scan/master",
+        "archive": "https://github.com/project-ilm/spi-scan/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/spi-scan/master/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/tok-doi",
+      "type": "repository",
+      "name": "project-ilm/tok-doi",
+      "title": "Tok DoI",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/project-ilm/tok-doi",
+      "links": {
+        "repo": "https://github.com/project-ilm/tok-doi",
+        "clone": "https://github.com/project-ilm/tok-doi.git",
+        "api": "https://api.github.com/repos/project-ilm/tok-doi",
+        "tree": "https://github.com/project-ilm/tok-doi/tree/main",
+        "issues": "https://github.com/project-ilm/tok-doi/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/tok-doi/main",
+        "archive": "https://github.com/project-ilm/tok-doi/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/tok-doi/main/descriptor.json",
+        "pages": "https://project-ilm.github.io/tok-doi/",
+        "doi": "https://doi.org/10.5281/zenodo.21397274"
+      }
+    },
+    {
+      "id": "page:project-ilm/tok-doi",
+      "type": "page",
+      "name": "project-ilm/tok-doi (site)",
+      "url": "https://project-ilm.github.io/tok-doi/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21397274",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21397274",
+      "url": "https://doi.org/10.5281/zenodo.21397274"
+    },
+    {
+      "id": "work:10.5281/zenodo.21402745",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21402745",
+      "url": "https://doi.org/10.5281/zenodo.21402745"
+    },
+    {
+      "id": "repo:project-ilm/vgc-notes",
+      "type": "repository",
+      "name": "project-ilm/vgc-notes",
+      "title": "Notes on verification-gated human-AI co-development",
+      "topics": [],
+      "licence": null,
+      "state": "empty",
+      "url": "https://github.com/project-ilm/vgc-notes",
+      "links": {
+        "repo": "https://github.com/project-ilm/vgc-notes",
+        "clone": "https://github.com/project-ilm/vgc-notes.git",
+        "api": "https://api.github.com/repos/project-ilm/vgc-notes",
+        "tree": "https://github.com/project-ilm/vgc-notes/tree/main",
+        "issues": "https://github.com/project-ilm/vgc-notes/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main",
+        "archive": "https://github.com/project-ilm/vgc-notes/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/vgc-notes/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:project-ilm/vscode-ilm",
+      "type": "repository",
+      "name": "project-ilm/vscode-ilm",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/project-ilm/vscode-ilm",
+      "links": {
+        "repo": "https://github.com/project-ilm/vscode-ilm",
+        "clone": "https://github.com/project-ilm/vscode-ilm.git",
+        "api": "https://api.github.com/repos/project-ilm/vscode-ilm",
+        "tree": "https://github.com/project-ilm/vscode-ilm/tree/main",
+        "issues": "https://github.com/project-ilm/vscode-ilm/issues",
+        "raw_base": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main",
+        "archive": "https://github.com/project-ilm/vscode-ilm/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/project-ilm/vscode-ilm/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/aab",
+      "type": "repository",
+      "name": "zistgah/aab",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "minted",
+      "url": "https://github.com/zistgah/aab",
+      "links": {
+        "repo": "https://github.com/zistgah/aab",
+        "clone": "https://github.com/zistgah/aab.git",
+        "api": "https://api.github.com/repos/zistgah/aab",
+        "tree": "https://github.com/zistgah/aab/tree/master",
+        "issues": "https://github.com/zistgah/aab/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/aab/master",
+        "archive": "https://github.com/zistgah/aab/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/aab/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/aab/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/aab/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/aab/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/aab/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/aab/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/aab/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/aab/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/aab/master/descriptor.json",
+        "pages": "https://zistgah.github.io/aab/",
+        "doi": "https://doi.org/10.5281/zenodo.21264248"
+      }
+    },
+    {
+      "id": "page:zistgah/aab",
+      "type": "page",
+      "name": "zistgah/aab (site)",
+      "url": "https://zistgah.github.io/aab/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21264248",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21264248",
+      "url": "https://doi.org/10.5281/zenodo.21264248"
+    },
+    {
+      "id": "repo:zistgah/alam",
+      "type": "repository",
+      "name": "zistgah/alam",
+      "title": "Small work, cycled with any AI. Part of the Zistgah ecosystem.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/alam",
+      "links": {
+        "repo": "https://github.com/zistgah/alam",
+        "clone": "https://github.com/zistgah/alam.git",
+        "api": "https://api.github.com/repos/zistgah/alam",
+        "tree": "https://github.com/zistgah/alam/tree/main",
+        "issues": "https://github.com/zistgah/alam/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/alam/main",
+        "archive": "https://github.com/zistgah/alam/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/alam/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/alam/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/alam/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/alam/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/alam/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/alam/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/alam/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/alam/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/alam/main/descriptor.json",
+        "pages": "https://zistgah.github.io/alam/"
+      }
+    },
+    {
+      "id": "page:zistgah/alam",
+      "type": "page",
+      "name": "zistgah/alam (site)",
+      "url": "https://zistgah.github.io/alam/"
+    },
+    {
+      "id": "repo:zistgah/asab",
+      "type": "repository",
+      "name": "zistgah/asab",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "empty",
+      "url": "https://github.com/zistgah/asab",
+      "links": {
+        "repo": "https://github.com/zistgah/asab",
+        "clone": "https://github.com/zistgah/asab.git",
+        "api": "https://api.github.com/repos/zistgah/asab",
+        "tree": "https://github.com/zistgah/asab/tree/main",
+        "issues": "https://github.com/zistgah/asab/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/asab/main",
+        "archive": "https://github.com/zistgah/asab/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/asab/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/asab/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/asab/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/asab/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/asab/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/asab/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/asab/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/asab/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/asab/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/awaz",
+      "type": "repository",
+      "name": "zistgah/awaz",
+      "title": "awaz \u2014 the listening room",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/awaz",
+      "links": {
+        "repo": "https://github.com/zistgah/awaz",
+        "clone": "https://github.com/zistgah/awaz.git",
+        "api": "https://api.github.com/repos/zistgah/awaz",
+        "tree": "https://github.com/zistgah/awaz/tree/main",
+        "issues": "https://github.com/zistgah/awaz/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/awaz/main",
+        "archive": "https://github.com/zistgah/awaz/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/awaz/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/awaz/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/awaz/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/awaz/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/awaz/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/awaz/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/awaz/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/awaz/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/awaz/main/descriptor.json",
+        "pages": "https://zistgah.github.io/awaz/",
+        "doi": "https://doi.org/10.5281/zenodo.22005575"
+      }
+    },
+    {
+      "id": "page:zistgah/awaz",
+      "type": "page",
+      "name": "zistgah/awaz (site)",
+      "url": "https://zistgah.github.io/awaz/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22005575",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22005575",
+      "url": "https://doi.org/10.5281/zenodo.22005575"
+    },
+    {
+      "id": "repo:zistgah/copa",
+      "type": "repository",
+      "name": "zistgah/copa",
+      "title": "COPA \u2014 Cost of Perceived Authority: a black-box behavioural methodology (measurement framework + open hypothesis)",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/copa",
+      "links": {
+        "repo": "https://github.com/zistgah/copa",
+        "clone": "https://github.com/zistgah/copa.git",
+        "api": "https://api.github.com/repos/zistgah/copa",
+        "tree": "https://github.com/zistgah/copa/tree/main",
+        "issues": "https://github.com/zistgah/copa/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/copa/main",
+        "archive": "https://github.com/zistgah/copa/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/copa/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/copa/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/copa/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/copa/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/copa/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/copa/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/copa/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/copa/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/copa/main/descriptor.json",
+        "pages": "https://zistgah.github.io/copa/"
+      }
+    },
+    {
+      "id": "page:zistgah/copa",
+      "type": "page",
+      "name": "zistgah/copa (site)",
+      "url": "https://zistgah.github.io/copa/"
+    },
+    {
+      "id": "repo:zistgah/cycles",
+      "type": "repository",
+      "name": "zistgah/cycles",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/cycles",
+      "links": {
+        "repo": "https://github.com/zistgah/cycles",
+        "clone": "https://github.com/zistgah/cycles.git",
+        "api": "https://api.github.com/repos/zistgah/cycles",
+        "tree": "https://github.com/zistgah/cycles/tree/main",
+        "issues": "https://github.com/zistgah/cycles/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/cycles/main",
+        "archive": "https://github.com/zistgah/cycles/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/cycles/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/cycles/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/cycles/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/cycles/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/cycles/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/cycles/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/cycles/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/cycles/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/cycles/main/descriptor.json",
+        "pages": "https://zistgah.github.io/cycles/"
+      }
+    },
+    {
+      "id": "page:zistgah/cycles",
+      "type": "page",
+      "name": "zistgah/cycles (site)",
+      "url": "https://zistgah.github.io/cycles/"
+    },
+    {
+      "id": "repo:zistgah/dhancha",
+      "type": "repository",
+      "name": "zistgah/dhancha",
+      "title": "The domain-invariant skeleton every FAKIR domain is built on: ten invariants, a machine-readable domain descriptor, a validator, a cross-domain vocabulary leak check, a correlation graph, and PANINI cycler configuration so the work can be done by any model.",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/dhancha",
+      "links": {
+        "repo": "https://github.com/zistgah/dhancha",
+        "clone": "https://github.com/zistgah/dhancha.git",
+        "api": "https://api.github.com/repos/zistgah/dhancha",
+        "tree": "https://github.com/zistgah/dhancha/tree/main",
+        "issues": "https://github.com/zistgah/dhancha/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/dhancha/main",
+        "archive": "https://github.com/zistgah/dhancha/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/dhancha/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/dhancha/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/dhancha/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/dhancha/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/dhancha/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/dhancha/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/dhancha/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/dhancha/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/dhancha/main/descriptor.json",
+        "pages": "https://zistgah.github.io/dhancha/",
+        "doi": "https://doi.org/10.5281/zenodo.22821645"
+      }
+    },
+    {
+      "id": "page:zistgah/dhancha",
+      "type": "page",
+      "name": "zistgah/dhancha (site)",
+      "url": "https://zistgah.github.io/dhancha/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22821645",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22821645",
+      "url": "https://doi.org/10.5281/zenodo.22821645"
+    },
+    {
+      "id": "repo:zistgah/dome",
+      "type": "repository",
+      "name": "zistgah/dome",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "minted",
+      "url": "https://github.com/zistgah/dome",
+      "links": {
+        "repo": "https://github.com/zistgah/dome",
+        "clone": "https://github.com/zistgah/dome.git",
+        "api": "https://api.github.com/repos/zistgah/dome",
+        "tree": "https://github.com/zistgah/dome/tree/main",
+        "issues": "https://github.com/zistgah/dome/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/dome/main",
+        "archive": "https://github.com/zistgah/dome/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/dome/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/dome/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/dome/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/dome/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/dome/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/dome/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/dome/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/dome/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/dome/main/descriptor.json",
+        "pages": "https://zistgah.github.io/dome/",
+        "doi": "https://doi.org/10.5281/zenodo.21449034"
+      }
+    },
+    {
+      "id": "page:zistgah/dome",
+      "type": "page",
+      "name": "zistgah/dome (site)",
+      "url": "https://zistgah.github.io/dome/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21449034",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21449034",
+      "url": "https://doi.org/10.5281/zenodo.21449034"
+    },
+    {
+      "id": "repo:zistgah/duke2",
+      "type": "repository",
+      "name": "zistgah/duke2",
+      "title": "The Dukedom of Humanesque, Volume II",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/duke2",
+      "links": {
+        "repo": "https://github.com/zistgah/duke2",
+        "clone": "https://github.com/zistgah/duke2.git",
+        "api": "https://api.github.com/repos/zistgah/duke2",
+        "tree": "https://github.com/zistgah/duke2/tree/main",
+        "issues": "https://github.com/zistgah/duke2/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/duke2/main",
+        "archive": "https://github.com/zistgah/duke2/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/duke2/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/duke2/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/duke2/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/duke2/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/duke2/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/duke2/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/duke2/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/duke2/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/duke2/main/descriptor.json",
+        "pages": "https://zistgah.github.io/duke2/"
+      }
+    },
+    {
+      "id": "page:zistgah/duke2",
+      "type": "page",
+      "name": "zistgah/duke2 (site)",
+      "url": "https://zistgah.github.io/duke2/"
+    },
+    {
+      "id": "repo:zistgah/dukedom",
+      "type": "repository",
+      "name": "zistgah/dukedom",
+      "title": "The Dukedom of Humanesque",
+      "topics": [],
+      "licence": null,
+      "state": "minted",
+      "url": "https://github.com/zistgah/dukedom",
+      "links": {
+        "repo": "https://github.com/zistgah/dukedom",
+        "clone": "https://github.com/zistgah/dukedom.git",
+        "api": "https://api.github.com/repos/zistgah/dukedom",
+        "tree": "https://github.com/zistgah/dukedom/tree/main",
+        "issues": "https://github.com/zistgah/dukedom/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/dukedom/main",
+        "archive": "https://github.com/zistgah/dukedom/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/dukedom/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/dukedom/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/dukedom/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/dukedom/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/dukedom/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/dukedom/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/dukedom/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/dukedom/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/dukedom/main/descriptor.json",
+        "pages": "https://zistgah.github.io/dukedom/",
+        "doi": "https://doi.org/10.5281/zenodo.21397274"
+      }
+    },
+    {
+      "id": "page:zistgah/dukedom",
+      "type": "page",
+      "name": "zistgah/dukedom (site)",
+      "url": "https://zistgah.github.io/dukedom/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21397274",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21397274",
+      "url": "https://doi.org/10.5281/zenodo.21397274"
+    },
+    {
+      "id": "repo:zistgah/ertabat",
+      "type": "repository",
+      "name": "zistgah/ertabat",
+      "title": "A FAKIR domain for communication engineering: one capability surface for a link whose geometry is changing, nine conformance conditions with units (two honestly unestablished), a closed four-point integration boundary, and twenty-eight work packages with executable acceptance criteria.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/ertabat",
+      "links": {
+        "repo": "https://github.com/zistgah/ertabat",
+        "clone": "https://github.com/zistgah/ertabat.git",
+        "api": "https://api.github.com/repos/zistgah/ertabat",
+        "tree": "https://github.com/zistgah/ertabat/tree/main",
+        "issues": "https://github.com/zistgah/ertabat/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/ertabat/main",
+        "archive": "https://github.com/zistgah/ertabat/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/ertabat/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/ertabat/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/ertabat/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/ertabat/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/ertabat/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/ertabat/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/ertabat/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/ertabat/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/ertabat/main/descriptor.json",
+        "pages": "https://zistgah.github.io/ertabat/"
+      }
+    },
+    {
+      "id": "page:zistgah/ertabat",
+      "type": "page",
+      "name": "zistgah/ertabat (site)",
+      "url": "https://zistgah.github.io/ertabat/"
+    },
+    {
+      "id": "repo:zistgah/estate",
+      "type": "repository",
+      "name": "zistgah/estate",
+      "title": "IP estate: inventory, licensing, offerings, workspace sync",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/estate",
+      "links": {
+        "repo": "https://github.com/zistgah/estate",
+        "clone": "https://github.com/zistgah/estate.git",
+        "api": "https://api.github.com/repos/zistgah/estate",
+        "tree": "https://github.com/zistgah/estate/tree/main",
+        "issues": "https://github.com/zistgah/estate/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/estate/main",
+        "archive": "https://github.com/zistgah/estate/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/estate/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/estate/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/estate/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/estate/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/estate/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/estate/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/estate/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/estate/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/estate/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/fakir",
+      "type": "repository",
+      "name": "zistgah/fakir",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "minted",
+      "url": "https://github.com/zistgah/fakir",
+      "links": {
+        "repo": "https://github.com/zistgah/fakir",
+        "clone": "https://github.com/zistgah/fakir.git",
+        "api": "https://api.github.com/repos/zistgah/fakir",
+        "tree": "https://github.com/zistgah/fakir/tree/main",
+        "issues": "https://github.com/zistgah/fakir/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/fakir/main",
+        "archive": "https://github.com/zistgah/fakir/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/fakir/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/fakir/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/fakir/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/fakir/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/fakir/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/fakir/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/fakir/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/fakir/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/fakir/main/descriptor.json",
+        "pages": "https://zistgah.github.io/fakir/",
+        "doi": "https://doi.org/10.5281/zenodo.21264248"
+      }
+    },
+    {
+      "id": "page:zistgah/fakir",
+      "type": "page",
+      "name": "zistgah/fakir (site)",
+      "url": "https://zistgah.github.io/fakir/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21264248",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21264248",
+      "url": "https://doi.org/10.5281/zenodo.21264248"
+    },
+    {
+      "id": "work:10.5281/zenodo.21402745",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21402745",
+      "url": "https://doi.org/10.5281/zenodo.21402745"
+    },
+    {
+      "id": "work:10.5281/zenodo.21436550",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21436550",
+      "url": "https://doi.org/10.5281/zenodo.21436550"
+    },
+    {
+      "id": "work:10.5281/zenodo.21436552",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21436552",
+      "url": "https://doi.org/10.5281/zenodo.21436552"
+    },
+    {
+      "id": "repo:zistgah/fiza",
+      "type": "repository",
+      "name": "zistgah/fiza",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "minted",
+      "url": "https://github.com/zistgah/fiza",
+      "links": {
+        "repo": "https://github.com/zistgah/fiza",
+        "clone": "https://github.com/zistgah/fiza.git",
+        "api": "https://api.github.com/repos/zistgah/fiza",
+        "tree": "https://github.com/zistgah/fiza/tree/master",
+        "issues": "https://github.com/zistgah/fiza/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/fiza/master",
+        "archive": "https://github.com/zistgah/fiza/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/fiza/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/fiza/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/fiza/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/fiza/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/fiza/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/fiza/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/fiza/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/fiza/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/fiza/master/descriptor.json",
+        "pages": "https://zistgah.github.io/fiza/",
+        "doi": "https://doi.org/10.5281/zenodo.21303401"
+      }
+    },
+    {
+      "id": "page:zistgah/fiza",
+      "type": "page",
+      "name": "zistgah/fiza (site)",
+      "url": "https://zistgah.github.io/fiza/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21303401",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21303401",
+      "url": "https://doi.org/10.5281/zenodo.21303401"
+    },
+    {
+      "id": "repo:zistgah/genie",
+      "type": "repository",
+      "name": "zistgah/genie",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/genie",
+      "links": {
+        "repo": "https://github.com/zistgah/genie",
+        "clone": "https://github.com/zistgah/genie.git",
+        "api": "https://api.github.com/repos/zistgah/genie",
+        "tree": "https://github.com/zistgah/genie/tree/main",
+        "issues": "https://github.com/zistgah/genie/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/genie/main",
+        "archive": "https://github.com/zistgah/genie/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/genie/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/genie/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/genie/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/genie/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/genie/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/genie/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/genie/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/genie/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/genie/main/descriptor.json",
+        "pages": "https://zistgah.github.io/genie/"
+      }
+    },
+    {
+      "id": "page:zistgah/genie",
+      "type": "page",
+      "name": "zistgah/genie (site)",
+      "url": "https://zistgah.github.io/genie/"
+    },
+    {
+      "id": "repo:zistgah/genie-book",
+      "type": "repository",
+      "name": "zistgah/genie-book",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/genie-book",
+      "links": {
+        "repo": "https://github.com/zistgah/genie-book",
+        "clone": "https://github.com/zistgah/genie-book.git",
+        "api": "https://api.github.com/repos/zistgah/genie-book",
+        "tree": "https://github.com/zistgah/genie-book/tree/main",
+        "issues": "https://github.com/zistgah/genie-book/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/genie-book/main",
+        "archive": "https://github.com/zistgah/genie-book/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/genie-book/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/genie-book/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/genie-book/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/genie-book/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/genie-book/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/genie-book/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/genie-book/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/genie-book/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/genie-book/main/descriptor.json",
+        "pages": "https://zistgah.github.io/genie-book/"
+      }
+    },
+    {
+      "id": "page:zistgah/genie-book",
+      "type": "page",
+      "name": "zistgah/genie-book (site)",
+      "url": "https://zistgah.github.io/genie-book/"
+    },
+    {
+      "id": "repo:zistgah/governance",
+      "type": "repository",
+      "name": "zistgah/governance",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/governance",
+      "links": {
+        "repo": "https://github.com/zistgah/governance",
+        "clone": "https://github.com/zistgah/governance.git",
+        "api": "https://api.github.com/repos/zistgah/governance",
+        "tree": "https://github.com/zistgah/governance/tree/main",
+        "issues": "https://github.com/zistgah/governance/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/governance/main",
+        "archive": "https://github.com/zistgah/governance/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/governance/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/governance/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/governance/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/governance/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/governance/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/governance/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/governance/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/governance/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/governance/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/humanesque",
+      "type": "repository",
+      "name": "zistgah/humanesque",
+      "title": "Humanesque merged release \u2014 PANINI, ILM, Hindawi, cyclers, Mez",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/humanesque",
+      "links": {
+        "repo": "https://github.com/zistgah/humanesque",
+        "clone": "https://github.com/zistgah/humanesque.git",
+        "api": "https://api.github.com/repos/zistgah/humanesque",
+        "tree": "https://github.com/zistgah/humanesque/tree/main",
+        "issues": "https://github.com/zistgah/humanesque/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/humanesque/main",
+        "archive": "https://github.com/zistgah/humanesque/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/humanesque/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/humanesque/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/humanesque/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/humanesque/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/humanesque/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/humanesque/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/humanesque/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/humanesque/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/humanesque/main/descriptor.json",
+        "pages": "https://zistgah.github.io/humanesque/"
+      }
+    },
+    {
+      "id": "page:zistgah/humanesque",
+      "type": "page",
+      "name": "zistgah/humanesque (site)",
+      "url": "https://zistgah.github.io/humanesque/"
+    },
+    {
+      "id": "repo:zistgah/inclinations",
+      "type": "repository",
+      "name": "zistgah/inclinations",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/inclinations",
+      "links": {
+        "repo": "https://github.com/zistgah/inclinations",
+        "clone": "https://github.com/zistgah/inclinations.git",
+        "api": "https://api.github.com/repos/zistgah/inclinations",
+        "tree": "https://github.com/zistgah/inclinations/tree/main",
+        "issues": "https://github.com/zistgah/inclinations/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/inclinations/main",
+        "archive": "https://github.com/zistgah/inclinations/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/inclinations/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/inclinations/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/inclinations/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/inclinations/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/inclinations/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/inclinations/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/inclinations/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/inclinations/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/inclinations/main/descriptor.json",
+        "pages": "https://zistgah.github.io/inclinations/"
+      }
+    },
+    {
+      "id": "page:zistgah/inclinations",
+      "type": "page",
+      "name": "zistgah/inclinations (site)",
+      "url": "https://zistgah.github.io/inclinations/"
+    },
+    {
+      "id": "repo:zistgah/janapad",
+      "type": "repository",
+      "name": "zistgah/janapad",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/janapad",
+      "links": {
+        "repo": "https://github.com/zistgah/janapad",
+        "clone": "https://github.com/zistgah/janapad.git",
+        "api": "https://api.github.com/repos/zistgah/janapad",
+        "tree": "https://github.com/zistgah/janapad/tree/main",
+        "issues": "https://github.com/zistgah/janapad/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/janapad/main",
+        "archive": "https://github.com/zistgah/janapad/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/janapad/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/janapad/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/janapad/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/janapad/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/janapad/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/janapad/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/janapad/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/janapad/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/janapad/main/descriptor.json",
+        "pages": "https://zistgah.github.io/janapad/"
+      }
+    },
+    {
+      "id": "page:zistgah/janapad",
+      "type": "page",
+      "name": "zistgah/janapad (site)",
+      "url": "https://zistgah.github.io/janapad/"
+    },
+    {
+      "id": "repo:zistgah/jugaad28",
+      "type": "repository",
+      "name": "zistgah/jugaad28",
+      "title": "Integrated circuits taped out on 28 nm: evidence-gated descriptors and a low-cost open laboratory",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/jugaad28",
+      "links": {
+        "repo": "https://github.com/zistgah/jugaad28",
+        "clone": "https://github.com/zistgah/jugaad28.git",
+        "api": "https://api.github.com/repos/zistgah/jugaad28",
+        "tree": "https://github.com/zistgah/jugaad28/tree/main",
+        "issues": "https://github.com/zistgah/jugaad28/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/jugaad28/main",
+        "archive": "https://github.com/zistgah/jugaad28/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/jugaad28/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/jugaad28/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/jugaad28/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/jugaad28/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/jugaad28/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/jugaad28/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/jugaad28/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/jugaad28/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/jugaad28/main/descriptor.json",
+        "pages": "https://zistgah.github.io/jugaad28/",
+        "doi": "https://doi.org/10.5281/zenodo.22818408"
+      }
+    },
+    {
+      "id": "page:zistgah/jugaad28",
+      "type": "page",
+      "name": "zistgah/jugaad28 (site)",
+      "url": "https://zistgah.github.io/jugaad28/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22818408",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22818408",
+      "url": "https://doi.org/10.5281/zenodo.22818408"
+    },
+    {
+      "id": "repo:zistgah/khwab",
+      "type": "repository",
+      "name": "zistgah/khwab",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/khwab",
+      "links": {
+        "repo": "https://github.com/zistgah/khwab",
+        "clone": "https://github.com/zistgah/khwab.git",
+        "api": "https://api.github.com/repos/zistgah/khwab",
+        "tree": "https://github.com/zistgah/khwab/tree/main",
+        "issues": "https://github.com/zistgah/khwab/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/khwab/main",
+        "archive": "https://github.com/zistgah/khwab/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/khwab/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/khwab/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/khwab/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/khwab/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/khwab/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/khwab/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/khwab/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/khwab/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/khwab/main/descriptor.json",
+        "pages": "https://zistgah.github.io/khwab/",
+        "doi": "https://doi.org/10.5281/zenodo.22005507"
+      }
+    },
+    {
+      "id": "page:zistgah/khwab",
+      "type": "page",
+      "name": "zistgah/khwab (site)",
+      "url": "https://zistgah.github.io/khwab/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22005507",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22005507",
+      "url": "https://doi.org/10.5281/zenodo.22005507"
+    },
+    {
+      "id": "repo:zistgah/kitab",
+      "type": "repository",
+      "name": "zistgah/kitab",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/kitab",
+      "links": {
+        "repo": "https://github.com/zistgah/kitab",
+        "clone": "https://github.com/zistgah/kitab.git",
+        "api": "https://api.github.com/repos/zistgah/kitab",
+        "tree": "https://github.com/zistgah/kitab/tree/main",
+        "issues": "https://github.com/zistgah/kitab/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/kitab/main",
+        "archive": "https://github.com/zistgah/kitab/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/kitab/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/kitab/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/kitab/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/kitab/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/kitab/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/kitab/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/kitab/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/kitab/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/kitab/main/descriptor.json",
+        "pages": "https://zistgah.github.io/kitab/"
+      }
+    },
+    {
+      "id": "page:zistgah/kitab",
+      "type": "page",
+      "name": "zistgah/kitab (site)",
+      "url": "https://zistgah.github.io/kitab/"
+    },
+    {
+      "id": "repo:zistgah/marham",
+      "type": "repository",
+      "name": "zistgah/marham",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/marham",
+      "links": {
+        "repo": "https://github.com/zistgah/marham",
+        "clone": "https://github.com/zistgah/marham.git",
+        "api": "https://api.github.com/repos/zistgah/marham",
+        "tree": "https://github.com/zistgah/marham/tree/main",
+        "issues": "https://github.com/zistgah/marham/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/marham/main",
+        "archive": "https://github.com/zistgah/marham/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/marham/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/marham/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/marham/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/marham/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/marham/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/marham/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/marham/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/marham/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/marham/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/matba",
+      "type": "repository",
+      "name": "zistgah/matba",
+      "title": "matba \u2014 the press. Posters in, book out, sealed, pushed, minted.",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/matba",
+      "links": {
+        "repo": "https://github.com/zistgah/matba",
+        "clone": "https://github.com/zistgah/matba.git",
+        "api": "https://api.github.com/repos/zistgah/matba",
+        "tree": "https://github.com/zistgah/matba/tree/main",
+        "issues": "https://github.com/zistgah/matba/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/matba/main",
+        "archive": "https://github.com/zistgah/matba/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/matba/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/matba/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/matba/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/matba/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/matba/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/matba/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/matba/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/matba/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/matba/main/descriptor.json",
+        "pages": "https://zistgah.github.io/matba/",
+        "doi": "https://doi.org/10.5281/zenodo.21948734"
+      }
+    },
+    {
+      "id": "page:zistgah/matba",
+      "type": "page",
+      "name": "zistgah/matba (site)",
+      "url": "https://zistgah.github.io/matba/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21948734",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21948734",
+      "url": "https://doi.org/10.5281/zenodo.21948734"
+    },
+    {
+      "id": "repo:zistgah/mez",
+      "type": "repository",
+      "name": "zistgah/mez",
+      "title": "mez \u2014 the desk. \u0645\u06cc\u0632. Local-first, no account, no vendor.",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/mez",
+      "links": {
+        "repo": "https://github.com/zistgah/mez",
+        "clone": "https://github.com/zistgah/mez.git",
+        "api": "https://api.github.com/repos/zistgah/mez",
+        "tree": "https://github.com/zistgah/mez/tree/main",
+        "issues": "https://github.com/zistgah/mez/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/mez/main",
+        "archive": "https://github.com/zistgah/mez/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/mez/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/mez/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/mez/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/mez/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/mez/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/mez/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/mez/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/mez/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/mez/main/descriptor.json",
+        "pages": "https://zistgah.github.io/mez/"
+      }
+    },
+    {
+      "id": "page:zistgah/mez",
+      "type": "page",
+      "name": "zistgah/mez (site)",
+      "url": "https://zistgah.github.io/mez/"
+    },
+    {
+      "id": "repo:zistgah/mrd",
+      "type": "repository",
+      "name": "zistgah/mrd",
+      "title": "Market Requirements for the Zistgah / AyeAI estate",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/mrd",
+      "links": {
+        "repo": "https://github.com/zistgah/mrd",
+        "clone": "https://github.com/zistgah/mrd.git",
+        "api": "https://api.github.com/repos/zistgah/mrd",
+        "tree": "https://github.com/zistgah/mrd/tree/main",
+        "issues": "https://github.com/zistgah/mrd/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/mrd/main",
+        "archive": "https://github.com/zistgah/mrd/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/mrd/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/mrd/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/mrd/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/mrd/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/mrd/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/mrd/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/mrd/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/mrd/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/mrd/main/descriptor.json",
+        "pages": "https://zistgah.github.io/mrd/"
+      }
+    },
+    {
+      "id": "page:zistgah/mrd",
+      "type": "page",
+      "name": "zistgah/mrd (site)",
+      "url": "https://zistgah.github.io/mrd/"
+    },
+    {
+      "id": "repo:zistgah/panini",
+      "type": "repository",
+      "name": "zistgah/panini",
+      "title": "PANINI \u2014 a language for prompt cycles",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/panini",
+      "links": {
+        "repo": "https://github.com/zistgah/panini",
+        "clone": "https://github.com/zistgah/panini.git",
+        "api": "https://api.github.com/repos/zistgah/panini",
+        "tree": "https://github.com/zistgah/panini/tree/main",
+        "issues": "https://github.com/zistgah/panini/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/panini/main",
+        "archive": "https://github.com/zistgah/panini/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/panini/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/panini/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/panini/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/panini/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/panini/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/panini/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/panini/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/panini/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/panini/main/descriptor.json",
+        "pages": "https://zistgah.github.io/panini/",
+        "doi": "https://doi.org/10.5281/zenodo.22103243"
+      }
+    },
+    {
+      "id": "page:zistgah/panini",
+      "type": "page",
+      "name": "zistgah/panini (site)",
+      "url": "https://zistgah.github.io/panini/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22103243",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22103243",
+      "url": "https://doi.org/10.5281/zenodo.22103243"
+    },
+    {
+      "id": "repo:zistgah/panini_by_claude",
+      "type": "repository",
+      "name": "zistgah/panini_by_claude",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/panini_by_claude",
+      "links": {
+        "repo": "https://github.com/zistgah/panini_by_claude",
+        "clone": "https://github.com/zistgah/panini_by_claude.git",
+        "api": "https://api.github.com/repos/zistgah/panini_by_claude",
+        "tree": "https://github.com/zistgah/panini_by_claude/tree/main",
+        "issues": "https://github.com/zistgah/panini_by_claude/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main",
+        "archive": "https://github.com/zistgah/panini_by_claude/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/panini_by_claude/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/panini_by_grok",
+      "type": "repository",
+      "name": "zistgah/panini_by_grok",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/panini_by_grok",
+      "links": {
+        "repo": "https://github.com/zistgah/panini_by_grok",
+        "clone": "https://github.com/zistgah/panini_by_grok.git",
+        "api": "https://api.github.com/repos/zistgah/panini_by_grok",
+        "tree": "https://github.com/zistgah/panini_by_grok/tree/main",
+        "issues": "https://github.com/zistgah/panini_by_grok/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main",
+        "archive": "https://github.com/zistgah/panini_by_grok/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/panini_by_grok/main/descriptor.json",
+        "pages": "https://zistgah.github.io/panini_by_grok/"
+      }
+    },
+    {
+      "id": "page:zistgah/panini_by_grok",
+      "type": "page",
+      "name": "zistgah/panini_by_grok (site)",
+      "url": "https://zistgah.github.io/panini_by_grok/"
+    },
+    {
+      "id": "repo:zistgah/panini_by_grok_toolchain",
+      "type": "repository",
+      "name": "zistgah/panini_by_grok_toolchain",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/panini_by_grok_toolchain",
+      "links": {
+        "repo": "https://github.com/zistgah/panini_by_grok_toolchain",
+        "clone": "https://github.com/zistgah/panini_by_grok_toolchain.git",
+        "api": "https://api.github.com/repos/zistgah/panini_by_grok_toolchain",
+        "tree": "https://github.com/zistgah/panini_by_grok_toolchain/tree/main",
+        "issues": "https://github.com/zistgah/panini_by_grok_toolchain/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main",
+        "archive": "https://github.com/zistgah/panini_by_grok_toolchain/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/panini_by_grok_toolchain_cgpt_fix",
+      "type": "repository",
+      "name": "zistgah/panini_by_grok_toolchain_cgpt_fix",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix",
+      "links": {
+        "repo": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix",
+        "clone": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix.git",
+        "api": "https://api.github.com/repos/zistgah/panini_by_grok_toolchain_cgpt_fix",
+        "tree": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix/tree/main",
+        "issues": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main",
+        "archive": "https://github.com/zistgah/panini_by_grok_toolchain_cgpt_fix/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/panini_by_grok_toolchain_cgpt_fix/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/paradox",
+      "type": "repository",
+      "name": "zistgah/paradox",
+      "title": "The Paradox of Innovation",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/paradox",
+      "links": {
+        "repo": "https://github.com/zistgah/paradox",
+        "clone": "https://github.com/zistgah/paradox.git",
+        "api": "https://api.github.com/repos/zistgah/paradox",
+        "tree": "https://github.com/zistgah/paradox/tree/main",
+        "issues": "https://github.com/zistgah/paradox/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/paradox/main",
+        "archive": "https://github.com/zistgah/paradox/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/paradox/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/paradox/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/paradox/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/paradox/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/paradox/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/paradox/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/paradox/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/paradox/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/paradox/main/descriptor.json",
+        "pages": "https://zistgah.github.io/paradox/"
+      }
+    },
+    {
+      "id": "page:zistgah/paradox",
+      "type": "page",
+      "name": "zistgah/paradox (site)",
+      "url": "https://zistgah.github.io/paradox/"
+    },
+    {
+      "id": "repo:zistgah/pench",
+      "type": "repository",
+      "name": "zistgah/pench",
+      "title": "pench \u2014 the embodied cycler. Robotics, cyberphysical, sim2real, real2sim.",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/pench",
+      "links": {
+        "repo": "https://github.com/zistgah/pench",
+        "clone": "https://github.com/zistgah/pench.git",
+        "api": "https://api.github.com/repos/zistgah/pench",
+        "tree": "https://github.com/zistgah/pench/tree/main",
+        "issues": "https://github.com/zistgah/pench/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/pench/main",
+        "archive": "https://github.com/zistgah/pench/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/pench/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/pench/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/pench/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/pench/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/pench/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/pench/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/pench/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/pench/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/pench/main/descriptor.json",
+        "pages": "https://zistgah.github.io/pench/",
+        "doi": "https://doi.org/10.5281/zenodo.22010962"
+      }
+    },
+    {
+      "id": "page:zistgah/pench",
+      "type": "page",
+      "name": "zistgah/pench (site)",
+      "url": "https://zistgah.github.io/pench/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22010962",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22010962",
+      "url": "https://doi.org/10.5281/zenodo.22010962"
+    },
+    {
+      "id": "repo:zistgah/poie",
+      "type": "repository",
+      "name": "zistgah/poie",
+      "title": "Proclamation of Individual Equity",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/poie",
+      "links": {
+        "repo": "https://github.com/zistgah/poie",
+        "clone": "https://github.com/zistgah/poie.git",
+        "api": "https://api.github.com/repos/zistgah/poie",
+        "tree": "https://github.com/zistgah/poie/tree/master",
+        "issues": "https://github.com/zistgah/poie/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/poie/master",
+        "archive": "https://github.com/zistgah/poie/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/poie/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/poie/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/poie/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/poie/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/poie/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/poie/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/poie/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/poie/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/poie/master/descriptor.json",
+        "pages": "https://zistgah.github.io/poie/",
+        "doi": "https://doi.org/10.5281/zenodo.21397274"
+      }
+    },
+    {
+      "id": "page:zistgah/poie",
+      "type": "page",
+      "name": "zistgah/poie (site)",
+      "url": "https://zistgah.github.io/poie/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21397274",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21397274",
+      "url": "https://doi.org/10.5281/zenodo.21397274"
+    },
+    {
+      "id": "work:10.5281/zenodo.21402745",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21402745",
+      "url": "https://doi.org/10.5281/zenodo.21402745"
+    },
+    {
+      "id": "repo:zistgah/pratik_core_mvp",
+      "type": "repository",
+      "name": "zistgah/pratik_core_mvp",
+      "title": "PRATIK Kernel Core \u2014 balanced-ternary, event-driven developmental kernel (PEDLER/AyeAI Triad)",
+      "topics": [],
+      "licence": "GPL-3.0",
+      "state": "minted",
+      "url": "https://github.com/zistgah/pratik_core_mvp",
+      "links": {
+        "repo": "https://github.com/zistgah/pratik_core_mvp",
+        "clone": "https://github.com/zistgah/pratik_core_mvp.git",
+        "api": "https://api.github.com/repos/zistgah/pratik_core_mvp",
+        "tree": "https://github.com/zistgah/pratik_core_mvp/tree/main",
+        "issues": "https://github.com/zistgah/pratik_core_mvp/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main",
+        "archive": "https://github.com/zistgah/pratik_core_mvp/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/pratik_core_mvp/main/descriptor.json",
+        "pages": "https://zistgah.github.io/pratik_core_mvp/",
+        "doi": "https://doi.org/10.5281/zenodo.21288232"
+      }
+    },
+    {
+      "id": "page:zistgah/pratik_core_mvp",
+      "type": "page",
+      "name": "zistgah/pratik_core_mvp (site)",
+      "url": "https://zistgah.github.io/pratik_core_mvp/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21288232",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21288232",
+      "url": "https://doi.org/10.5281/zenodo.21288232"
+    },
+    {
+      "id": "repo:zistgah/qaem",
+      "type": "repository",
+      "name": "zistgah/qaem",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/qaem",
+      "links": {
+        "repo": "https://github.com/zistgah/qaem",
+        "clone": "https://github.com/zistgah/qaem.git",
+        "api": "https://api.github.com/repos/zistgah/qaem",
+        "tree": "https://github.com/zistgah/qaem/tree/main",
+        "issues": "https://github.com/zistgah/qaem/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/qaem/main",
+        "archive": "https://github.com/zistgah/qaem/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/qaem/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/qaem/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/qaem/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/qaem/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/qaem/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/qaem/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/qaem/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/qaem/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/qaem/main/descriptor.json",
+        "pages": "https://zistgah.github.io/qaem/"
+      }
+    },
+    {
+      "id": "page:zistgah/qaem",
+      "type": "page",
+      "name": "zistgah/qaem (site)",
+      "url": "https://zistgah.github.io/qaem/"
+    },
+    {
+      "id": "repo:zistgah/tabdili",
+      "type": "repository",
+      "name": "zistgah/tabdili",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "minted",
+      "url": "https://github.com/zistgah/tabdili",
+      "links": {
+        "repo": "https://github.com/zistgah/tabdili",
+        "clone": "https://github.com/zistgah/tabdili.git",
+        "api": "https://api.github.com/repos/zistgah/tabdili",
+        "tree": "https://github.com/zistgah/tabdili/tree/main",
+        "issues": "https://github.com/zistgah/tabdili/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/tabdili/main",
+        "archive": "https://github.com/zistgah/tabdili/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/tabdili/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/tabdili/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/tabdili/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/tabdili/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/tabdili/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/tabdili/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/tabdili/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/tabdili/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/tabdili/main/descriptor.json",
+        "pages": "https://zistgah.github.io/tabdili/",
+        "doi": "https://doi.org/10.5281/zenodo.21764943"
+      }
+    },
+    {
+      "id": "page:zistgah/tabdili",
+      "type": "page",
+      "name": "zistgah/tabdili (site)",
+      "url": "https://zistgah.github.io/tabdili/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21764943",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21764943",
+      "url": "https://doi.org/10.5281/zenodo.21764943"
+    },
+    {
+      "id": "repo:zistgah/tarbiyat",
+      "type": "repository",
+      "name": "zistgah/tarbiyat",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/tarbiyat",
+      "links": {
+        "repo": "https://github.com/zistgah/tarbiyat",
+        "clone": "https://github.com/zistgah/tarbiyat.git",
+        "api": "https://api.github.com/repos/zistgah/tarbiyat",
+        "tree": "https://github.com/zistgah/tarbiyat/tree/main",
+        "issues": "https://github.com/zistgah/tarbiyat/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/tarbiyat/main",
+        "archive": "https://github.com/zistgah/tarbiyat/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/tarbiyat/main/descriptor.json",
+        "pages": "https://zistgah.github.io/tarbiyat/"
+      }
+    },
+    {
+      "id": "page:zistgah/tarbiyat",
+      "type": "page",
+      "name": "zistgah/tarbiyat (site)",
+      "url": "https://zistgah.github.io/tarbiyat/"
+    },
+    {
+      "id": "repo:zistgah/tilasm",
+      "type": "repository",
+      "name": "zistgah/tilasm",
+      "title": "tilasm \u2014 the immersive cycler. AR, XR, VR.",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/tilasm",
+      "links": {
+        "repo": "https://github.com/zistgah/tilasm",
+        "clone": "https://github.com/zistgah/tilasm.git",
+        "api": "https://api.github.com/repos/zistgah/tilasm",
+        "tree": "https://github.com/zistgah/tilasm/tree/main",
+        "issues": "https://github.com/zistgah/tilasm/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/tilasm/main",
+        "archive": "https://github.com/zistgah/tilasm/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/tilasm/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/tilasm/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/tilasm/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/tilasm/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/tilasm/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/tilasm/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/tilasm/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/tilasm/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/tilasm/main/descriptor.json",
+        "pages": "https://zistgah.github.io/tilasm/",
+        "doi": "https://doi.org/10.5281/zenodo.22010869"
+      }
+    },
+    {
+      "id": "page:zistgah/tilasm",
+      "type": "page",
+      "name": "zistgah/tilasm (site)",
+      "url": "https://zistgah.github.io/tilasm/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22010869",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22010869",
+      "url": "https://doi.org/10.5281/zenodo.22010869"
+    },
+    {
+      "id": "repo:zistgah/transeg",
+      "type": "repository",
+      "name": "zistgah/transeg",
+      "title": "Project TransEg \u2014 local digital twin reference implementation (identity continuity research platform)",
+      "topics": [],
+      "licence": "GPL-3.0",
+      "state": "minted",
+      "url": "https://github.com/zistgah/transeg",
+      "links": {
+        "repo": "https://github.com/zistgah/transeg",
+        "clone": "https://github.com/zistgah/transeg.git",
+        "api": "https://api.github.com/repos/zistgah/transeg",
+        "tree": "https://github.com/zistgah/transeg/tree/main",
+        "issues": "https://github.com/zistgah/transeg/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/transeg/main",
+        "archive": "https://github.com/zistgah/transeg/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/transeg/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/transeg/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/transeg/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/transeg/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/transeg/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/transeg/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/transeg/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/transeg/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/transeg/main/descriptor.json",
+        "doi": "https://doi.org/10.5281/zenodo.17497559"
+      }
+    },
+    {
+      "id": "work:10.5281/zenodo.17497559",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.17497559",
+      "url": "https://doi.org/10.5281/zenodo.17497559"
+    },
+    {
+      "id": "work:10.5281/zenodo.21321557",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21321557",
+      "url": "https://doi.org/10.5281/zenodo.21321557"
+    },
+    {
+      "id": "work:10.5281/zenodo.21321558",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21321558",
+      "url": "https://doi.org/10.5281/zenodo.21321558"
+    },
+    {
+      "id": "repo:zistgah/transeg-idgov",
+      "type": "repository",
+      "name": "zistgah/transeg-idgov",
+      "title": "TransEg identity governance \u2014 typed layers, envelope, staged policies, audit",
+      "topics": [],
+      "licence": "GPL-3.0",
+      "state": "minted",
+      "url": "https://github.com/zistgah/transeg-idgov",
+      "links": {
+        "repo": "https://github.com/zistgah/transeg-idgov",
+        "clone": "https://github.com/zistgah/transeg-idgov.git",
+        "api": "https://api.github.com/repos/zistgah/transeg-idgov",
+        "tree": "https://github.com/zistgah/transeg-idgov/tree/main",
+        "issues": "https://github.com/zistgah/transeg-idgov/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main",
+        "archive": "https://github.com/zistgah/transeg-idgov/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/transeg-idgov/main/descriptor.json",
+        "doi": "https://doi.org/10.5281/zenodo.17497559"
+      }
+    },
+    {
+      "id": "work:10.5281/zenodo.17497559",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.17497559",
+      "url": "https://doi.org/10.5281/zenodo.17497559"
+    },
+    {
+      "id": "repo:zistgah/transeg-research",
+      "type": "repository",
+      "name": "zistgah/transeg-research",
+      "title": "TransEg research \u2014 9-benchmark framework + 7 reference experiments",
+      "topics": [],
+      "licence": "GPL-3.0",
+      "state": "minted",
+      "url": "https://github.com/zistgah/transeg-research",
+      "links": {
+        "repo": "https://github.com/zistgah/transeg-research",
+        "clone": "https://github.com/zistgah/transeg-research.git",
+        "api": "https://api.github.com/repos/zistgah/transeg-research",
+        "tree": "https://github.com/zistgah/transeg-research/tree/main",
+        "issues": "https://github.com/zistgah/transeg-research/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/transeg-research/main",
+        "archive": "https://github.com/zistgah/transeg-research/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/transeg-research/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/transeg-research/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/transeg-research/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/transeg-research/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/transeg-research/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/transeg-research/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/transeg-research/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/transeg-research/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/transeg-research/main/descriptor.json",
+        "doi": "https://doi.org/10.5281/zenodo.17497559"
+      }
+    },
+    {
+      "id": "work:10.5281/zenodo.17497559",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.17497559",
+      "url": "https://doi.org/10.5281/zenodo.17497559"
+    },
+    {
+      "id": "repo:zistgah/urdu-ilm",
+      "type": "repository",
+      "name": "zistgah/urdu-ilm",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "seeded",
+      "url": "https://github.com/zistgah/urdu-ilm",
+      "links": {
+        "repo": "https://github.com/zistgah/urdu-ilm",
+        "clone": "https://github.com/zistgah/urdu-ilm.git",
+        "api": "https://api.github.com/repos/zistgah/urdu-ilm",
+        "tree": "https://github.com/zistgah/urdu-ilm/tree/master",
+        "issues": "https://github.com/zistgah/urdu-ilm/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master",
+        "archive": "https://github.com/zistgah/urdu-ilm/archive/refs/heads/master.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/urdu-ilm/master/descriptor.json",
+        "pages": "https://zistgah.github.io/urdu-ilm/"
+      }
+    },
+    {
+      "id": "page:zistgah/urdu-ilm",
+      "type": "page",
+      "name": "zistgah/urdu-ilm (site)",
+      "url": "https://zistgah.github.io/urdu-ilm/"
+    },
+    {
+      "id": "repo:zistgah/vakil",
+      "type": "repository",
+      "name": "zistgah/vakil",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/vakil",
+      "links": {
+        "repo": "https://github.com/zistgah/vakil",
+        "clone": "https://github.com/zistgah/vakil.git",
+        "api": "https://api.github.com/repos/zistgah/vakil",
+        "tree": "https://github.com/zistgah/vakil/tree/main",
+        "issues": "https://github.com/zistgah/vakil/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/vakil/main",
+        "archive": "https://github.com/zistgah/vakil/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/vakil/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/vakil/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/vakil/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/vakil/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/vakil/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/vakil/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/vakil/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/vakil/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/vakil/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/varzish",
+      "type": "repository",
+      "name": "zistgah/varzish",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "empty",
+      "url": "https://github.com/zistgah/varzish",
+      "links": {
+        "repo": "https://github.com/zistgah/varzish",
+        "clone": "https://github.com/zistgah/varzish.git",
+        "api": "https://api.github.com/repos/zistgah/varzish",
+        "tree": "https://github.com/zistgah/varzish/tree/main",
+        "issues": "https://github.com/zistgah/varzish/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/varzish/main",
+        "archive": "https://github.com/zistgah/varzish/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/varzish/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/varzish/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/varzish/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/varzish/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/varzish/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/varzish/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/varzish/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/varzish/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/varzish/main/descriptor.json"
+      }
+    },
+    {
+      "id": "repo:zistgah/wake",
+      "type": "repository",
+      "name": "zistgah/wake",
+      "title": "",
+      "topics": [],
+      "licence": "GPL-3.0",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/wake",
+      "links": {
+        "repo": "https://github.com/zistgah/wake",
+        "clone": "https://github.com/zistgah/wake.git",
+        "api": "https://api.github.com/repos/zistgah/wake",
+        "tree": "https://github.com/zistgah/wake/tree/main",
+        "issues": "https://github.com/zistgah/wake/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/wake/main",
+        "archive": "https://github.com/zistgah/wake/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/wake/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/wake/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/wake/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/wake/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/wake/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/wake/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/wake/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/wake/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/wake/main/descriptor.json",
+        "pages": "https://zistgah.github.io/wake/"
+      }
+    },
+    {
+      "id": "page:zistgah/wake",
+      "type": "page",
+      "name": "zistgah/wake (site)",
+      "url": "https://zistgah.github.io/wake/"
+    },
+    {
+      "id": "repo:zistgah/yadein",
+      "type": "repository",
+      "name": "zistgah/yadein",
+      "title": "yadein \u2014 the record. A multimodal diary, staggered, toward TransEg.",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "minted",
+      "url": "https://github.com/zistgah/yadein",
+      "links": {
+        "repo": "https://github.com/zistgah/yadein",
+        "clone": "https://github.com/zistgah/yadein.git",
+        "api": "https://api.github.com/repos/zistgah/yadein",
+        "tree": "https://github.com/zistgah/yadein/tree/main",
+        "issues": "https://github.com/zistgah/yadein/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/yadein/main",
+        "archive": "https://github.com/zistgah/yadein/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/yadein/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/yadein/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/yadein/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/yadein/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/yadein/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/yadein/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/yadein/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/yadein/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/yadein/main/descriptor.json",
+        "pages": "https://zistgah.github.io/yadein/",
+        "doi": "https://doi.org/10.5281/zenodo.22011073"
+      }
+    },
+    {
+      "id": "page:zistgah/yadein",
+      "type": "page",
+      "name": "zistgah/yadein (site)",
+      "url": "https://zistgah.github.io/yadein/"
+    },
+    {
+      "id": "work:10.5281/zenodo.22011073",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.22011073",
+      "url": "https://doi.org/10.5281/zenodo.22011073"
+    },
+    {
+      "id": "repo:zistgah/zamin",
+      "type": "repository",
+      "name": "zistgah/zamin",
+      "title": "Zamin \u2014 PRATIK ternary silicon: physicalizing the poised-zero substrate (PEDLER/AyeAI Triad)",
+      "topics": [],
+      "licence": "GPL-3.0",
+      "state": "minted",
+      "url": "https://github.com/zistgah/zamin",
+      "links": {
+        "repo": "https://github.com/zistgah/zamin",
+        "clone": "https://github.com/zistgah/zamin.git",
+        "api": "https://api.github.com/repos/zistgah/zamin",
+        "tree": "https://github.com/zistgah/zamin/tree/main",
+        "issues": "https://github.com/zistgah/zamin/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/zamin/main",
+        "archive": "https://github.com/zistgah/zamin/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/zamin/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/zamin/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/zamin/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/zamin/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/zamin/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/zamin/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/zamin/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/zamin/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/zamin/main/descriptor.json",
+        "pages": "https://zistgah.github.io/zamin/",
+        "doi": "https://doi.org/10.5281/zenodo.21297556"
+      }
+    },
+    {
+      "id": "page:zistgah/zamin",
+      "type": "page",
+      "name": "zistgah/zamin (site)",
+      "url": "https://zistgah.github.io/zamin/"
+    },
+    {
+      "id": "work:10.5281/zenodo.21297556",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21297556",
+      "url": "https://doi.org/10.5281/zenodo.21297556"
+    },
+    {
+      "id": "repo:zistgah/zindagi",
+      "type": "repository",
+      "name": "zistgah/zindagi",
+      "title": "",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/zindagi",
+      "links": {
+        "repo": "https://github.com/zistgah/zindagi",
+        "clone": "https://github.com/zistgah/zindagi.git",
+        "api": "https://api.github.com/repos/zistgah/zindagi",
+        "tree": "https://github.com/zistgah/zindagi/tree/main",
+        "issues": "https://github.com/zistgah/zindagi/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/zindagi/main",
+        "archive": "https://github.com/zistgah/zindagi/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/zindagi/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/zindagi/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/zindagi/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/zindagi/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/zindagi/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/zindagi/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/zindagi/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/zindagi/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/zindagi/main/descriptor.json",
+        "pages": "https://zistgah.github.io/zindagi/"
+      }
+    },
+    {
+      "id": "page:zistgah/zindagi",
+      "type": "page",
+      "name": "zistgah/zindagi (site)",
+      "url": "https://zistgah.github.io/zindagi/"
+    },
+    {
+      "id": "repo:zistgah/zistgah.github.io",
+      "type": "repository",
+      "name": "zistgah/zistgah.github.io",
+      "title": "Zistgah",
+      "topics": [],
+      "licence": "NOASSERTION",
+      "state": "seeded",
+      "url": "https://github.com/zistgah/zistgah.github.io",
+      "links": {
+        "repo": "https://github.com/zistgah/zistgah.github.io",
+        "clone": "https://github.com/zistgah/zistgah.github.io.git",
+        "api": "https://api.github.com/repos/zistgah/zistgah.github.io",
+        "tree": "https://github.com/zistgah/zistgah.github.io/tree/main",
+        "issues": "https://github.com/zistgah/zistgah.github.io/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main",
+        "archive": "https://github.com/zistgah/zistgah.github.io/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/zistgah.github.io/main/descriptor.json",
+        "pages": "https://zistgah.github.io/zistgah.github.io/"
+      }
+    },
+    {
+      "id": "page:zistgah/zistgah.github.io",
+      "type": "page",
+      "name": "zistgah/zistgah.github.io (site)",
+      "url": "https://zistgah.github.io/zistgah.github.io/"
+    },
+    {
+      "id": "repo:zistgah/ztools",
+      "type": "repository",
+      "name": "zistgah/ztools",
+      "title": "",
+      "topics": [],
+      "licence": null,
+      "state": "minted",
+      "url": "https://github.com/zistgah/ztools",
+      "links": {
+        "repo": "https://github.com/zistgah/ztools",
+        "clone": "https://github.com/zistgah/ztools.git",
+        "api": "https://api.github.com/repos/zistgah/ztools",
+        "tree": "https://github.com/zistgah/ztools/tree/main",
+        "issues": "https://github.com/zistgah/ztools/issues",
+        "raw_base": "https://raw.githubusercontent.com/zistgah/ztools/main",
+        "archive": "https://github.com/zistgah/ztools/archive/refs/heads/main.tar.gz",
+        "README.md": "https://raw.githubusercontent.com/zistgah/ztools/main/README.md",
+        "CONTRACT.md": "https://raw.githubusercontent.com/zistgah/ztools/main/CONTRACT.md",
+        "CONTEXT.md": "https://raw.githubusercontent.com/zistgah/ztools/main/CONTEXT.md",
+        "AGENTS.md": "https://raw.githubusercontent.com/zistgah/ztools/main/AGENTS.md",
+        "CITATION.cff": "https://raw.githubusercontent.com/zistgah/ztools/main/CITATION.cff",
+        "MANIFEST.yaml": "https://raw.githubusercontent.com/zistgah/ztools/main/MANIFEST.yaml",
+        "MANIFEST.sha256": "https://raw.githubusercontent.com/zistgah/ztools/main/MANIFEST.sha256",
+        "roadmap/packages.json": "https://raw.githubusercontent.com/zistgah/ztools/main/roadmap/packages.json",
+        "descriptor.json": "https://raw.githubusercontent.com/zistgah/ztools/main/descriptor.json",
+        "doi": "https://doi.org/10.5281/zenodo.21303400"
+      }
+    },
+    {
+      "id": "work:10.5281/zenodo.21303400",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21303400",
+      "url": "https://doi.org/10.5281/zenodo.21303400"
+    },
+    {
+      "id": "work:10.5281/zenodo.21312769",
+      "type": "deposited_work",
+      "name": "10.5281/zenodo.21312769",
+      "url": "https://doi.org/10.5281/zenodo.21312769"
+    }
+  ],
+  "edges": [
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/.github",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ai-scratch",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/ai-scratch",
+      "to": "page:project-ilm/ai-scratch",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/chakra",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/chakra",
+      "to": "page:project-ilm/chakra",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/cognitive-fabric",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/foundry",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-data",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-devtools",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-interface",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-lexicon",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-lsp",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-meta",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-orthography",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-phonology",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-site",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/ilm-site",
+      "to": "page:project-ilm/ilm-site",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-syntax-semantics",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-transliteration",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm-validation",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ilm.codes",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/ilm.codes",
+      "to": "page:project-ilm/ilm.codes",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/language-specs",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/legacy",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/linguistics-labs",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/misty-doi",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/misty-doi",
+      "to": "page:project-ilm/misty-doi",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:project-ilm/misty-doi",
+      "to": "work:10.5281/zenodo.20719388",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/ops",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/praat",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/qedler",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/qedler",
+      "to": "page:project-ilm/qedler",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:project-ilm/qedler",
+      "to": "work:10.5281/zenodo.17497559",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/record",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/research-kundali",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/romenagri",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/romenagri",
+      "to": "page:project-ilm/romenagri",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/scripts",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/spi-scan",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/tok-doi",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:project-ilm/tok-doi",
+      "to": "page:project-ilm/tok-doi",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:project-ilm/tok-doi",
+      "to": "work:10.5281/zenodo.21397274",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:project-ilm/tok-doi",
+      "to": "work:10.5281/zenodo.21402745",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/vgc-notes",
+      "kind": "contains"
+    },
+    {
+      "from": "org:project-ilm",
+      "to": "repo:project-ilm/vscode-ilm",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/aab",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/aab",
+      "to": "page:zistgah/aab",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/aab",
+      "to": "work:10.5281/zenodo.21264248",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/alam",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/alam",
+      "to": "page:zistgah/alam",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/asab",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/awaz",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/awaz",
+      "to": "page:zistgah/awaz",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/awaz",
+      "to": "work:10.5281/zenodo.22005575",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/copa",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/copa",
+      "to": "page:zistgah/copa",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/cycles",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/cycles",
+      "to": "page:zistgah/cycles",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/dhancha",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/dhancha",
+      "to": "page:zistgah/dhancha",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/dhancha",
+      "to": "work:10.5281/zenodo.22821645",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/dome",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/dome",
+      "to": "page:zistgah/dome",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/dome",
+      "to": "work:10.5281/zenodo.21449034",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/duke2",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/duke2",
+      "to": "page:zistgah/duke2",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/dukedom",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/dukedom",
+      "to": "page:zistgah/dukedom",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/dukedom",
+      "to": "work:10.5281/zenodo.21397274",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/ertabat",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/ertabat",
+      "to": "page:zistgah/ertabat",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/estate",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/fakir",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/fakir",
+      "to": "page:zistgah/fakir",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/fakir",
+      "to": "work:10.5281/zenodo.21264248",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:zistgah/fakir",
+      "to": "work:10.5281/zenodo.21402745",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:zistgah/fakir",
+      "to": "work:10.5281/zenodo.21436550",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:zistgah/fakir",
+      "to": "work:10.5281/zenodo.21436552",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/fiza",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/fiza",
+      "to": "page:zistgah/fiza",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/fiza",
+      "to": "work:10.5281/zenodo.21303401",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/genie",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/genie",
+      "to": "page:zistgah/genie",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/genie-book",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/genie-book",
+      "to": "page:zistgah/genie-book",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/governance",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/humanesque",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/humanesque",
+      "to": "page:zistgah/humanesque",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/inclinations",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/inclinations",
+      "to": "page:zistgah/inclinations",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/janapad",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/janapad",
+      "to": "page:zistgah/janapad",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/jugaad28",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/jugaad28",
+      "to": "page:zistgah/jugaad28",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/jugaad28",
+      "to": "work:10.5281/zenodo.22818408",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/khwab",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/khwab",
+      "to": "page:zistgah/khwab",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/khwab",
+      "to": "work:10.5281/zenodo.22005507",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/kitab",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/kitab",
+      "to": "page:zistgah/kitab",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/marham",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/matba",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/matba",
+      "to": "page:zistgah/matba",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/matba",
+      "to": "work:10.5281/zenodo.21948734",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/mez",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/mez",
+      "to": "page:zistgah/mez",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/mrd",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/mrd",
+      "to": "page:zistgah/mrd",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/panini",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/panini",
+      "to": "page:zistgah/panini",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/panini",
+      "to": "work:10.5281/zenodo.22103243",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/panini_by_claude",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/panini_by_grok",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/panini_by_grok",
+      "to": "page:zistgah/panini_by_grok",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/panini_by_grok_toolchain",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/panini_by_grok_toolchain_cgpt_fix",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/paradox",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/paradox",
+      "to": "page:zistgah/paradox",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/pench",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/pench",
+      "to": "page:zistgah/pench",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/pench",
+      "to": "work:10.5281/zenodo.22010962",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/poie",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/poie",
+      "to": "page:zistgah/poie",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/poie",
+      "to": "work:10.5281/zenodo.21397274",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:zistgah/poie",
+      "to": "work:10.5281/zenodo.21402745",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/pratik_core_mvp",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/pratik_core_mvp",
+      "to": "page:zistgah/pratik_core_mvp",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/pratik_core_mvp",
+      "to": "work:10.5281/zenodo.21288232",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/qaem",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/qaem",
+      "to": "page:zistgah/qaem",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/tabdili",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/tabdili",
+      "to": "page:zistgah/tabdili",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/tabdili",
+      "to": "work:10.5281/zenodo.21764943",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/tarbiyat",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/tarbiyat",
+      "to": "page:zistgah/tarbiyat",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/tilasm",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/tilasm",
+      "to": "page:zistgah/tilasm",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/tilasm",
+      "to": "work:10.5281/zenodo.22010869",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/transeg",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/transeg",
+      "to": "work:10.5281/zenodo.17497559",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:zistgah/transeg",
+      "to": "work:10.5281/zenodo.21321557",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:zistgah/transeg",
+      "to": "work:10.5281/zenodo.21321558",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/transeg-idgov",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/transeg-idgov",
+      "to": "work:10.5281/zenodo.17497559",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/transeg-research",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/transeg-research",
+      "to": "work:10.5281/zenodo.17497559",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/urdu-ilm",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/urdu-ilm",
+      "to": "page:zistgah/urdu-ilm",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/vakil",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/varzish",
+      "kind": "contains"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/wake",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/wake",
+      "to": "page:zistgah/wake",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/yadein",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/yadein",
+      "to": "page:zistgah/yadein",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/yadein",
+      "to": "work:10.5281/zenodo.22011073",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/zamin",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/zamin",
+      "to": "page:zistgah/zamin",
+      "kind": "publishes"
+    },
+    {
+      "from": "repo:zistgah/zamin",
+      "to": "work:10.5281/zenodo.21297556",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/zindagi",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/zindagi",
+      "to": "page:zistgah/zindagi",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/zistgah.github.io",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/zistgah.github.io",
+      "to": "page:zistgah/zistgah.github.io",
+      "kind": "publishes"
+    },
+    {
+      "from": "org:zistgah",
+      "to": "repo:zistgah/ztools",
+      "kind": "contains"
+    },
+    {
+      "from": "repo:zistgah/ztools",
+      "to": "work:10.5281/zenodo.21303400",
+      "kind": "deposited_as"
+    },
+    {
+      "from": "repo:zistgah/ztools",
+      "to": "work:10.5281/zenodo.21312769",
+      "kind": "deposited_as"
+    }
+  ]
+}
