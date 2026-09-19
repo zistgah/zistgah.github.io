@@ -1,7 +1,7 @@
 {
   "name": "Zistgah / Project ILM estate ontology",
   "version": "0.1",
-  "generated_utc": "2026-09-18T17:18:27Z",
+  "generated_utc": "2026-09-19T11:00:50Z",
   "purpose": "A scaffold, not a finished ontology. The classes and relations are stable; the instances are seeded from a walk of the forge and are incomplete on purpose. Extend it.",
   "rules": [
     "Retrieve before asserting. The live state is in the repository.",

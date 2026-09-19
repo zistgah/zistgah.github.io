@@ -1,0 +1,96 @@
+{
+  "rule": "A package is done when its acceptance criteria are met, not when the work reads well. Labels are capabilities, never model names.",
+  "packages": [
+    {
+      "id": "PKG-PROJ-1",
+      "needs": "needs:ontology",
+      "brief": "Author the Humanesque core page from the ontology federation, and state for each of O0 to O25 whether a component realises it.",
+      "acceptance": [
+        "a page per ontology position",
+        "each says realised / partly / not established"
+      ]
+    },
+    {
+      "id": "PKG-PROJ-2",
+      "needs": "needs:ontology",
+      "brief": "For each cultural derivation, state what it derives and what it does NOT: the anti-conflation rules made concrete per projection.",
+      "acceptance": [
+        "three pages",
+        "each names at least three things it is not"
+      ]
+    },
+    {
+      "id": "PKG-DOM-1",
+      "needs": "needs:ontology",
+      "brief": "Fill the domain registry from the collaborator domain map: 390 declared, 66 enumerated. Each entry needs its own enablement list, never a shared one.",
+      "acceptance": [
+        "registry entries grow",
+        "no two domains share an enablement list"
+      ]
+    },
+    {
+      "id": "PKG-DOM-2",
+      "needs": "needs:code",
+      "brief": "Generate a lab kit per enumerated domain and price one bill of materials end to end, so 'low cost' becomes a measurement.",
+      "acceptance": [
+        "lab_gen --all",
+        "at least one BoM with every line sourced"
+      ]
+    },
+    {
+      "id": "PKG-LAB-1",
+      "needs": "needs:testing",
+      "brief": "Stand up one Holy Grail lab on real hardware and record the loop closing: research, formalisation, simulation, prototype, experiment, instrumentation, observation, evidence, verification, revision.",
+      "acceptance": [
+        "an evidence crate with an instrument named",
+        "a rung promoted with its artifact"
+      ]
+    },
+    {
+      "id": "PKG-REG-1",
+      "needs": "needs:legal",
+      "brief": "Declare the non-file rights: trademarks, filings, registered marks, with jurisdiction and number. A filing date is declared by the author, never inferred.",
+      "acceptance": [
+        "registry items of type trademark and patent carry a jurisdiction"
+      ]
+    },
+    {
+      "id": "PKG-REG-2",
+      "needs": "needs:proof",
+      "brief": "Resolve every 'precedence not established' by verifying its OTS proof or reading its deposit date from the registrar.",
+      "acceptance": [
+        "precedence_not_established falls",
+        "each resolved date names its source"
+      ]
+    },
+    {
+      "id": "PKG-SITE-1",
+      "needs": "needs:visual",
+      "brief": "Give each projection its own visual identity within one design system, without forking the page generator.",
+      "acceptance": [
+        "one generator",
+        "four themes",
+        "no duplicated markup"
+      ]
+    },
+    {
+      "id": "PKG-ORG-1",
+      "needs": "needs:code",
+      "brief": "Extend the walk beyond the two orgs: discover every org the token can see and record which were walked and which were not.",
+      "acceptance": [
+        "estate.sh --discover-orgs",
+        "orgs_failed is never silently empty"
+      ]
+    },
+    {
+      "id": "PKG-CHAN-1",
+      "needs": "needs:human",
+      "brief": "Define the promotion process from test to production: what evidence, whose gate, and what is recorded when it passes.",
+      "acceptance": [
+        "a written process",
+        "a receipt schema",
+        "a refusal path"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 > A federated estate of independently implementable components: knowledge, intelligence, realization and continuity. Every component is sovereign, carries its own contract, and can be used without the rest.
 
-Walked 2026-09-18T17:18:27Z. 85 repositories across zistgah, project-ilm; 26 carry a DOI, 55 do not.
+Walked 2026-09-19T11:00:50Z. 85 repositories across zistgah, project-ilm; 26 carry a DOI, 55 do not.
 
 ## Read these first
 

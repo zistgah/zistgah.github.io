@@ -1,6 +1,6 @@
 # AGENTS.md — for any agent reading this estate
 
-Generated 2026-09-18T17:18:27Z from a walk of zistgah, project-ilm.
+Generated 2026-09-19T11:00:50Z from a walk of zistgah, project-ilm.
 Regenerated on every walk; do not hand-edit.
 
 ## Where everything is

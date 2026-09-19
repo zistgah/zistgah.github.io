@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-18T17:18:27Z",
+  "generated_utc": "2026-09-19T11:00:50Z",
   "rule": "Live on the forge and carrying no DOI in CITATION.cff, MANIFEST.yaml or the README. A repository whose files could not be read is listed under 'unknown' instead, because a failed read is not an absent DOI.",
   "not_minted": [
     {
